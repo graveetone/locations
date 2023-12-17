@@ -25,19 +25,20 @@ SECRET_KEY = 'django-insecure-gu+!c+ui!fl%y!4i=41*5&is*n**385$l37u5mjv!r5xt9&klg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'channels',
     'core'
 ]
 
@@ -70,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'point_field_app.wsgi.application'
+ASGI_APPLICATION = 'point_field_app.asgi.application'
 
 
 # Database
