@@ -14,7 +14,7 @@ TABLE_NAME = "locations_for_resource{resource_id}"
 def get_dynamic_tables():
     all_tables = connection.introspection.table_names()
     dynamic_tables = [
-        table_name for table_name in all_tables if table_name.startswith(MODEL_NAME)]
+        table_name for table_name in all_tables if table_name.startswith(TABLE_NAME.format(resource_id=''))]
 
     return dynamic_tables
 
