@@ -13,7 +13,7 @@ from core.models import (
 )
 
 RESOURCES_NUMBER = 5
-LOCATIONS_NUMBER_FOR_RESOURCE = 10
+LOCATIONS_NUMBER_PER_RESOURCE = 10
 
 def generate_random_point():
     latitude = random.uniform(-90, 90)
@@ -29,7 +29,7 @@ print(f"Destroyed: {tables_to_destroy}")
 
 for i in range(RESOURCES_NUMBER):
     LocationsForResource = create_table_for_resource()
-    for j in range(LOCATIONS_NUMBER_FOR_RESOURCE):
+    for j in range(LOCATIONS_NUMBER_PER_RESOURCE):
         point = generate_random_point()
         LocationsForResource.objects.create(point=point)
 
