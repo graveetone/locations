@@ -26,18 +26,21 @@ SECRET_KEY = 'django-insecure-vcx-_k8y6^((g76b7-kbos35z*#z+%lw7u=w40qch2()-nv2@z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -69,6 +72,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mongo_app.wsgi.application'
+ASGI_APPLICATION = 'mongo_app.asgi.application'
 
 
 # Database

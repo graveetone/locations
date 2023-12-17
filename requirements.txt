@@ -1,6 +1,7 @@
 # common
 django
-faker
+daphne
+channels
 
 # point_field_app | single_table_app | dynamic_table_app
 psycopg

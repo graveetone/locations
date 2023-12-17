@@ -25,19 +25,20 @@ SECRET_KEY = 'django-insecure-h-p)4!#wsmnh_85*1vbrr+!=ldbs291zpo3so)ty+vtd@k)+&n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'channels',
     'core'
 ]
 
@@ -70,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'single_table_app.wsgi.application'
+ASGI_APPLICATION = 'single_table_app.asgi.application'
 
 
 # Database
