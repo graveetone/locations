@@ -1,3 +1,9 @@
+# common
 django
-psycopg
 faker
+
+# point_field_app | single_table_app | dynamic_table_app
+psycopg
+
+# mongo_app
+mongoengine
