@@ -45,7 +45,7 @@ class LocationsService:
 
         locations = Location.objects.filter(
             timestamp__gte=query_time,
-            point__distance_lte=(Point(latitude, longitude), D(m=radius))
+            point__distance_lte=(Point(x=latitude, y=longitude), D(m=radius))
         )
 
         resource_ids = locations.values_list('resource_id', flat=True)

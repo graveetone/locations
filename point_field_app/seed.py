@@ -15,7 +15,7 @@ def generate_random_point():
         latitude = random.uniform(-90, 90)
         longitude = random.uniform(-180, 180)
 
-        return Point(longitude, latitude)
+        return Point(x=longitude, y=latitude)
 
 models_to_reset = [Resource, Location]
 print(f"Destroying: {models_to_reset}")

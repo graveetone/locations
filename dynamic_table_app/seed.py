@@ -19,7 +19,7 @@ def generate_random_point():
     latitude = random.uniform(-90, 90)
     longitude = random.uniform(-180, 180)
 
-    return Point(longitude, latitude)
+    return Point(x=longitude, y=latitude)
 
 tables_to_destroy = get_dynamic_tables()
 print(f"Destroying: {tables_to_destroy}")
