@@ -1,14 +1,17 @@
 from mongoengine import (
     Document, ListField, EmbeddedDocument,
     PointField, DateTimeField,
-    EmbeddedDocumentField, SequenceField
+    EmbeddedDocumentField, SequenceField, IntField
 )
 from datetime import datetime
 
 
 class Location(EmbeddedDocument):
-    coordinates = PointField(required=True)
+    id = SequenceField()
+    point = PointField(required=True)
     timestamp = DateTimeField(default=datetime.utcnow)
+    resource_id = IntField(required=True)
+    
 
 
 class Resource(Document):

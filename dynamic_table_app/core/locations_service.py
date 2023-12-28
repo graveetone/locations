@@ -7,8 +7,8 @@ from django.contrib.gis.measure import D
 
 
 class ResourcesService:
-    def __init__(self, resource__id):
-        self.resource_id = resource__id
+    def __init__(self, resource_id):
+        self.resource_id = resource_id
 
     def get_location(self):
         with ResourceLocation(self.resource_id) as Location:
@@ -48,7 +48,6 @@ class LocationsService:
         resource_ids = TableManager.get_resource_ids()
         resources_nearby = []
         for id in resource_ids:
-            # breakpoint()
             with ResourceLocation(id) as Location:
                 locations = Location.objects.filter(
                     timestamp__gte=query_time,
