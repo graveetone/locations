@@ -18,14 +18,10 @@ class LocationSerializer:
     def to_dict(self, object):
         # breakpoint()
         return {
-            "id": object.id,
-            # "coordinates": {
-            #     "longitude": object.point['coordinates'][0],
-            #     "latitude": object.point['coordinates'][1]
-            # },
+            "id": str(object.id),
             "coordinates": {
-                "longitude": object.point[0],
-                "latitude": object.point[1]
+                "longitude": object.point['coordinates'][0],
+                "latitude": object.point['coordinates'][1]
             },
             "timestamp": str(object.timestamp)
         }

@@ -28,13 +28,8 @@ class ResourcesService:
             coordinates['longitude'],
             coordinates['latitude']
         ]
-        location = Location(
-            point=point,
-            resource_id=self.resource.resource_id
-        )
 
-        self.resource.locations.append(location)
-        self.resource.save()
+        self.resource.add_location(point)
 
 
 class LocationsService:
@@ -42,16 +37,13 @@ class LocationsService:
         ...
 
     def get_resources_nearby(self, threshold, radius, coordinates):
-        query_time = datetime.utcnow() - timedelta(seconds=threshold)
-        latitude = coordinates.get('latitude')
-        longitude = coordinates.get('longitude')
+        found_resources = Resource.get_resources_near_point(
+            point=[coordinates['longitude'], coordinates['latitude']],
+            radius=radius,
+            seconds=threshold
+        ).all()
 
-        locations = Location.objects.filter(
-            timestamp__gte=query_time,
-            point__distance_lte=(Point(x=longitude, y=latitude), D(m=radius))
-        )
+        resource_ids = found_resources.values_list('resource_id')
+        result_resources = [r.resource_id for r in Resource.objects.filter(resource_id__in=resource_ids)]
 
-        resource_ids = locations.values_list('resource_id', flat=True)
-        result_resources = [r.id for r in Resource.objects.filter(id__in=resource_ids)]
-
-        return json.dumps(result_resources)
+        return json.dumps(list(result_resources))

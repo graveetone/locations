@@ -15,7 +15,7 @@ def generate_random_coordinates():
     latitude = random.uniform(-90, 90)
     longitude = random.uniform(-180, 180)
 
-    return longitude, latitude
+    return [longitude, latitude]
 
 models_to_reset = [Resource]
 
@@ -31,12 +31,11 @@ print(f"Destroyed: {counters_collection}")
 
 
 for i in range(RESOURCES_NUMBER):
-    resource = Resource.objects.create()
+    resource = Resource()
+    resource.save()
     
     for j in range(LOCATIONS_NUMBER_PER_RESOURCE):      
-        location = Location(point=generate_random_coordinates(), resource_id=resource.resource_id)
-        resource.locations.append(location)
-    resource.save()
+        resource.add_location(generate_random_coordinates())
     
 
 print('Seed completed!')            
