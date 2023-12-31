@@ -34,7 +34,7 @@ class Resource(Document):
         return self.locations.order_by('-timestamp').first()
 
     def get_all_locations(self):
-        return self.locations
+        return self.locations.order_by('-timestamp')
 
     @classmethod
     def get_resources_near_point(cls, point, radius, seconds):

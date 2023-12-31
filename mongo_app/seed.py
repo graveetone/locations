@@ -1,21 +1,16 @@
-import random
 import os
-from mongoengine.connection import _get_db
+import sys
 
-import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mongo_app.settings")
-django.setup() # to run connect method and establish connection to mongo database
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+from mongoengine.connection import _get_db
+from shared import generate_random_coordinates, get_seed_args, setup_django_for_app
+setup_django_for_app('mongo_app')
 
 from core.models import Resource, Location
 
-RESOURCES_NUMBER = 5
-LOCATIONS_NUMBER_PER_RESOURCE = 10
-
-def generate_random_coordinates():
-    latitude = random.uniform(-90, 90)
-    longitude = random.uniform(-180, 180)
-
-    return [longitude, latitude]
+RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE = get_seed_args()
+print('Seeding: {} resources | {} locations per resource | {} resources'.format(RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE))
 
 models_to_reset = [Resource]
 
@@ -38,4 +33,4 @@ for i in range(RESOURCES_NUMBER):
         resource.add_location(generate_random_coordinates())
     
 
-print('Seed completed!')            
+print('Seed completed!')

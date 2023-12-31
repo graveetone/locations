@@ -69,10 +69,10 @@ class TableManager:
 
         return LocationModel
 
-
-    def destroy_table(self):
+    @staticmethod
+    def destroy_table(table_name):
         with connection.cursor() as cursor:
-            cursor.execute(f"DROP TABLE {self.table_name}")
+            cursor.execute(f"DROP TABLE {table_name}")
 
     @property
     def table_name(self):

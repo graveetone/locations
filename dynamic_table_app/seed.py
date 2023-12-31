@@ -1,36 +1,28 @@
-import random
 import os
+import sys
 
-import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dynamic_table_app.settings")
-django.setup()
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
+from shared import generate_random_coordinates, get_seed_args, setup_django_for_app
+setup_django_for_app('dynamic_table_app')
 
 from django.contrib.gis.geos import Point
-from core.models import (
-     create_table_for_resource,
-     get_dynamic_tables,
-     destroy_dynamic_table
-)
+from core.models import TableManager
 
-RESOURCES_NUMBER = 5
-LOCATIONS_NUMBER_PER_RESOURCE = 10
+RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE = get_seed_args()
+print('Seeding: {} resources | {} locations per resource | {} resources'.format(RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE))
 
-def generate_random_point():
-    latitude = random.uniform(-90, 90)
-    longitude = random.uniform(-180, 180)
-
-    return Point(x=longitude, y=latitude)
-
-tables_to_destroy = get_dynamic_tables()
+tables_to_destroy = TableManager.get_dynamic_tables()
 print(f"Destroying: {tables_to_destroy}")
 for table in tables_to_destroy:
-    destroy_dynamic_table(table)
+    TableManager.destroy_table(table)
 print(f"Destroyed: {tables_to_destroy}")
 
 for i in range(RESOURCES_NUMBER):
-    LocationsForResource = create_table_for_resource()
+    LocationsForResource = TableManager().create_table()
     for j in range(LOCATIONS_NUMBER_PER_RESOURCE):
-        point = generate_random_point()
-        LocationsForResource.objects.create(point=point)
+        coordinates = generate_random_coordinates()
+        LocationsForResource.objects.create(point=Point(*coordinates))
 
-print('Seed completed!')            
+print('Seed completed!')
