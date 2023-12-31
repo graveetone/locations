@@ -1,21 +1,17 @@
-import random
 import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
+from shared import generate_random_coordinates, get_seed_args, setup_django_for_app
+setup_django_for_app('point_field_app')
+
 from django.contrib.gis.geos import Point
-
-import django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "point_field_app.settings")
-django.setup()
-
 from core.models import Resource, Location
 
-RESOURCES_NUMBER = 5
-LOCATIONS_NUMBER_PER_RESOURCE = 10
-
-def generate_random_point():
-        latitude = random.uniform(-90, 90)
-        longitude = random.uniform(-180, 180)
-
-        return Point(x=longitude, y=latitude)
+RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE = get_seed_args()
+print('Seeding: {} resources | {} locations per resource | {} resources'.format(RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE))
 
 models_to_reset = [Resource, Location]
 print(f"Destroying: {models_to_reset}")
@@ -27,8 +23,7 @@ for i in range(RESOURCES_NUMBER):
     resource = Resource.objects.create()
     
     for j in range(LOCATIONS_NUMBER_PER_RESOURCE):      
-        point = generate_random_point()
-        resource.locations.create(point=point)
+        coordinates = generate_random_coordinates()
+        resource.locations.create(point=Point(*coordinates))
 
-print('Seed completed!')            
-
+print('Seed completed!')
