@@ -25,9 +25,11 @@ class Resource(Document):
     }
 
     def add_location(self, point):
-        location = Location(point=point, resource_id=self.resource_id)
-
-        self.locations.append(location)
+        self.add_locations([point])
+    
+    def add_locations(self, points):
+        locations = [Location(point=point, resource_id=self.resource_id) for point in points]
+        self.locations.extend(locations)
         self.save().reload()
 
     def get_last_location(self):

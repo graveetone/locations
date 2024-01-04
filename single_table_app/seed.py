@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
@@ -12,16 +13,18 @@ from core.models import Location
 
 RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE = get_seed_args()
 print('Seeding: {} resources | {} locations per resource | {} locations'.format(RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE))
-
+start_time = time.time()
 models_to_reset = [Location]
 print(f"Destroying: {models_to_reset}")
 for model in models_to_reset:
     model.objects.all().delete()
 print(f"Destroyed: {models_to_reset}")
 
-for i in range(RESOURCES_NUMBER):    
-    for j in range(LOCATIONS_NUMBER_PER_RESOURCE):      
-        coordinates = generate_random_coordinates()
-        Location.objects.create(point=Point(*coordinates), resource_id=i)
+for i in range(1, RESOURCES_NUMBER + 1):
+    locations = [Location(point=Point(*generate_random_coordinates()), resource_id=i)
+                 for _ in range(LOCATIONS_NUMBER_PER_RESOURCE)]        
+    print("Locations created: {}/{}".format(i * LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE), end="\r")        
 
-print('Seed completed!')            
+print('\nSeed completed!')
+print("--- %s seconds ---" % (time.time() - start_time))
+          
