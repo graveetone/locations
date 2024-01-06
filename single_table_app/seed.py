@@ -22,7 +22,8 @@ print(f"Destroyed: {models_to_reset}")
 
 for i in range(1, RESOURCES_NUMBER + 1):
     locations = [Location(point=Point(*generate_random_coordinates()), resource_id=i)
-                 for _ in range(LOCATIONS_NUMBER_PER_RESOURCE)]        
+                 for _ in range(LOCATIONS_NUMBER_PER_RESOURCE)]
+    Location.objects.bulk_create(locations)        
     print("Locations created: {}/{}".format(i * LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE), end="\r")        
 
 print('\nSeed completed!')
