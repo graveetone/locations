@@ -13,12 +13,12 @@ def test_resource_id():
 
 @pytest.fixture
 def resources_url(websocket_url, test_resource_id):
-    return "{}/ws/resource/{}/".format(websocket_url, test_resource_id)
+    return "{}/ws/resources/{}/".format(websocket_url, test_resource_id)
 
 
 @pytest.fixture
 def locations_url(websocket_url):
-    return "{}/ws/location/get-nearby-resources/".format(websocket_url)
+    return "{}/ws/locations/get-nearby-resources/".format(websocket_url)
 
 
 @pytest.fixture
@@ -70,7 +70,7 @@ def not_existing_resource_id():
 
 @pytest.fixture
 def not_existing_resource_id_url(websocket_url, not_existing_resource_id):
-    return "{}/ws/resource/{}/".format(websocket_url, not_existing_resource_id)
+    return "{}/ws/resources/{}/".format(websocket_url, not_existing_resource_id)
 
 
 @pytest.fixture
