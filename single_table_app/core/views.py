@@ -8,10 +8,6 @@ from .models import Location
 class ResourceConsumer(WebsocketConsumer):
     def connect(self):
         self.resource_id = self.scope['url_route']['kwargs']['id']
-        if not self.resource_id:
-            return
-
-        print(self.resource_id)
         self.accept()
         try:
             self.resource_service = ResourcesService(self.resource_id)

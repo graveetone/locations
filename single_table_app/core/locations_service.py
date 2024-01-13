@@ -9,6 +9,9 @@ from django.contrib.gis.measure import D
 class ResourcesService:
     def __init__(self, resource_id):
         self.resource_id = resource_id
+        # temp test_no_resource fix
+        if Location.objects.filter(resource_id=self.resource_id).count() < 1:
+            raise Location.DoesNotExist
 
     def get_location(self):
         # first should always be the last location by timestamp!
