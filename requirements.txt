@@ -8,3 +8,8 @@ psycopg
 
 # mongo_app
 mongoengine
+
+# tests
+pytest
+websockets
+pytest-asyncio
