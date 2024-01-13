@@ -6,16 +6,16 @@ class LocationSerializer:
         self.serializable = serializable
         self.many = many
 
-    def to_json(self):
+    def to_dict(self):
         if self.many:
             return json.dumps([
-                self.to_dict(obj)
+                self._to_dict(obj)
                 for obj in self.serializable
             ])
 
-        return json.dumps(self.to_dict(self.serializable))
+        return self._to_dict(self.serializable)
 
-    def to_dict(self, object):
+    def _to_dict(self, object):
         return {
             "id": object.id,
             "coordinates": {
