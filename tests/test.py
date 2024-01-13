@@ -13,6 +13,13 @@ def check_values_are_correct(expected, actual):
 
 
 @pytest.mark.asyncio
+async def test_ping(ping_url):
+    async with websockets.connect(ping_url) as websocket:
+        response = await websocket.recv()
+        assert response == "pong"
+
+
+@pytest.mark.asyncio
 @pytest.mark.usefixtures("expected_location_keys")
 async def test_get_location(resources_url, get_location_payload, expected_location_keys):
     async with websockets.connect(resources_url) as websocket:

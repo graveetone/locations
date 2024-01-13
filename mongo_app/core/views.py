@@ -10,13 +10,14 @@ class ResourceConsumer(WebsocketConsumer):
         self.resource_id = int(self.scope['url_route']['kwargs']['id'])
         if not self.resource_id:
             return
-        
+
         print(self.resource_id)
         self.accept()
         try:
             self.resource_service = ResourcesService(self.resource_id)
         except Resource.DoesNotExist:
-            self.send(json.dumps({'error': f'No resource with id {self.resource_id}'}))
+            self.send(json.dumps(
+                {'error': f'No resource with id {self.resource_id}'}))
             self.close()
 
     def disconnect(self, *args, **kwargs):
@@ -32,15 +33,13 @@ class ResourceConsumer(WebsocketConsumer):
 
         def handle_get_location():
             self.send(self.resource_service.get_location())
-            
 
         def handle_get_track():
             self.send(self.resource_service.get_track())
 
-
         def handle_add_location(**kwargs):
-                self.resource_service.add_location(**kwargs)
-                handle_get_location()
+            self.resource_service.add_location(**kwargs)
+            handle_get_location()
 
         match action:
             case 'get-location':
@@ -49,6 +48,7 @@ class ResourceConsumer(WebsocketConsumer):
                 handle_get_track()
             case 'add-location':
                 handle_add_location(**payload)
+
 
 class LocationConsumer(WebsocketConsumer):
     def connect(self):
@@ -60,6 +60,13 @@ class LocationConsumer(WebsocketConsumer):
 
     def receive(self, text_data):
         payload = json.loads(text_data)
-        
+
         resources = self.locations_service.get_resources_nearby(**payload)
         self.send(resources)
+
+
+class PingConsumer(WebsocketConsumer):
+    def connect(self):
+        self.accept()
+        self.send('pong')
+        self.close()

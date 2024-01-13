@@ -53,3 +53,9 @@ class LocationConsumer(WebsocketConsumer):
         payload = json.loads(text_data)
         response = self.controller.get_resources_nearby(payload)
         self.send(response)
+
+class PingConsumer(WebsocketConsumer):
+    def connect(self):
+        self.accept()
+        self.send('pong')
+        self.close()

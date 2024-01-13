@@ -57,3 +57,10 @@ class LocationConsumer(WebsocketConsumer):
 
         resources = self.locations_service.get_resources_nearby(**payload)
         self.send(resources)
+
+
+class PingConsumer(WebsocketConsumer):
+    def connect(self):
+        self.accept()
+        self.send('pong')
+        self.close()

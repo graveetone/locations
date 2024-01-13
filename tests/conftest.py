@@ -76,3 +76,8 @@ def not_existing_resource_id_url(websocket_url, not_existing_resource_id):
 @pytest.fixture
 def expected_error_response(not_existing_resource_id):
     return {"error": "No resource with id {}".format(not_existing_resource_id)}
+
+
+@pytest.fixture
+def ping_url(websocket_url):
+    return "{}/ws/ping/".format(websocket_url)
