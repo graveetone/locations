@@ -13,3 +13,7 @@ mongoengine
 pytest
 websockets
 pytest-asyncio
+
+# automation
+colorama
+pandas
