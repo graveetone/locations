@@ -1,7 +1,8 @@
 import json
 from channels.generic.websocket import WebsocketConsumer
 
-from .locations_service import ResourcesService, LocationsService
+from .controllers import LocationController, ResourceController
+
 from .models import Resource
 
 
@@ -9,11 +10,13 @@ class ResourceConsumer(WebsocketConsumer):
     def connect(self):
         self.resource_id = int(self.scope['url_route']['kwargs']['id'])
         self.accept()
+
         try:
-            self.resource_service = ResourcesService(self.resource_id)
+            self.controller = ResourceController(self.resource_id)
         except Resource.DoesNotExist:
-            self.send(json.dumps(
-                {'error': f'No resource with id {self.resource_id}'}))
+            response = ResourceController.handle_no_resource_found(
+                self.resource_id)
+            self.send(response)
             self.close()
 
     def disconnect(self, *args, **kwargs):
@@ -21,44 +24,33 @@ class ResourceConsumer(WebsocketConsumer):
 
     def receive(self, text_data):
         payload = json.loads(text_data)
-        print(payload)
-        action = payload.get('action')
+        action = payload.pop('action')
 
         if not action:
             return
 
-        def handle_get_location():
-            self.send(self.resource_service.get_location())
-
-        def handle_get_track():
-            self.send(self.resource_service.get_track())
-
-        def handle_add_location(**kwargs):
-            self.resource_service.add_location(**kwargs)
-            handle_get_location()
-
         match action:
             case 'get-location':
-                handle_get_location()
+                response = self.controller.get_location()
             case 'get-track':
-                handle_get_track()
+                response = self.controller.get_track()
             case 'add-location':
-                handle_add_location(**payload)
+                response = self.controller.add_location(**payload)
+
+        self.send(response)
 
 
 class LocationConsumer(WebsocketConsumer):
     def connect(self):
-        self.locations_service = LocationsService()
         self.accept()
+        self.controller = LocationController()
 
-    def disconnect(self, *args, **kwargs):
-        ...
+    def disconnect(self, *args, **kwargs): ...
 
     def receive(self, text_data):
         payload = json.loads(text_data)
-
-        resources = self.locations_service.get_resources_nearby(**payload)
-        self.send(resources)
+        response = self.controller.get_resources_nearby(payload)
+        self.send(response)
 
 
 class PingConsumer(WebsocketConsumer):
