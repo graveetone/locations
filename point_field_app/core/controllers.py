@@ -17,12 +17,12 @@ class ResourceController:
         self.resource = Resource.objects.get(pk=resource_id)
 
     @json_response
-    def get_location(self, ):
+    def get_location(self):
         last_location = self.resource.get_last_location()
         return LocationSerializer(last_location).to_dict()
 
     @json_response
-    def get_track(self, ):
+    def get_track(self):
         locations = self.resource.get_track()
         return LocationSerializer(locations, many=True).to_dict()
 

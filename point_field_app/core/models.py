@@ -4,16 +4,17 @@ from django.contrib.gis.db import models as gis_models
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
 
+
 class Resource(models.Model):
     def __str__(self):
         return f"Resource {self.id}"
-    
+
     def get_last_location(self):
         return self.locations.first()
-    
+
     def get_track(self):
         return self.locations.all()
-    
+
     def add_location(self, coordinates):
         point = Point(
             x=coordinates['longitude'],
@@ -35,9 +36,11 @@ class Resource(models.Model):
         )
 
         resource_ids = locations.values_list('resource_id', flat=True)
-        result_resources = [r.id for r in cls.objects.filter(id__in=resource_ids)]
+        resources_nearby = [
+            r.id for r in cls.objects.filter(id__in=resource_ids)]
 
-        return result_resources
+        return resources_nearby
+
 
 class Location(models.Model):
     point = gis_models.PointField()
