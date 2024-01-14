@@ -1,27 +1,35 @@
-from .models import ResourceLocation, TableManager
 from .serializers import LocationSerializer
+from .models import ResourceLocation, TableManager
 from datetime import datetime, timedelta
 from django.contrib.gis.geos import Point
 import json
 from django.contrib.gis.measure import D
 
 
-class ResourcesService:
+def json_response(func):
+    def wrapper(*args, **kwargs):
+        response = func(*args, **kwargs)
+
+        return response if type(response) is str else json.dumps(response)
+
+    return wrapper
+
+
+class ResourceController:
     def __init__(self, resource_id):
-        self.resource_id = resource_id
+        self.resource = ResourceLocation(resource_id).model
 
+    @json_response
     def get_location(self):
-        with ResourceLocation(self.resource_id) as Location:
-            location = Location.objects.first()
+        last_location = self.resource.objects.first()
+        return LocationSerializer(last_location).to_dict()
 
-        return LocationSerializer(location).to_json()
-
+    @json_response
     def get_track(self):
-        with ResourceLocation(self.resource_id) as Location:
-            locations = Location.objects.all()
+        locations = self.resource.objects.all()
+        return LocationSerializer(locations, many=True).to_dict()
 
-        return LocationSerializer(locations, many=True).to_json()
-
+    @json_response
     def add_location(self, **kwargs):
         coordinates = kwargs.get('coordinates')
 
@@ -30,16 +38,17 @@ class ResourcesService:
             y=coordinates['latitude']
         )
 
-        with ResourceLocation(self.resource_id) as Location:
-            Location.objects.create(
-                point=point
-            )
+        self.resource.objects.create(point=point)
+        return self.get_location()
+
+    @json_response
+    @staticmethod
+    def handle_no_resource_found(resource_id):
+        return {"error": "No resource with id {}".format(resource_id)}
 
 
-class LocationsService:
-    def __init__(self):
-        ...
-
+class LocationController:
+    @json_response
     def get_resources_nearby(self, threshold, radius, coordinates):
         query_time = datetime.utcnow() - timedelta(seconds=threshold)
         latitude = coordinates.get('latitude')
@@ -51,10 +60,11 @@ class LocationsService:
             with ResourceLocation(id) as Location:
                 locations = Location.objects.filter(
                     timestamp__gte=query_time,
-                    point__distance_lte=(Point(x=longitude, y=latitude), D(m=radius))
+                    point__distance_lte=(
+                        Point(x=longitude, y=latitude), D(m=radius))
                 )
 
                 if locations.count() > 0:
                     resources_nearby.append(id)
 
-        return json.dumps(resources_nearby)
+        return resources_nearby

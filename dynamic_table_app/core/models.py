@@ -1,4 +1,4 @@
-from django.db import models, connection, reset_queries, close_old_connections
+from django.db import models, connection
 from django.contrib.gis.db import models as gis_models
 from django.contrib import admin
 
@@ -6,20 +6,27 @@ from django.contrib import admin
     This app uses approach to dynamically create separate table with Locations for each Resourse
 '''
 
+
+class DoesNotExist(Exception):
+    pass
+
+
 class ResourceLocation:
     def __init__(self, resource_id=None):
-        if resource_id and resource_id not in TableManager.get_resource_ids():
-            raise Exception('No table with resource_id {resource_id}'.format(resource_id=resource_id))
-        
+        if resource_id is not None and resource_id not in TableManager.get_resource_ids():
+            raise DoesNotExist('No table with resource_id {resource_id}'.format(
+                resource_id=resource_id))
+
         if resource_id is None:
             self.model = TableManager().create_table()
         else:
             self.model = TableManager(resource_id).get_model()
 
-    def __enter__(self): 
+    def __enter__(self):
         return self.model
 
-    def __exit__(self, exc_type, exc_value, traceback): ...
+    def __exit__(self, *args, **kwargs): ...
+
 
 class TableManager:
     APP_NAME = 'core'
@@ -43,8 +50,9 @@ class TableManager:
 
     def get_model(self):
         if not self.table_name:
-            raise Exception('No table name! Did you forget to specify id of the resource?')
-    
+            raise Exception(
+                'No table name! Did you forget to specify id of the resource?')
+
         model_attributes = {
             "point": gis_models.PointField(),
             "timestamp": models.DateTimeField(auto_now_add=True),
@@ -83,7 +91,6 @@ class TableManager:
     def model_name(self):
         if self.resource_id is not None:
             return TableManager.MODEL_NAME.format(resource_id=self.resource_id)
-
 
     @staticmethod
     def get_dynamic_tables():
