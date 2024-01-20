@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import time
 from colorama import Fore, Style
@@ -69,47 +70,63 @@ class LocationsFlow:
         print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
         subprocess.run(command)
 
-    def compose_file_path(self):
-        folder_path = "reports/{}/{}-{}".format(
+    def compose_reports_folder_path(self):
+        return "reports/{}/{}-{}".format(
             self.app, self.resources_count, self.locations_count)
+    
+    def compose_file_path(self):
+        folder_path = self.compose_reports_folder_path()
         os.makedirs(folder_path, exist_ok=True)
 
         return folder_path + "/result.csv"
+    
+    @staticmethod
+    def reset_reports_folder():
+        folder_path = "reports"
+        try:
+            shutil.rmtree(folder_path)
+        except FileNotFoundError:
+            print(f"Folder '{folder_path}' not found.")
+    
+        try:
+            os.makedirs(folder_path)
+        except OSError as e:
+            print(f"Failed to create folder '{folder_path}': {e}")
 
     def run_test_flow(self):
         # seeding for tests
-        print(Fore.RED + "{}: Test seeding".format(APPS[0]) + Style.RESET_ALL)
+        print(Fore.RED + "{}: Test seeding".format(self.app) + Style.RESET_ALL)
         self.run_test_seed()
 
         # run server
         print(
-            Fore.RED + "{}: Running server".format(APPS[0]) + Style.RESET_ALL)
+            Fore.RED + "{}: Running server".format(self.app) + Style.RESET_ALL)
         self.server_process = self.run_server()
 
         # run tests
-        print(Fore.RED + "{}: Running tests".format(APPS[0]) + Style.RESET_ALL)
+        print(Fore.RED + "{}: Running tests".format(self.app) + Style.RESET_ALL)
         self.run_tests()
 
         # terminate server
         print(
-            Fore.RED + "{}: Turning server off".format(APPS[0]) + Style.RESET_ALL)
+            Fore.RED + "{}: Turning server off".format(self.app) + Style.RESET_ALL)
         self.server_process.terminate()
 
     def run_prod_flow(self):
         # "prod" seeding
-        print(Fore.RED + "{}: Seeding".format(APPS[0]) + Style.RESET_ALL)
+        print(Fore.RED + "{}: Seeding".format(self.app) + Style.RESET_ALL)
         self.run_seed()
 
         # run jmeter
         print(
-            Fore.RED + "{}: Running JMeter test plan".format(APPS[0]) + Style.RESET_ALL)
+            Fore.RED + "{}: Running JMeter test plan".format(self.app) + Style.RESET_ALL)
         jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH,
                               test_plan_path=TEST_PLAN_PATH, output_file=self.compose_file_path())
         jmeter.run()
 
         # terminate server
         print(
-            Fore.RED + "{}: Turning server off".format(APPS[0]) + Style.RESET_ALL)
+            Fore.RED + "{}: Turning server off".format(self.app) + Style.RESET_ALL)
         self.server_process.terminate()
 
     def run_full_flow(self):
@@ -124,13 +141,15 @@ APPS = ["mongo_app", "single_table_app",
         "point_field_app", "dynamic_table_app"]
 counts = [(5, 5), (10, 5)]
 
+LocationsFlow.reset_reports_folder()
 for app in APPS:
     for resources_count, locations_count in counts:
         lflow = LocationsFlow(app=app,
                               resources_count=resources_count, locations_count=locations_count)
 
         try:
-            lflow.run_full_flow()
+            # lflow.run_test_flow()
+            lflow.run_prod_flow()
         except:
             if hasattr(lflow, "server_process"):
                 # turn off server if server started and error was raise

@@ -2,14 +2,21 @@ import os
 import sys
 import time
 
+current_app_name = "dynamic_table_app"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
-from shared import generate_random_coordinates, get_seed_args, setup_django_for_app
-setup_django_for_app('dynamic_table_app')
+from shared import (generate_random_coordinates,
+                    get_seed_args,
+                    setup_django_for_app,
+                    get_database_size_in_bytes,
+                    save_database_size_to_file)
+
+setup_django_for_app(current_app_name)
 
 from django.contrib.gis.geos import Point
 from core.models import TableManager
+from django.db import connection
 
 RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE = get_seed_args()
 print('Seeding: {} resources | {} locations per resource | {} locations'.format(RESOURCES_NUMBER, LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE))
@@ -29,3 +36,7 @@ for i in range(RESOURCES_NUMBER):
 
 print('\nSeed completed!')
 print("--- %s seconds ---" % (time.time() - start_time))
+save_database_size_to_file(
+    app_name=current_app_name, 
+    locations_total=RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE,
+    db_size_bytes=get_database_size_in_bytes())

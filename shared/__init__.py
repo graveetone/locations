@@ -2,6 +2,10 @@ import argparse
 import django
 import os
 import random
+import csv
+from django.db import connection
+from django.conf import settings
+from mongoengine.connection import _get_db
 
 
 def get_seed_args():
@@ -32,3 +36,27 @@ def generate_random_coordinates():
     latitude = random.uniform(-90, 90)
 
     return [longitude, latitude]
+
+
+def get_database_size_in_bytes():
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT pg_database_size(current_database())")
+        size_in_bytes = cursor.fetchone()[0]
+    return size_in_bytes
+
+def get_mongo_database_size_in_bytes():
+    return _get_db().command("dbStats")['dataSize']
+
+def save_database_size_to_file(app_name, locations_total, db_size_bytes):
+    base_dir = settings.BASE_DIR.parent
+    file_path = "{base_dir}/automation/reports/db_sizes.csv".format(base_dir=base_dir)
+
+    file_exists = os.path.exists(file_path)
+    headers = ["app_name", "locations_total", "db_size_bytes"]
+    with open(file_path, 'a', newline='') as csv_file:
+        writer = csv.writer(csv_file)
+
+        if not file_exists:
+            writer.writerow(headers)
+
+        writer.writerow([app_name, locations_total, db_size_bytes])
