@@ -1,4 +1,5 @@
 import os
+import random
 import sys
 import time
 
@@ -22,8 +23,20 @@ for model in models_to_reset:
     model.objects.all().delete()
 print(f"Destroyed: {models_to_reset}")
 
+not_full_resources = list(range(1, RESOURCES_NUMBER + 1))
+resource_location_count_mapping = {
+    resource_id: 0 for resource_id in not_full_resources
+}
+def get_random_not_full_resource_id():
+    random_resource_id = random.choice(not_full_resources)
+    resource_location_count_mapping[random_resource_id] += 1
+    if resource_location_count_mapping[random_resource_id] >= LOCATIONS_NUMBER_PER_RESOURCE:
+        not_full_resources.remove(random_resource_id)
+        
+    return random_resource_id
+    
 for i in range(1, RESOURCES_NUMBER + 1):
-    locations = [Location(point=Point(*generate_random_coordinates()), resource_id=i)
+    locations = [Location(point=Point(*generate_random_coordinates()), resource_id=get_random_not_full_resource_id())
                  for _ in range(LOCATIONS_NUMBER_PER_RESOURCE)]
     Location.objects.bulk_create(locations)        
     print("Locations created: {}/{}".format(i * LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE), end="\r")        
