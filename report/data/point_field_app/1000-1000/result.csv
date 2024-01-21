@@ -1,0 +1,801 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1705797684089,33,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-1,,true,,145,168,1,1,null,0,0,33
+1705797684144,5,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-1,,true,,2,6,1,1,null,0,0,0
+1705797684150,135,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-1,text,true,,150,38,3,3,null,0,0,0
+1705797684286,48,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-1,text,true,,122,121,3,3,null,0,0,0
+1705797684160,176,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-2,,true,,145,168,3,3,null,0,0,176
+1705797684337,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-2,,true,,2,6,3,3,null,0,0,0
+1705797684334,157,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-1,text,true,,146640,35,5,5,null,0,0,0
+1705797684492,11,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-1,text,true,,4,31,5,5,null,0,0,0
+1705797684338,201,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-2,text,true,,122,38,5,5,null,0,0,0
+1705797684258,283,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-3,,true,,145,168,5,5,null,0,0,283
+1705797684541,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-3,,true,,2,6,5,5,null,0,0,0
+1705797684539,86,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-2,text,true,,122,121,6,6,null,0,0,0
+1705797684543,126,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-3,text,true,,122,38,7,7,null,0,0,0
+1705797684355,317,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-4,,true,,145,168,7,7,null,0,0,317
+1705797684672,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-4,,true,,2,6,7,7,null,0,0,0
+1705797684626,197,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-2,text,true,,146762,35,8,8,null,0,0,0
+1705797684455,369,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-5,,true,,145,168,8,8,null,0,0,369
+1705797684823,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-2,text,true,,4,31,8,8,null,0,0,0
+1705797684824,3,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-5,,true,,2,6,8,8,null,0,0,0
+1705797684670,227,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-3,text,true,,122,121,9,9,null,0,0,0
+1705797684674,257,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-4,text,true,,122,38,9,9,null,0,0,0
+1705797684554,378,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-6,,true,,145,168,9,9,null,0,0,378
+1705797684933,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-6,,true,,2,6,9,9,null,0,0,0
+1705797684828,162,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-5,text,true,,122,38,10,10,null,0,0,0
+1705797684505,2543,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-1,text,true,,149,143,31,31,null,0,0,350
+1705797687049,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-1,text,true,,4,31,31,31,null,0,0,0
+1705797684898,2278,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-3,text,true,,146884,35,31,31,null,0,0,0
+1705797687176,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-3,text,true,,4,31,31,31,null,0,0,0
+1705797684931,2294,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-4,text,true,,122,121,31,31,null,0,0,0
+1705797684934,2327,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-6,text,true,,122,38,32,32,null,0,0,0
+1705797684991,2316,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-5,text,true,,122,121,32,32,null,0,0,0
+1705797684650,2659,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-7,,true,,145,168,32,32,null,0,0,2659
+1705797687310,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-7,,true,,2,6,32,32,null,0,0,0
+1705797687226,227,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-4,text,true,,147128,35,34,34,null,0,0,0
+1705797684750,2705,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-8,,true,,145,168,34,34,null,0,0,2705
+1705797687454,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-4,text,true,,4,31,34,34,null,0,0,0
+1705797687456,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-8,,true,,2,6,34,34,null,0,0,0
+1705797684846,2639,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-9,,true,,145,168,34,34,null,0,0,2638
+1705797687485,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-9,,true,,2,6,34,34,null,0,0,0
+1705797687262,285,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-6,text,true,,122,121,35,35,null,0,0,0
+1705797687307,410,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-5,text,true,,147250,35,36,36,null,0,0,0
+1705797687718,8,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-5,text,true,,4,31,36,36,null,0,0,0
+1705797687312,452,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-7,text,true,,122,38,37,37,null,0,0,0
+1705797684945,2822,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-10,,true,,145,168,37,37,null,0,0,2822
+1705797687768,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-10,,true,,2,6,37,37,null,0,0,0
+1705797687458,367,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-8,text,true,,122,38,37,37,null,0,0,0
+1705797684826,4114,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-2,text,true,,149,143,49,49,null,0,0,2656
+1705797688941,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-2,text,true,,4,31,49,49,null,0,0,0
+1705797687486,1489,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-9,text,true,,122,38,48,48,null,0,0,0
+1705797687547,1550,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-6,text,true,,147250,35,49,49,null,0,0,0
+1705797685051,4049,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-11,,true,,145,168,49,49,null,0,0,4049
+1705797689100,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-11,,true,,2,6,49,49,null,0,0,0
+1705797689098,8,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-6,text,true,,4,31,49,49,null,0,0,0
+1705797685141,3994,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-12,,true,,145,168,49,49,null,0,0,3994
+1705797689135,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-12,,true,,2,6,49,49,null,0,0,0
+1705797685238,3923,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-13,,true,,145,168,50,50,null,0,0,3923
+1705797689161,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-13,,true,,2,6,50,50,null,0,0,0
+1705797685342,3878,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-14,,true,,145,168,50,50,null,0,0,3878
+1705797689221,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-14,,true,,2,6,50,50,null,0,0,0
+1705797685439,3807,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-15,,true,,145,168,51,51,null,0,0,3807
+1705797689247,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-15,,true,,2,6,51,51,null,0,0,0
+1705797685545,3724,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-16,,true,,145,168,51,51,null,0,0,3724
+1705797689270,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-16,,true,,2,6,51,51,null,0,0,0
+1705797685642,3653,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-17,,true,,145,168,51,51,null,0,0,3653
+1705797689295,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-17,,true,,2,6,51,51,null,0,0,0
+1705797685744,3574,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-18,,true,,145,168,51,51,null,0,0,3574
+1705797689318,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-18,,true,,2,6,51,51,null,0,0,0
+1705797685839,3505,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-19,,true,,145,168,52,52,null,0,0,3505
+1705797689344,4,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-19,,true,,2,6,52,52,null,0,0,0
+1705797685939,3430,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-20,,true,,145,168,52,52,null,0,0,3430
+1705797689369,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-20,,true,,2,6,52,52,null,0,0,0
+1705797686039,3352,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-21,,true,,145,168,52,52,null,0,0,3352
+1705797689392,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-21,,true,,2,6,52,52,null,0,0,0
+1705797686139,3276,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-22,,true,,145,168,52,52,null,0,0,3276
+1705797689416,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-22,,true,,2,6,52,52,null,0,0,0
+1705797686239,3203,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-23,,true,,145,168,53,53,null,0,0,3203
+1705797689442,3,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-23,,true,,2,6,53,53,null,0,0,0
+1705797686339,3126,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-24,,true,,145,168,53,53,null,0,0,3126
+1705797689466,3,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-24,,true,,2,6,53,53,null,0,0,0
+1705797686439,3050,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-25,,true,,145,168,53,53,null,0,0,3050
+1705797689489,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-25,,true,,2,6,53,53,null,0,0,0
+1705797686540,2969,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-26,,true,,145,168,53,53,null,0,0,2969
+1705797689510,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-26,,true,,2,6,53,53,null,0,0,0
+1705797686637,2898,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-27,,true,,145,168,53,53,null,0,0,2898
+1705797689536,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-27,,true,,2,6,53,53,null,0,0,0
+1705797686738,2820,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-28,,true,,145,168,54,54,null,0,0,2820
+1705797689558,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-28,,true,,2,6,54,54,null,0,0,0
+1705797686837,2748,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-29,,true,,145,168,54,54,null,0,0,2748
+1705797689585,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-29,,true,,2,6,54,54,null,0,0,0
+1705797686939,2671,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-30,,true,,145,168,54,54,null,0,0,2671
+1705797689610,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-30,,true,,2,6,54,54,null,0,0,0
+1705797687037,2595,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-31,,true,,145,168,54,54,null,0,0,2595
+1705797689633,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-31,,true,,2,6,54,54,null,0,0,0
+1705797687137,2522,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-32,,true,,145,168,55,55,null,0,0,2522
+1705797689659,1,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-32,,true,,2,6,55,55,null,0,0,0
+1705797687765,1961,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-7,text,true,,122,121,55,55,null,0,0,0
+1705797687769,1990,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-10,text,true,,122,38,56,56,null,0,0,0
+1705797687826,1977,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-8,text,true,,122,121,56,56,null,0,0,0
+1705797687238,2569,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-33,,true,,145,168,56,56,null,0,0,2569
+1705797689807,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-33,,true,,2,6,56,56,null,0,0,0
+1705797688975,896,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-9,text,true,,122,121,57,57,null,0,0,0
+1705797689101,801,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-11,text,true,,122,38,57,57,null,0,0,0
+1705797689137,796,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-12,text,true,,122,38,57,57,null,0,0,0
+1705797689164,807,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-13,text,true,,122,38,58,58,null,0,0,0
+1705797689222,789,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-14,text,true,,122,38,58,58,null,0,0,0
+1705797689250,795,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-15,text,true,,122,38,59,59,null,0,0,0
+1705797689271,810,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-16,text,true,,122,38,59,59,null,0,0,0
+1705797689297,817,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-17,text,true,,122,38,59,59,null,0,0,0
+1705797689321,825,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-18,text,true,,122,38,60,60,null,0,0,0
+1705797689348,832,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-19,text,true,,122,38,60,60,null,0,0,0
+1705797689372,839,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-20,text,true,,122,38,60,60,null,0,0,0
+1705797689394,850,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-21,text,true,,122,38,61,61,null,0,0,0
+1705797689417,863,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-22,text,true,,122,38,61,61,null,0,0,0
+1705797689445,868,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-23,text,true,,122,38,61,61,null,0,0,0
+1705797689469,877,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-24,text,true,,122,38,62,62,null,0,0,0
+1705797689490,893,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-25,text,true,,122,38,62,62,null,0,0,0
+1705797689511,905,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-26,text,true,,122,38,62,62,null,0,0,0
+1705797689537,912,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-27,text,true,,122,38,62,62,null,0,0,0
+1705797689560,925,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-28,text,true,,122,38,63,63,null,0,0,0
+1705797689586,930,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-29,text,true,,122,38,63,63,null,0,0,0
+1705797689612,938,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-30,text,true,,122,38,64,64,null,0,0,0
+1705797689634,952,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-31,text,true,,122,38,64,64,null,0,0,0
+1705797689660,959,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-32,text,true,,122,38,64,64,null,0,0,0
+1705797687178,4485,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-3,text,true,,149,143,75,75,null,0,0,2502
+1705797691664,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-3,text,true,,4,31,75,75,null,0,0,0
+1705797689726,2067,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-7,text,true,,147616,35,75,75,null,0,0,0
+1705797691794,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-7,text,true,,4,31,75,75,null,0,0,0
+1705797687338,4460,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-34,,true,,145,168,75,75,null,0,0,4460
+1705797691798,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-34,,true,,2,6,75,75,null,0,0,0
+1705797687439,4385,Resource 5 | Open Connection,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-35,,true,,145,168,75,75,null,0,0,4385
+1705797691824,2,Resource 5 | PingPong Request,200,OK,Run 1 time by 100 users withing 10 seconds 1-35,,true,,2,6,75,75,null,0,0,0
+1705797689760,2132,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-10,text,true,,122,121,76,76,null,0,0,0
+1705797687726,4279,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-5,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-5,,false,,0,0,77,77,null,0,0,0
+1705797687739,4270,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,76,76,null,0,0,0
+1705797687538,4471,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,76,76,null,0,0,0
+1705797687638,4367,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,76,76,null,0,0,0
+1705797687838,4178,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,76,76,null,0,0,0
+1705797687938,4076,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,76,76,null,0,0,0
+1705797689803,2228,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-8,text,true,,147738,35,76,76,null,0,0,0
+1705797692031,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-8,text,true,,4,31,76,76,null,0,0,0
+1705797689809,2265,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-33,text,true,,122,38,77,77,null,0,0,0
+1705797689872,2340,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-9,text,true,,147738,35,78,78,null,0,0,0
+1705797692212,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-9,text,true,,4,31,78,78,null,0,0,0
+1705797689903,2382,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-11,text,true,,122,121,79,79,null,0,0,0
+1705797689933,2387,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-12,text,true,,122,121,79,79,null,0,0,0
+1705797689971,2386,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-13,text,true,,122,121,80,80,null,0,0,0
+1705797690016,2380,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-14,text,true,,122,121,80,80,null,0,0,0
+1705797690045,2385,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-15,text,true,,122,121,80,80,null,0,0,0
+1705797690081,2390,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-16,text,true,,122,121,81,81,null,0,0,0
+1705797690114,2392,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-17,text,true,,122,121,81,81,null,0,0,0
+1705797690146,2399,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-18,text,true,,122,121,82,82,null,0,0,0
+1705797690180,2411,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-19,text,true,,122,121,82,82,null,0,0,0
+1705797690211,2416,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-20,text,true,,122,121,82,82,null,0,0,0
+1705797690245,2424,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-21,text,true,,122,121,83,83,null,0,0,0
+1705797690281,2426,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-22,text,true,,122,121,83,83,null,0,0,0
+1705797690314,2448,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-23,text,true,,122,121,84,84,null,0,0,0
+1705797690347,2481,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-24,text,true,,122,121,84,84,null,0,0,0
+1705797690383,2486,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-25,text,true,,122,121,85,85,null,0,0,0
+1705797690417,2489,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-26,text,true,,122,121,85,85,null,0,0,0
+1705797690449,2492,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-27,text,true,,122,121,86,86,null,0,0,0
+1705797690486,2504,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-28,text,true,,122,121,86,86,null,0,0,0
+1705797688038,4965,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+1705797688136,4869,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+1705797688237,4775,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,86,86,null,0,0,0
+1705797688338,4677,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,86,86,null,0,0,0
+1705797688437,4580,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,86,86,null,0,0,0
+1705797688537,4481,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,86,86,null,0,0,0
+1705797688636,4384,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,86,86,null,0,0,0
+1705797688839,4182,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,86,86,null,0,0,0
+1705797688737,4285,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,86,86,null,0,0,0
+1705797688938,4085,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,86,86,null,0,0,0
+1705797690517,2546,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-29,text,true,,122,121,87,87,null,0,0,0
+1705797690551,2552,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-30,text,true,,122,121,87,87,null,0,0,0
+1705797690587,2554,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-31,text,true,,122,121,88,88,null,0,0,0
+1705797690619,2559,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-32,text,true,,122,121,88,88,null,0,0,0
+1705797691800,1431,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-34,text,true,,122,38,88,88,null,0,0,0
+1705797691826,1444,Resource 5 | GetLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-35,text,true,,122,38,89,89,null,0,0,0
+1705797689038,4964,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,96,96,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,96,96,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,96,96,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,96,96,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,96,96,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,96,96,null,0,0,0
+1705797689107,4897,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-6,,false,,0,0,96,96,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-6,,false,,0,0,96,96,null,0,0,0
+1705797689142,4874,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,95,95,null,0,0,0
+1705797689241,4775,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,95,95,null,0,0,0
+1705797689343,4675,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,95,95,null,0,0,0
+1705797689441,4578,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,95,95,null,0,0,0
+1705797689541,4480,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,95,95,null,0,0,0
+1705797689640,4382,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,95,95,null,0,0,0
+1705797689740,4282,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,95,95,null,0,0,0
+1705797689839,4184,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,95,95,null,0,0,0
+1705797689936,4089,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,95,95,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,95,95,null,0,0,0
+1705797687458,6851,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-4,text,true,,149,143,95,95,null,0,0,4393
+1705797694310,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-4,text,true,,4,31,95,95,null,0,0,0
+1705797691892,2555,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-10,text,true,,150422,35,94,94,null,0,0,0
+1705797694447,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-10,text,true,,4,31,94,94,null,0,0,0
+1705797692074,2706,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-33,text,true,,122,121,94,94,null,0,0,0
+1705797690037,4964,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-61,,false,,0,0,94,94,null,0,0,0
+1705797690138,4863,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-62,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-61,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-62,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-61,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-62,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-61,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-62,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-61,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-62,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-61,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-62,,false,,0,0,94,94,null,0,0,0
+1705797690241,4762,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-63,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-63,,false,,0,0,94,94,null,0,0,0
+1705797690450,4553,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-65,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-63,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-63,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-63,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-63,,false,,0,0,94,94,null,0,0,0
+1705797690541,4464,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-66,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-66,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-66,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-66,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-66,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-66,,false,,0,0,94,94,null,0,0,0
+1705797690838,4169,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-69,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-69,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-69,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-69,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-69,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-69,,false,,0,0,94,94,null,0,0,0
+1705797690937,4071,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-70,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-70,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-70,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-70,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-70,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-70,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-65,,false,,0,0,94,94,null,0,0,0
+1705797690638,4371,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-67,,false,,0,0,94,94,null,0,0,0
+1705797690736,4277,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-68,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-68,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-68,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-68,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-68,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-68,,false,,0,0,94,94,null,0,0,0
+1705797690341,4675,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-64,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-64,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-64,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-64,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-64,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-64,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-67,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-67,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-67,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-67,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-67,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-65,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-65,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-65,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-65,,false,,0,0,94,94,null,0,0,0
+1705797692285,2762,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-11,text,true,,150544,35,94,94,null,0,0,0
+1705797695047,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-11,text,true,,4,31,94,94,null,0,0,0
+1705797692321,2864,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-12,text,true,,150544,35,94,94,null,0,0,0
+1705797695185,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-12,text,true,,4,31,94,94,null,0,0,0
+1705797692358,2972,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-13,text,true,,150544,35,94,94,null,0,0,0
+1705797695330,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-13,text,true,,4,31,94,94,null,0,0,0
+1705797692396,3051,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-14,text,true,,150544,35,94,94,null,0,0,0
+1705797695447,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-14,text,true,,4,31,94,94,null,0,0,0
+1705797692431,3132,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-15,text,true,,150544,35,94,94,null,0,0,0
+1705797695563,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-15,text,true,,4,31,94,94,null,0,0,0
+1705797692471,3218,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-16,text,true,,150544,35,94,94,null,0,0,0
+1705797695689,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-16,text,true,,4,31,94,94,null,0,0,0
+1705797692507,3305,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-17,text,true,,150544,35,94,94,null,0,0,0
+1705797695813,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-17,text,true,,4,31,94,94,null,0,0,0
+1705797692545,3453,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-18,text,true,,150544,35,94,94,null,0,0,0
+1705797691037,4965,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-71,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-71,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-71,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-71,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-71,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-71,,false,,0,0,94,94,null,0,0,0
+1705797695998,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-18,text,true,,4,31,94,94,null,0,0,0
+1705797691238,4768,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-73,,false,,0,0,94,94,null,0,0,0
+1705797691338,4669,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-74,,false,,0,0,94,94,null,0,0,0
+1705797691437,4570,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-75,,false,,0,0,94,94,null,0,0,0
+1705797691537,4471,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-76,,false,,0,0,94,94,null,0,0,0
+1705797691640,4368,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-77,,false,,0,0,94,94,null,0,0,0
+1705797691737,4271,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-78,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-77,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-77,,false,,0,0,94,94,null,0,0,0
+1705797691136,4870,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-72,,false,,0,0,94,94,null,0,0,0
+1705797691938,4072,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-80,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-80,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-80,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-80,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-80,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-80,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-75,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-75,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-75,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-75,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-75,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-73,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-74,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-74,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-74,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-74,,false,,0,0,94,94,null,0,0,0
+1705797691838,4175,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-79,,false,,0,0,94,94,null,0,0,0
+1705797691796,4222,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-7,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-7,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-74,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-73,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-78,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-73,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-73,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-72,,false,,0,0,94,94,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-76,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-72,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-76,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-72,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-78,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-72,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-78,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-72,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-78,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-78,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-77,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-77,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-77,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-76,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-76,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-76,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-73,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-79,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-79,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-79,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-79,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-79,,false,,0,0,93,93,null,0,0,0
+1705797692591,3563,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-19,text,true,,150544,35,93,93,null,0,0,0
+1705797696154,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-19,text,true,,4,31,93,93,null,0,0,0
+1705797692628,3644,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-20,text,true,,150544,35,93,93,null,0,0,0
+1705797696273,0,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-20,text,true,,4,31,93,93,null,0,0,0
+1705797692669,3724,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-21,text,true,,150544,35,93,93,null,0,0,0
+1705797696393,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-21,text,true,,4,31,93,93,null,0,0,0
+1705797692707,3836,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-22,text,true,,150544,35,93,93,null,0,0,0
+1705797696544,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-22,text,true,,4,31,93,93,null,0,0,0
+1705797692762,3902,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-23,text,true,,150544,35,93,93,null,0,0,0
+1705797696665,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-23,text,true,,4,31,93,93,null,0,0,0
+1705797692828,4056,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-24,text,true,,150544,35,93,93,null,0,0,0
+1705797696884,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-24,text,true,,4,31,93,93,null,0,0,0
+1705797692015,4991,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,93,93,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-38,,false,,0,0,93,93,null,0,0,0
+1705797692037,4972,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-8,,false,,0,0,92,92,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-8,,false,,0,0,92,92,null,0,0,0
+1705797692021,4988,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,92,92,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-39,,false,,0,0,92,92,null,0,0,0
+1705797692017,4993,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,91,91,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-40,,false,,0,0,91,91,null,0,0,0
+1705797692016,4994,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,90,90,null,0,0,0
+1705797692636,4377,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-87,,false,,0,0,90,90,null,0,0,0
+1705797692737,4277,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-88,,false,,0,0,89,89,null,0,0,0
+1705797692836,4179,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-89,,false,,0,0,89,89,null,0,0,0
+1705797692936,4079,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-90,,false,,0,0,89,89,null,0,0,0
+1705797692336,4680,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-84,,false,,0,0,89,89,null,0,0,0
+1705797692014,5006,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,89,89,null,0,0,0
+1705797692869,4151,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-25,text,true,,150544,35,89,89,null,0,0,0
+1705797692537,4484,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-86,,false,,0,0,89,89,null,0,0,0
+1705797697020,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-25,text,true,,4,31,89,89,null,0,0,0
+1705797692436,4588,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-85,,false,,0,0,89,89,null,0,0,0
+1705797692215,4810,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-9,,false,,0,0,89,89,null,0,0,0
+1705797692241,4784,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-83,,false,,0,0,89,89,null,0,0,0
+1705797692137,4888,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-82,,false,,0,0,89,89,null,0,0,0
+1705797692039,4987,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-81,,false,,0,0,89,89,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-37,,false,,0,0,89,89,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-81,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-81,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-81,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-81,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-81,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-82,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-82,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-82,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-82,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-82,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-83,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-9,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-83,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-83,,false,,0,0,88,88,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-83,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-85,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-85,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-85,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-85,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-85,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-86,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-36,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-86,,false,,0,0,87,87,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-84,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-90,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-89,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-89,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-88,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-89,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-88,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-89,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-88,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-89,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-88,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-88,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-90,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-87,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-90,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-90,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-84,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-90,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-86,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-83,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-84,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-87,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-84,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-87,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-84,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-87,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-87,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-86,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-86,,false,,0,0,86,86,null,0,0,0
+1705797692907,4268,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-26,text,true,,150544,35,86,86,null,0,0,0
+1705797697175,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-26,text,true,,4,31,86,86,null,0,0,0
+1705797692942,4355,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-27,text,true,,150544,35,86,86,null,0,0,0
+1705797697297,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-27,text,true,,4,31,86,86,null,0,0,0
+1705797692990,4424,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-28,text,true,,150544,35,86,86,null,0,0,0
+1705797697414,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-28,text,true,,4,31,86,86,null,0,0,0
+1705797693063,4472,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-29,text,true,,150544,35,86,86,null,0,0,0
+1705797697536,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-29,text,true,,4,31,86,86,null,0,0,0
+1705797693103,4588,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-30,text,true,,150544,35,86,86,null,0,0,0
+1705797697692,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-30,text,true,,4,31,86,86,null,0,0,0
+1705797693142,4732,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-31,text,true,,150544,35,86,86,null,0,0,0
+1705797697874,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-31,text,true,,4,31,86,86,null,0,0,0
+1705797693179,4803,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-32,text,true,,150544,35,86,86,null,0,0,0
+1705797697982,9,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-32,text,true,,4,31,86,86,null,0,0,0
+1705797693006,5011,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+1705797693007,5011,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-41,,false,,0,0,86,86,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-42,,false,,0,0,86,86,null,0,0,0
+1705797693014,5005,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,84,84,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-43,,false,,0,0,84,84,null,0,0,0
+1705797693017,5003,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,83,83,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-44,,false,,0,0,83,83,null,0,0,0
+1705797693019,5002,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,82,82,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-46,,false,,0,0,82,82,null,0,0,0
+1705797693021,5001,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,81,81,null,0,0,0
+1705797693022,5000,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,81,81,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-49,,false,,0,0,81,81,null,0,0,0
+1705797693023,5000,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,81,81,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-47,,false,,0,0,81,81,null,0,0,0
+1705797693943,4085,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-100,,false,,0,0,80,80,null,0,0,0
+1705797693343,4685,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-94,,false,,0,0,80,80,null,0,0,0
+1705797693843,4185,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-99,,false,,0,0,80,80,null,0,0,0
+1705797693745,4284,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-98,,false,,0,0,80,80,null,0,0,0
+1705797693536,4493,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-96,,false,,0,0,80,80,null,0,0,0
+1705797693236,4793,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-93,,false,,0,0,80,80,null,0,0,0
+1705797693138,4891,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-92,,false,,0,0,80,80,null,0,0,0
+1705797693644,4386,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-97,,false,,0,0,80,80,null,0,0,0
+1705797693038,4992,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-91,,false,,0,0,80,80,null,0,0,0
+1705797693018,5012,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,80,80,null,0,0,0
+1705797693439,4591,Resource 5 | Open Connection,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-95,,false,,0,0,80,80,null,0,0,0
+1705797693024,5007,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-95,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-95,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-95,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-48,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-95,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-95,,false,,0,0,80,80,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-45,,false,,0,0,79,79,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-91,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-91,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-91,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-91,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-91,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-97,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-92,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-97,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-92,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-97,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-92,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-97,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-92,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-92,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-97,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-93,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-96,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-96,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-96,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-96,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-96,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-98,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-99,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-94,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-99,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-94,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | PingPong Request,Sampler error,"Sampler must use existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-100,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-99,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-100,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-99,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-100,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-100,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-100,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-93,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-93,,false,,0,0,78,78,null,0,0,0
+0,0,Resource 5 | GetLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-98,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-98,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-50,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-98,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-98,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | AddLocation,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-94,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-93,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-93,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-99,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | GetTrack,Sampler error,"Sampler configured for using existing connection, but there is no connection",Run 1 time by 100 users withing 10 seconds 1-94,,false,,0,0,77,77,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-94,,false,,0,0,77,77,null,0,0,0
+1705797693231,4831,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-34,text,true,,122,121,76,76,null,0,0,0
+1705797693270,4845,Resource 5 | AddLocation,200,OK,Run 1 time by 100 users withing 10 seconds 1-35,text,true,,122,121,76,76,null,0,0,0
+1705797694780,3480,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-33,text,true,,150788,35,76,76,null,0,0,0
+1705797698260,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-33,text,true,,4,31,76,76,null,0,0,0
+1705797698065,764,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-34,text,true,,150788,35,76,76,null,0,0,0
+1705797698829,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-34,text,true,,4,31,76,76,null,0,0,0
+1705797698115,871,Resource 5 | GetTrack,200,OK,Run 1 time by 100 users withing 10 seconds 1-35,text,true,,150788,35,76,76,null,0,0,0
+1705797698986,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-35,text,true,,4,31,76,76,null,0,0,0
+1705797694003,4999,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,76,76,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-51,,false,,0,0,76,76,null,0,0,0
+1705797694019,4986,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,75,75,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-54,,false,,0,0,75,75,null,0,0,0
+1705797694018,4987,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,75,75,null,0,0,0
+1705797694023,4984,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,74,74,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-57,,false,,0,0,74,74,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-53,,false,,0,0,73,73,null,0,0,0
+1705797694025,4983,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,72,72,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-59,,false,,0,0,72,72,null,0,0,0
+1705797694028,4981,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,71,71,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-58,,false,,0,0,71,71,null,0,0,0
+1705797694026,4983,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,70,70,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-60,,false,,0,0,70,70,null,0,0,0
+1705797694021,4989,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,69,69,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-55,,false,,0,0,69,69,null,0,0,0
+1705797694030,4980,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,68,68,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-56,,false,,0,0,68,68,null,0,0,0
+1705797694449,4562,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-10,,false,,0,0,67,67,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-10,,false,,0,0,67,67,null,0,0,0
+1705797694032,4980,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,66,66,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-52,,false,,0,0,66,66,null,0,0,0
+1705797695002,5474,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-61,text,true,,149,143,65,65,null,0,0,4470
+1705797700477,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-61,text,true,,4,31,65,65,null,0,0,0
+1705797695004,6439,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-63,text,true,,149,143,64,64,null,0,0,4469
+1705797701444,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-63,text,true,,4,31,64,64,null,0,0,0
+1705797695006,7377,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-66,text,true,,149,143,63,63,null,0,0,4468
+1705797702384,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-66,text,true,,4,31,63,63,null,0,0,0
+1705797698830,4171,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-34,,false,,0,0,62,62,null,0,0,0
+1705797698991,4011,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Run 1 time by 100 users withing 10 seconds 1-35,,false,,0,0,62,62,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-34,,false,,0,0,62,62,null,0,0,0
+0,0,Resource 5 | CloseConnection,,No connection; nothing to close.,Run 1 time by 100 users withing 10 seconds 1-35,,false,,0,0,62,62,null,0,0,0
+1705797695008,8307,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-69,text,true,,149,143,60,60,null,0,0,4468
+1705797703315,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-69,text,true,,4,31,60,60,null,0,0,0
+1705797695010,9271,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-70,text,true,,149,143,59,59,null,0,0,4467
+1705797704281,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-70,text,true,,4,31,59,59,null,0,0,0
+1705797695002,10191,Location | GetResourcesNearby,101,Switching Protocols,Run 1 time by 100 users withing 10 seconds 1-62,text,true,,149,143,58,58,null,0,0,4477
+1705797705194,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-62,text,true,,4,31,58,58,null,0,0,0
+1705797695016,10468,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-68,,false,,145,143,57,57,null,0,0,4464
+1705797695017,10467,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-64,,false,,145,143,57,57,null,0,0,4464
+1705797705484,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-68,text,true,,4,31,57,57,null,0,0,0
+1705797705484,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-64,text,true,,4,31,56,56,null,0,0,0
+1705797695018,10470,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-65,,false,,145,143,55,55,null,0,0,4466
+1705797695018,10470,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-67,,false,,145,143,55,55,null,0,0,4464
+1705797705488,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-65,text,true,,4,31,55,55,null,0,0,0
+1705797705488,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-67,text,true,,4,31,54,54,null,0,0,0
+1705797695449,10043,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-14,,false,,145,143,53,53,null,0,0,4040
+1705797695048,10444,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-11,,false,,145,143,53,53,null,0,0,4438
+1705797695189,10303,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-12,,false,,145,143,53,53,null,0,0,4298
+1705797695337,10155,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-13,,false,,145,143,53,53,null,0,0,4151
+1705797705492,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-11,text,true,,4,31,53,53,null,0,0,0
+1705797705492,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-14,text,true,,4,31,52,52,null,0,0,0
+1705797695565,9931,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-15,,false,,145,143,51,51,null,0,0,3925
+1705797705492,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-13,text,true,,4,31,51,51,null,0,0,0
+1705797695692,9804,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-16,,false,,145,143,51,51,null,0,0,3799
+1705797695815,9681,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-17,,false,,145,143,50,50,null,0,0,3678
+1705797705492,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-12,text,true,,4,31,50,50,null,0,0,0
+1705797705496,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-15,text,true,,4,31,49,49,null,0,0,0
+1705797705496,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-16,text,true,,4,31,48,48,null,0,0,0
+1705797696003,9497,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-71,,false,,145,143,47,47,null,0,0,3491
+1705797696004,9496,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-18,,false,,145,143,47,47,null,0,0,3493
+1705797705496,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-17,text,true,,4,31,47,47,null,0,0,0
+1705797705500,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-71,text,true,,4,31,47,47,null,0,0,0
+1705797705500,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-18,text,true,,4,31,45,45,null,0,0,0
+1705797696011,9493,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-80,,false,,145,143,44,44,null,0,0,3489
+1705797705504,0,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-80,text,true,,4,31,44,44,null,0,0,0
+1705797696013,9493,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-75,,false,,145,143,43,43,null,0,0,3487
+1705797705506,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-75,text,true,,4,31,43,43,null,0,0,0
+1705797696022,9486,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-78,,false,,145,143,42,42,null,0,0,3481
+1705797696020,9488,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-74,,false,,145,143,42,42,null,0,0,3482
+1705797696021,9487,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-72,,false,,145,143,42,42,null,0,0,3484
+1705797705508,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-74,text,true,,4,31,42,42,null,0,0,0
+1705797705508,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-78,text,true,,4,31,41,41,null,0,0,0
+1705797696022,9490,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-77,,false,,145,143,40,40,null,0,0,3483
+1705797696024,9488,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-76,,false,,145,143,40,40,null,0,0,3483
+1705797696024,9488,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-73,,false,,145,143,40,40,null,0,0,3485
+1705797705508,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-72,text,true,,4,31,40,40,null,0,0,0
+1705797705512,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-77,text,true,,4,31,39,39,null,0,0,0
+1705797696025,9491,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-79,,false,,145,143,39,39,null,0,0,3485
+1705797696155,9361,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-19,,false,,145,143,39,39,null,0,0,3355
+1705797696274,9243,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-20,,false,,145,143,38,38,null,0,0,3238
+1705797705512,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-76,text,true,,4,31,38,38,null,0,0,0
+1705797696396,9122,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-21,,false,,145,143,38,38,null,0,0,3117
+1705797705512,8,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-73,text,true,,4,31,37,37,null,0,0,0
+1705797696547,8973,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-22,,false,,145,143,37,37,null,0,0,2967
+1705797696667,8853,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-23,,false,,145,143,37,37,null,0,0,2848
+1705797697022,8499,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-25,,false,,145,143,36,36,null,0,0,2495
+1705797696887,8634,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-24,,false,,145,143,36,36,null,0,0,2629
+1705797705516,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-79,text,true,,4,31,36,36,null,0,0,0
+1705797705517,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-20,text,true,,4,31,36,36,null,0,0,0
+1705797705517,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-19,text,true,,4,31,36,36,null,0,0,0
+1705797697032,8492,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-85,,false,,145,143,33,33,null,0,0,2488
+1705797697029,8495,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-82,,false,,145,143,33,33,null,0,0,2490
+1705797697028,8496,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-81,,false,,145,143,33,33,null,0,0,2490
+1705797697033,8491,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-89,,false,,145,143,33,33,null,0,0,2488
+1705797705518,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-21,text,true,,4,31,33,33,null,0,0,0
+1705797705520,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-22,text,true,,4,31,33,33,null,0,0,0
+1705797705520,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-23,text,true,,4,31,31,31,null,0,0,0
+1705797705521,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-25,text,true,,4,31,30,30,null,0,0,0
+1705797705521,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-24,text,true,,4,31,30,30,null,0,0,0
+1705797697035,8493,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-90,,false,,145,143,29,29,null,0,0,2488
+1705797697035,8493,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-83,,false,,145,143,29,29,null,0,0,2489
+1705797697034,8495,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-88,,false,,145,143,29,29,null,0,0,2488
+1705797705524,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-85,text,true,,4,31,29,29,null,0,0,0
+1705797705524,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-82,text,true,,4,31,27,27,null,0,0,0
+1705797705524,8,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-81,text,true,,4,31,26,26,null,0,0,0
+1705797697177,8355,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-26,,false,,145,143,26,26,null,0,0,2352
+1705797697036,8496,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-84,,false,,145,143,26,26,null,0,0,2490
+1705797697036,8496,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-87,,false,,145,143,25,25,null,0,0,2491
+1705797705524,9,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-89,text,true,,4,31,25,25,null,0,0,0
+1705797697037,8497,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-86,,false,,145,143,24,24,null,0,0,2491
+1705797705528,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-90,text,true,,4,31,24,24,null,0,0,0
+1705797705528,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-83,text,true,,4,31,24,24,null,0,0,0
+1705797697299,8237,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-27,,false,,145,143,22,22,null,0,0,2234
+1705797705529,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-88,text,true,,4,31,22,22,null,0,0,0
+1705797705532,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-26,text,true,,4,31,21,21,null,0,0,0
+1705797705532,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-84,text,true,,4,31,21,21,null,0,0,0
+1705797705532,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-87,text,true,,4,31,19,19,null,0,0,0
+1705797697419,8121,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-28,,false,,145,143,19,19,null,0,0,2117
+1705797705534,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-86,text,true,,4,31,18,18,null,0,0,0
+1705797705536,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-27,text,true,,4,31,18,18,null,0,0,0
+1705797705540,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-28,text,true,,4,31,16,16,null,0,0,0
+1705797697537,8007,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-29,,false,,145,143,15,15,null,0,0,2001
+1705797705544,0,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-29,text,true,,4,31,15,15,null,0,0,0
+1705797697695,7851,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-30,,false,,145,143,14,14,null,0,0,1845
+1705797705546,1,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-30,text,true,,4,31,14,14,null,0,0,0
+1705797697876,7672,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-31,,false,,145,143,13,13,null,0,0,1665
+1705797698031,7517,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-95,,false,,145,143,13,13,null,0,0,1513
+1705797698035,7513,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-92,,false,,145,143,13,13,null,0,0,1510
+1705797705548,2,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-31,text,true,,4,31,13,13,null,0,0,0
+1705797698033,7517,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-91,,false,,145,143,13,13,null,0,0,1512
+1705797698035,7517,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-97,,false,,145,143,12,12,null,0,0,1512
+1705797698036,7516,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-96,,false,,145,143,12,12,null,0,0,1512
+1705797697991,7561,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-32,,false,,145,143,12,12,null,0,0,1552
+1705797698038,7514,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-100,,false,,145,143,12,12,null,0,0,1511
+1705797705548,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-95,text,true,,4,31,12,12,null,0,0,0
+1705797705548,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-92,text,true,,4,31,11,11,null,0,0,0
+1705797705550,6,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-91,text,true,,4,31,10,10,null,0,0,0
+1705797698041,7515,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-94,,false,,145,143,10,10,null,0,0,1511
+1705797698040,7516,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-99,,false,,145,143,10,10,null,0,0,1511
+1705797705552,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-100,text,true,,4,31,9,9,null,0,0,0
+1705797698039,7517,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-98,,false,,145,143,8,8,null,0,0,1511
+1705797698040,7517,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-93,,false,,145,143,8,8,null,0,0,1511
+1705797705552,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-96,text,true,,4,31,8,8,null,0,0,0
+1705797705552,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-32,text,true,,4,31,7,7,null,0,0,0
+1705797705552,7,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-97,text,true,,4,31,6,6,null,0,0,0
+1705797705556,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-94,text,true,,4,31,5,5,null,0,0,0
+1705797698262,7298,Location | GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Run 1 time by 100 users withing 10 seconds 1-33,,false,,145,143,4,4,null,0,0,1294
+1705797705556,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-99,text,true,,4,31,4,4,null,0,0,0
+1705797705557,4,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-98,text,true,,4,31,4,4,null,0,0,0
+1705797705557,5,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-93,text,true,,4,31,2,2,null,0,0,0
+1705797705560,3,Resource 5 | CloseConnection,1000,Connection closed.,Run 1 time by 100 users withing 10 seconds 1-33,text,true,,4,31,1,1,null,0,0,0

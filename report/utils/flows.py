@@ -2,7 +2,7 @@ import re
 import pandas as pd
 from .jmeter_report_analyser import JMeterReportAnalyser
 
-BASE_PATH = "/home/graveetone/code/locations/automation" 
+BASE_PATH = "/home/graveetone/code/locations/report" 
 
 REQUESTS_MAPPING = {
     "OpenConnection": "Resource 5 | Open Connection",
@@ -15,7 +15,7 @@ REQUESTS_MAPPING = {
 }
 
 def build_path_to_file(app, resources, locations):
-    return "{}/reports/{}/{}-{}/result.csv".format(BASE_PATH, app, resources, locations)
+    return "{}/data/{}/{}-{}/result.csv".format(BASE_PATH, app, resources, locations)
 
 def get_result(app, resources, locations):
     path_to_file = build_path_to_file(app, resources, locations)
@@ -50,7 +50,7 @@ def compose_row(app, resources, locations, requests=None):
     }
 
 def get_db_size(app, locations_total):
-    file = BASE_PATH + "/reports/db_sizes.csv"
+    file = BASE_PATH + "/data/db_sizes.csv"
     db_sizes = pd.read_csv(file)
     app = get_path_to_app(app)
     filter = (db_sizes.app_name == app) & (db_sizes.locations_total == locations_total)
