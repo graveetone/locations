@@ -24,13 +24,13 @@ class LocationsFlow:
             "seed": [
                 'python3',
                 "{}/seed.py".format(self.path_to_app),
-                '--resource={}'.format(self.resources_count),
+                '--resources={}'.format(self.resources_count),
                 '--locations={}'.format(self.locations_count),
             ],
             "test_seed": [
                 'python3',
                 "{}/seed.py".format(self.path_to_app),
-                '--resource={}'.format(5),
+                '--resources={}'.format(5),
                 '--locations={}'.format(5),
             ],
             "runserver": [
@@ -140,7 +140,7 @@ class LocationsFlow:
 
 
 current_directory = Path.cwd()
-parent_directory = current_directory.parent
+parent_directory = current_directory.parent / 'apps'
 
 APPS = ["mongo_app", "single_table_app",
         "point_field_app", "dynamic_table_app"]

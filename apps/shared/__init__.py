@@ -48,7 +48,7 @@ def get_mongo_database_size_in_bytes():
     return _get_db().command("dbStats")['dataSize']
 
 def save_database_size_to_file(app_name, locations_total, db_size_bytes):
-    base_dir = settings.BASE_DIR.parent
+    base_dir = settings.BASE_DIR.parent.parent
     file_path = "{base_dir}/automation/reports/db_sizes.csv".format(base_dir=base_dir)
 
     file_exists = os.path.exists(file_path)
