@@ -157,5 +157,5 @@ for app in APPS:
             lflow.run_prod_flow()
         except:
             if hasattr(lflow, "server_process"):
-                # turn off server if server started and error was raise
+                # turn off server if server started and error occurred
                 lflow.server_process.terminate()
