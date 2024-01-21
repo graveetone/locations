@@ -3,8 +3,7 @@ import pandas as pd
 
 class JMeterReportAnalyser:
     def __init__(self, csv_filename):
-        self.csv_filename = csv_filename
-        self.data = pd.read_csv("result.csv")
+        self.data = pd.read_csv(csv_filename)
         self.labels = self.data["label"].unique()
         self._prepare_results_template()
 
@@ -22,7 +21,7 @@ class JMeterReportAnalyser:
             self.data[self.data['success'] == True])/len(self.data)
 
         self.results["summary"].update({
-            "sucess": success_count * 100,
+            "success": success_count * 100,
             "failure": (1 - success_count) * 100
         })
 
@@ -31,7 +30,7 @@ class JMeterReportAnalyser:
             success_count = len(data[data['success'] == True])/len(data)
 
             self.results[label].update({
-                "sucess": success_count * 100,
+                "success": success_count * 100,
                 "failure": (1 - success_count) * 100
             })
 

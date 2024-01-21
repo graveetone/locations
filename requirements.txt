@@ -14,6 +14,9 @@ pytest
 websockets
 pytest-asyncio
 
-# automation
+# automation and reports
 colorama
 pandas
+matplotlib
+streamlit
+
