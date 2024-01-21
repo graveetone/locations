@@ -116,6 +116,11 @@ class LocationsFlow:
         # "prod" seeding
         print(Fore.RED + "{}: Seeding".format(self.app) + Style.RESET_ALL)
         self.run_seed()
+        
+        # run server
+        print(
+            Fore.RED + "{}: Running server".format(self.app) + Style.RESET_ALL)
+        self.server_process = self.run_server()
 
         # run jmeter
         print(
@@ -139,7 +144,7 @@ parent_directory = current_directory.parent
 
 APPS = ["mongo_app", "single_table_app",
         "point_field_app", "dynamic_table_app"]
-counts = [(5, 5), (10, 5)]
+counts = [(10, 100), (100, 100), (100, 1_000), (1_000, 1_000), (1_000, 10_000)]
 
 LocationsFlow.reset_reports_folder()
 for app in APPS:
@@ -154,19 +159,3 @@ for app in APPS:
             if hasattr(lflow, "server_process"):
                 # turn off server if server started and error was raise
                 lflow.server_process.terminate()
-
-# print(Fore.RED + "{}: Seeding".format(APPS[0]) + Style.RESET_ALL)
-# lflow.run_seed()
-
-# print(Fore.RED + "{}: Running server".format(APPS[0]) + Style.RESET_ALL)
-# server_process = lflow.run_server()
-
-# print(Fore.RED + "{}: Running tests".format(APPS[0]) + Style.RESET_ALL)
-# lflow.run_tests()
-
-# print(Fore.RED + "{}: Running JMeter test plan".format(APPS[0]) + Style.RESET_ALL)
-# jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH, test_plan_path=TEST_PLAN_PATH, output_file="result.csv")
-# jmeter.run()
-
-# print(Fore.RED + "{}: Turning server off".format(APPS[0]) + Style.RESET_ALL)
-# server_process.terminate()
