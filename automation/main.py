@@ -6,11 +6,15 @@ import time
 from colorama import Fore, Style
 
 from jmeter_runner import JMeterRunner
+# from ..report.utils.constants import REQUESTS_TITLES
 
+REQUESTS_TITLES = [
+    "GetLocation", "AddLocation", "GetTrack", "GetResourcesNearby"
+]
 
 JMETER_BIN_PATH = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/jmeter'
-TEST_PLAN_PATH = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/LocationsWsTestPlan.jmx'
 
+TEST_PLANS_DIR = "test_plans"
 
 class LocationsFlow:
     def __init__(self, app, resources_count, locations_count):
@@ -69,16 +73,19 @@ class LocationsFlow:
         command = self.build_command("tests")
         print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
         subprocess.run(command)
-
-    def compose_reports_folder_path(self):
-        return "reports/{}/{}-{}".format(
-            self.app, self.resources_count, self.locations_count)
     
-    def compose_file_path(self):
-        folder_path = self.compose_reports_folder_path()
+    def compose_file_path(self, request):
+        folder_path = "reports/{app}".format(app=self.app)
+        
+        file_path = "/{request}[{resources_count}-{locations_count}].csv".format(
+            request=request,
+            resources_count=self.resources_count,
+            locations_count=self.locations_count
+        )
+    
         os.makedirs(folder_path, exist_ok=True)
 
-        return folder_path + "/result.csv"
+        return folder_path + file_path
     
     @staticmethod
     def reset_reports_folder():
@@ -123,11 +130,13 @@ class LocationsFlow:
         self.server_process = self.run_server()
 
         # run jmeter
-        print(
-            Fore.RED + "{}: Running JMeter test plan".format(self.app) + Style.RESET_ALL)
-        jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH,
-                              test_plan_path=TEST_PLAN_PATH, output_file=self.compose_file_path())
-        jmeter.run()
+        for request in REQUESTS_TITLES:
+            print(
+                Fore.RED + "{}: Running JMeter test plan {}".format(self.app, request) + Style.RESET_ALL)
+            jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH,
+                                test_plan_path="{}/{}.jmx".format(TEST_PLANS_DIR, request),
+                                output_file=self.compose_file_path(request))
+            jmeter.run()
 
         # terminate server
         print(

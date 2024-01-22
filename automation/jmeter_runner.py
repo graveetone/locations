@@ -26,10 +26,10 @@ class JMeterRunner:
 
 if __name__ == "__main__":
     jmeter_bin_path = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/jmeter'
-    test_plan_path = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/LocationsWsTestPlan.jmx'
+    test_plan_path = '/home/graveetone/code/locations/automation/test_plans/GetLocation.jmx'
 
     runner = JMeterRunner(test_plan_path=test_plan_path,
                           jmeter_path=jmeter_bin_path,
-                          output_file="results1.csv"
+                          output_file="GetLocation.csv"
                           )
     runner.run()

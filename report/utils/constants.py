@@ -12,7 +12,7 @@ SEED_PARAMS = [
 ]
 
 REQUESTS_TITLES = [
-    "OpenConnection", "PingPong", "GetLocation"
+    "OpenConnection", "PingPong", "GetLocation",
     "AddLocation", "GetTrack", "FindResourcesNearby",
     "CloseConnection"
 ]
