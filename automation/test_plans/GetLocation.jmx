@@ -75,7 +75,6 @@
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename">/home/graveetone/code/locations/automation/test_plans/test.csv</stringProp>
           </ResultCollector>
           <hashTree/>
         </hashTree>
