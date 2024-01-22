@@ -75,9 +75,9 @@ class LocationsFlow:
         subprocess.run(command)
     
     def compose_file_path(self, request):
-        folder_path = "reports/{app}".format(app=self.app)
+        folder_path = "reports/{app}/{request}".format(app=self.app, request=request)
         
-        file_path = "/{request}[{resources_count}-{locations_count}].csv".format(
+        file_path = "/{resources_count}-{locations_count}.csv".format(
             request=request,
             resources_count=self.resources_count,
             locations_count=self.locations_count
