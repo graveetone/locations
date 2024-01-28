@@ -32,11 +32,12 @@ seed_params = st.sidebar.multiselect(
 requests = st.sidebar.multiselect(
     label='Вебсокетні запити',
     options=REQUESTS_TITLES,
-    key="REQUESTS"
+    key="REQUESTS",
+    default=REQUESTS_TITLES
 )
 show_table = st.sidebar.checkbox("Відобразити таблицю")
 
-if apps and seed_params:
+if all((apps, seed_params, requests)):
     all_apps_data = pd.DataFrame(columns=TABLE_HEADERS)
 
     plot_data = {"Кількість точок": [param.locations_total for param in seed_params]}

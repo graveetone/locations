@@ -1,52 +1,38 @@
-import re
-import pandas as pd
+from .helpers import camel_to_snake_case_converter, read_csv_file
+from .constants import DB_SIZES_FILE_PATH, REPORT_FILE_PATH_TEMPLATE
 from .jmeter_report_analyser import JMeterReportAnalyser
 
-BASE_PATH = "/home/graveetone/code/locations/report" 
 
-REQUESTS_MAPPING = {
-    "OpenConnection": "Resource 5 | Open Connection",
-    "PingPong": "Resource 5 | PingPong Request",
-    "GetLocation": "Resource 5 | GetLocation",
-    "AddLocation": "Resource 5 | AddLocation",
-    "GetTrack": "Resource 5 | GetTrack",
-    "FindResourcesNearby": "Location | GetResourcesNearby",
-    "CloseConnection": "Resource 5 | CloseConnection"
-}
+def build_path_to_file(app, test_plan, resources, locations):
+    return REPORT_FILE_PATH_TEMPLATE.format(app=app, test_plan=test_plan, resources=resources, locations=locations)
 
-def build_path_to_file(app, resources, locations):
-    return "{}/data/{}/{}-{}/result.csv".format(BASE_PATH, app, resources, locations)
 
-def get_result(app, resources, locations):
-    path_to_file = build_path_to_file(app, resources, locations)
+def get_result(app, test_plan, resources, locations):
+    path_to_file = build_path_to_file(app, test_plan, resources, locations)
     jmra = JMeterReportAnalyser(path_to_file)
 
     return jmra.analyze()
 
-def get_path_to_app(app):
-    return re.sub(r'(?<!^)(?=[A-Z])', '_', app).lower()
 
-def convert_requests(requests):
-    return [REQUESTS_MAPPING.get(request) for request in requests]
+def compose_row(app, param, requests=None):
+    total_success, total_apdex = 0, 0
 
-def compose_row(app, resources, locations, requests=None):
-    path_to_app = get_path_to_app(app)
-    result = get_result(path_to_app, resources, locations)
-    locations_total = resources * locations 
+    path_to_app = camel_to_snake_case_converter(app)
 
-    total_success = result["summary"]["success"]
-    total_apdex = result["summary"]["apdex"]
-    if requests:
-        requests = convert_requests(requests)
-        total_success = sum(result[request]["success"] for request in requests)/len(requests)
-        total_apdex = sum(result[request]["apdex"] for request in requests)/len(requests)
+    for request in requests:
+        result = get_result(path_to_app, request, param.resources, param.locations_per_resource)
+        total_success += result["summary"]["success"]
+        total_apdex += result["summary"]["apdex"]
+
+    total_success_normalized = total_success / len(requests)
+    total_apdex_normalized = total_apdex / len(requests)
 
     return {
         "Додаток": app,
         "Кількість локацій": param.locations_total,
         "Розмір бази": get_db_size(app, param.locations_total),
-        "Кількість успішних запитів": total_success,
-        "APDEX індекс": total_apdex,
+        "Кількість успішних запитів": total_success_normalized,
+        "APDEX індекс": total_apdex_normalized,
     }
 
 

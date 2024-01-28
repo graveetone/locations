@@ -25,6 +25,8 @@ class JMeterReportAnalyser:
             "failure": (1 - success_count) * 100
         })
 
+        #  potentially redundant functionality if jmeter csv reports is generated for each request separetely
+        #  but this code can be used for backward compatibility for use case when csv report can contain data about several requests
         for label in self.labels:
             data = self._get_request_data_by_label(label)
             success_count = len(data[data['success'] == True])/len(data)
