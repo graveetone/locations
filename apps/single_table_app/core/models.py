@@ -3,14 +3,15 @@ from django.contrib.gis.db import models as gis_models
 from datetime import datetime, timedelta
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
-
+from django.contrib.gis.db.models import Index
 
 class Location(models.Model):
-    resource_id = models.IntegerField()
+    resource_id = models.IntegerField(db_index=True)
 
     point = gis_models.PointField()
     timestamp = models.DateTimeField(
-        auto_now_add=True
+        auto_now_add=True,
+        db_index=True
     )
 
     def __str__(self):
@@ -18,6 +19,7 @@ class Location(models.Model):
 
     class Meta:
         ordering = ['-timestamp']
+        indexes = [Index(fields=['point'])]
 
     @classmethod
     def get_last_location(cls, resource_id):
@@ -48,10 +50,9 @@ class Location(models.Model):
         latitude = coordinates.get('latitude')
 
         locations = cls.objects.filter(
-            timestamp__gte=query_time,
-            point__distance_lte=(Point(x=longitude, y=latitude), D(m=radius))
+            timestamp__gte=query_time).filter(
+                point__distance_lte=(Point(x=longitude, y=latitude), D(m=radius))
         )
 
-        resources_nearby = [location.resource_id for location in locations]
-
+        resources_nearby = list(set(locations.values_list("resource_id", flat=True)))
         return resources_nearby

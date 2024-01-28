@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.gis.db import models as gis_models
 from django.contrib.gis.geos import Point
 from django.contrib.gis.measure import D
-
+from django.contrib.gis.db.models import Index
 
 class Resource(models.Model):
     def __str__(self):
@@ -45,7 +45,8 @@ class Resource(models.Model):
 class Location(models.Model):
     point = gis_models.PointField()
     timestamp = models.DateTimeField(
-        auto_now_add=True
+        auto_now_add=True,
+        db_index=True
     )
     resource = models.ForeignKey(
         to=Resource,
@@ -59,3 +60,4 @@ class Location(models.Model):
 
     class Meta:
         ordering = ['-timestamp']
+        indexes = [Index(fields=['point'])]
