@@ -10,6 +10,7 @@ class JMeterReportAnalyser:
     def analyze(self):
         self.analyze_requests()
         self.calculate_apdex()
+        self.calculate_mean_elapsed_time()
 
         return self.results
     
@@ -51,6 +52,18 @@ class JMeterReportAnalyser:
             apdex = (count_satisfied(data) + count_tolerant(data) * 0.5) / len(data)
             self.results[label].update({
                 "apdex": apdex,
+            })
+
+    def calculate_mean_elapsed_time(self):
+        self.results["summary"].update({
+            "elapsed": self.data['elapsed'].mean(),
+        })
+
+        for label in self.labels:
+            data = self._get_request_data_by_label(label)
+
+            self.results[label].update({
+                "elapsed": data['elapsed'].mean(),
             })
 
     def _get_request_data_by_label(self, label):

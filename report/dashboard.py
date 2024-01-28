@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 from utils.flows import compose_row
-from utils.constants import (APPS_TITLES, SEED_PARAMS, REQUESTS_TITLES,
+from utils.constants import (APP_ELAPSED_TIME_KEY, APPS_TITLES, SEED_PARAMS, REQUESTS_TITLES,
                              TABLE_HEADERS, APP_APDEX_KEY, APP_DB_SIZE_KEY,
                              APP_SUCCESS_KEY)
 
@@ -53,10 +53,12 @@ if all((apps, seed_params, requests)):
         app_success_key = APP_SUCCESS_KEY.format(app=app)
         app_apdex_key = APP_APDEX_KEY.format(app=app)
         app_db_size_key = APP_DB_SIZE_KEY.format(app=app)
+        app_elapsed_time_key = APP_ELAPSED_TIME_KEY.format(app=app)
 
         plot_data[app_success_key] = current_app_data["Кількість успішних запитів"]
         plot_data[app_apdex_key] = current_app_data["APDEX індекс"]
         plot_data[app_db_size_key] = current_app_data["Розмір бази"]
+        plot_data[app_elapsed_time_key] = current_app_data["Середній час відповіді"]
 
     if show_table:
         st.table(all_apps_data)
@@ -64,11 +66,13 @@ if all((apps, seed_params, requests)):
     apps_success = [APP_SUCCESS_KEY.format(app=app) for app in apps]
     apps_apdex = [APP_APDEX_KEY.format(app=app) for app in apps]
     apps_db_size = [APP_DB_SIZE_KEY.format(app=app) for app in apps]
+    apps_elapsed_time = [APP_ELAPSED_TIME_KEY.format(app=app) for app in apps]
 
     plots_mapping = {
         "Залежність кількості успішних запитів від кількості точок": apps_success,
         "Залежність значення індексу APDEX від кількості точок": apps_apdex,
-        "Залежність розміру бази від кількості точок": apps_db_size
+        "Залежність розміру бази від кількості точок": apps_db_size,
+        "Залежність середнього часу відповіді від кількості точок": apps_elapsed_time
     }
 
     for plot_title, ydata in plots_mapping.items():

@@ -40,8 +40,10 @@ TABLE_HEADERS = [
     "Розмір бази",
     "Кількість успішних запитів",
     "APDEX індекс",
+    "Середній час відповіді"
 ]
 
 APP_SUCCESS_KEY = "{app} success"
 APP_APDEX_KEY = "{app} apdex"
 APP_DB_SIZE_KEY = "{app} db_size"
+APP_ELAPSED_TIME_KEY = "{app} elapsed"

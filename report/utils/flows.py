@@ -17,7 +17,7 @@ def get_result(app, test_plan, resources, locations):
 
 
 def compose_row(app, param, requests=None):
-    total_success, total_apdex = 0, 0
+    total_success, total_apdex, total_elapsed_time = 0, 0, 0
 
     path_to_app = camel_to_snake_case_converter(app)
 
@@ -25,9 +25,12 @@ def compose_row(app, param, requests=None):
         result = get_result(path_to_app, request, param.resources, param.locations_per_resource)
         total_success += result["summary"]["success"]
         total_apdex += result["summary"]["apdex"]
+        total_elapsed_time += result["summary"]["elapsed"]
 
     total_success_normalized = total_success / len(requests)
     total_apdex_normalized = total_apdex / len(requests)
+    total_elapsed_time_normalized = total_elapsed_time / len(requests)
+
 
     return {
         "Додаток": app,
@@ -35,6 +38,7 @@ def compose_row(app, param, requests=None):
         "Розмір бази": get_db_size(app, param.locations_total),
         "Кількість успішних запитів": total_success_normalized,
         "APDEX індекс": total_apdex_normalized,
+        "Середній час відповіді": total_elapsed_time_normalized
     }
 
 
