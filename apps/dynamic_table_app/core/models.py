@@ -1,6 +1,7 @@
 from django.db import models, connection
 from django.contrib.gis.db import models as gis_models
 from django.contrib import admin
+from django.contrib.gis.db.models import Index
 
 '''
     This app uses approach to dynamically create separate table with Locations for each Resourse
@@ -55,14 +56,15 @@ class TableManager:
 
         model_attributes = {
             "point": gis_models.PointField(),
-            "timestamp": models.DateTimeField(auto_now_add=True),
+            "timestamp": models.DateTimeField(auto_now_add=True, db_index=True),
             "Meta": type(
                 "Meta",
                 (),
                 {
                     "app_label": TableManager.APP_NAME,
                     "db_table": self.table_name,
-                    "ordering": ['-timestamp']
+                    "ordering": ['-timestamp'],
+                    "indexes": [Index(fields=['point'])]
 
                 }
             ),

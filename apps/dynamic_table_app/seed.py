@@ -32,7 +32,9 @@ for i in range(RESOURCES_NUMBER):
     LocationsForResource = TableManager().create_table()
     locations = [LocationsForResource(point=Point(*generate_random_coordinates())) for _ in range(LOCATIONS_NUMBER_PER_RESOURCE)]
     LocationsForResource.objects.bulk_create(locations)
-    print("Locations created: {}/{}".format((i + 1) * LOCATIONS_NUMBER_PER_RESOURCE, RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE), end="\r")
+
+    progress = int(100 * (i * LOCATIONS_NUMBER_PER_RESOURCE) / (RESOURCES_NUMBER * LOCATIONS_NUMBER_PER_RESOURCE))
+    print("Seeding in progress: {}% {}".format(progress, "|" * progress), end="\r")
 
 print('\nSeed completed!')
 print("--- %s seconds ---" % (time.time() - start_time))

@@ -3,19 +3,23 @@ from pathlib import Path
 import shutil
 import subprocess
 import time
-from colorama import Fore, Style
+from utils import ColorPrint
+from config import APPS, TEST_PLANS, SEED_PARAMS
 
 from jmeter_runner import JMeterRunner
+from dotenv import load_dotenv
+load_dotenv()
 
-
-JMETER_BIN_PATH = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/jmeter'
-TEST_PLAN_PATH = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/LocationsWsTestPlan.jmx'
+BASE_PROJECT_DIR = Path(os.getenv("BASE_PROJECT_DIR")) 
+JMETER_BIN_PATH = Path(os.getenv("JMETER_BIN_PATH"))
+TEST_PLANS_DIR = BASE_PROJECT_DIR / os.getenv("TEST_PLANS_DIR")
+APPS_DIR = BASE_PROJECT_DIR / 'apps'
 
 
 class LocationsFlow:
     def __init__(self, app, resources_count, locations_count):
         self.app = app
-        self.path_to_app = parent_directory / app
+        self.path_to_app = APPS_DIR / app
         self.resources_count = resources_count
         self.locations_count = locations_count
 
@@ -23,25 +27,25 @@ class LocationsFlow:
         COMMANDS = {
             "seed": [
                 'python3',
-                "{}/seed.py".format(self.path_to_app),
+                self.path_to_app / "seed.py",
                 '--resources={}'.format(self.resources_count),
                 '--locations={}'.format(self.locations_count),
             ],
             "test_seed": [
                 'python3',
-                "{}/seed.py".format(self.path_to_app),
+                self.path_to_app / "seed.py",
                 '--resources={}'.format(5),
                 '--locations={}'.format(5),
             ],
             "runserver": [
                 'python3',
-                "{}/manage.py".format(self.path_to_app),
+                self.path_to_app / "manage.py",
                 "runserver",
             ],
             "tests": [
                 "pytest",
                 "-vs",
-                Path.cwd().parent / "tests/test.py",
+                Path.cwd().parent / "tests" / "test.py",
             ]
         }
 
@@ -49,17 +53,17 @@ class LocationsFlow:
 
     def run_seed(self):
         command = self.build_command("seed")
-        print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
+        self.claim_command(str(command))
         subprocess.run(command)
 
     def run_test_seed(self):
         command = self.build_command("test_seed")
-        print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
+        self.claim_command(str(command))
         subprocess.run(command)
 
     def run_server(self):
         command = self.build_command("runserver")
-        print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
+        self.claim_command(str(command))
         process = subprocess.Popen(command)
         time.sleep(5)  # wait for server to start
 
@@ -67,19 +71,21 @@ class LocationsFlow:
 
     def run_tests(self):
         command = self.build_command("tests")
-        print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
+        self.claim_command(str(command))
         subprocess.run(command)
 
-    def compose_reports_folder_path(self):
-        return "reports/{}/{}-{}".format(
-            self.app, self.resources_count, self.locations_count)
-    
-    def compose_file_path(self):
-        folder_path = self.compose_reports_folder_path()
+    def compose_file_path(self, request):
+        folder_path = Path("reports") / app / request
+        
+        file_path = "{resources_count}-{locations_count}.csv".format(
+            resources_count=self.resources_count,
+            locations_count=self.locations_count,
+        )
+
         os.makedirs(folder_path, exist_ok=True)
 
-        return folder_path + "/result.csv"
-    
+        return folder_path / file_path
+
     @staticmethod
     def reset_reports_folder():
         folder_path = "reports"
@@ -87,7 +93,7 @@ class LocationsFlow:
             shutil.rmtree(folder_path)
         except FileNotFoundError:
             print(f"Folder '{folder_path}' not found.")
-    
+
         try:
             os.makedirs(folder_path)
         except OSError as e:
@@ -95,67 +101,93 @@ class LocationsFlow:
 
     def run_test_flow(self):
         # seeding for tests
-        print(Fore.RED + "{}: Test seeding".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("cyan") as print:
+            print("Test seeding")
+
         self.run_test_seed()
 
         # run server
-        print(
-            Fore.RED + "{}: Running server".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("green") as print:
+            print("Running server")
+
         self.server_process = self.run_server()
 
         # run tests
-        print(Fore.RED + "{}: Running tests".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("blue") as print:
+            print("Running tests")
+
         self.run_tests()
 
         # terminate server
-        print(
-            Fore.RED + "{}: Turning server off".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("red") as print:
+            print("Turning server off")
+
         self.server_process.terminate()
 
     def run_prod_flow(self):
         # "prod" seeding
-        print(Fore.RED + "{}: Seeding".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("cyan") as print:
+            print("Seeding")
+
         self.run_seed()
-        
+
         # run server
-        print(
-            Fore.RED + "{}: Running server".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("green") as print:
+            print("Running server")
+
         self.server_process = self.run_server()
 
         # run jmeter
-        print(
-            Fore.RED + "{}: Running JMeter test plan".format(self.app) + Style.RESET_ALL)
-        jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH,
-                              test_plan_path=TEST_PLAN_PATH, output_file=self.compose_file_path())
-        jmeter.run()
+        for test_plan in TEST_PLANS:
+            self.claim_current_app()
+            with ColorPrint("yellow") as print:
+                print("Running JMeter test plan {}".format(test_plan))
+
+            jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH,
+                                  test_plan_path=TEST_PLANS_DIR / "{}.jmx".format(test_plan),
+                                  output_file=self.compose_file_path(test_plan))
+            jmeter.run()
 
         # terminate server
-        print(
-            Fore.RED + "{}: Turning server off".format(self.app) + Style.RESET_ALL)
+        self.claim_current_app()
+        with ColorPrint("red") as print:
+            print("Turning server off")
+
         self.server_process.terminate()
+
+    def claim_current_app(self):
+        with ColorPrint(background='red', color='black'):
+            print(self.app, end='')
+        
+    def claim_command(self, command):
+        with ColorPrint(color="magenta") as print:
+            print(str(command))
+        print()
 
     def run_full_flow(self):
         self.run_test_flow()
         self.run_prod_flow()
 
 
-current_directory = Path.cwd()
-parent_directory = current_directory.parent / 'apps'
-
-APPS = ["mongo_app", "single_table_app",
-        "point_field_app", "dynamic_table_app"]
-counts = [(10, 100), (100, 100), (100, 1_000), (1_000, 1_000), (1_000, 10_000)]
-
 LocationsFlow.reset_reports_folder()
 for app in APPS:
-    for resources_count, locations_count in counts:
-        lflow = LocationsFlow(app=app,
-                              resources_count=resources_count, locations_count=locations_count)
+    for resources, locations_per_resource in SEED_PARAMS:
+        lflow = LocationsFlow(app=app, resources_count=resources, locations_count=locations_per_resource)
 
         try:
             # lflow.run_test_flow()
             lflow.run_prod_flow()
-        except:
+        except Exception as e:
+            print(e)
             if hasattr(lflow, "server_process"):
                 # turn off server if server started and error occurred
+                lflow.claim_current_app()
+                with ColorPrint("red") as print:
+                    print("Turning server off due to error")
                 lflow.server_process.terminate()

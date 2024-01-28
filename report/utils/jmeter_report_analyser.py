@@ -10,6 +10,7 @@ class JMeterReportAnalyser:
     def analyze(self):
         self.analyze_requests()
         self.calculate_apdex()
+        self.calculate_mean_elapsed_time()
 
         return self.results
     
@@ -18,16 +19,18 @@ class JMeterReportAnalyser:
             
     def analyze_requests(self):
         success_count = len(
-            self.data[self.data['success'] == True])/len(self.data)
+            self.data[self.data['success'] == True]) / len(self.data)
 
         self.results["summary"].update({
             "success": success_count * 100,
             "failure": (1 - success_count) * 100
         })
 
+        #  potentially redundant functionality if jmeter csv reports is generated for each request separetely
+        #  but this code can be used for backward compatibility for use case when csv report can contain data about several requests
         for label in self.labels:
             data = self._get_request_data_by_label(label)
-            success_count = len(data[data['success'] == True])/len(data)
+            success_count = len(data[data['success'] == True]) / len(data)
 
             self.results[label].update({
                 "success": success_count * 100,
@@ -49,6 +52,18 @@ class JMeterReportAnalyser:
             apdex = (count_satisfied(data) + count_tolerant(data) * 0.5) / len(data)
             self.results[label].update({
                 "apdex": apdex,
+            })
+
+    def calculate_mean_elapsed_time(self):
+        self.results["summary"].update({
+            "elapsed": self.data['elapsed'].mean(),
+        })
+
+        for label in self.labels:
+            data = self._get_request_data_by_label(label)
+
+            self.results[label].update({
+                "elapsed": data['elapsed'].mean(),
             })
 
     def _get_request_data_by_label(self, label):

@@ -6,9 +6,9 @@ from datetime import datetime, timedelta
 
 class Location(EmbeddedDocument):
     id = ObjectIdField(required=True, default=ObjectId)
-    point = PointField(required=True)
-    resource_id = IntField()
-    timestamp = DateTimeField(default=datetime.utcnow)
+    point = PointField(required=True, db_index=True)
+    resource_id = IntField(db_index=True)
+    timestamp = DateTimeField(default=datetime.utcnow, db_index=True)
 
 
 class Resource(Document):
