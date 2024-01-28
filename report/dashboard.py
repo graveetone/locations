@@ -22,6 +22,7 @@ apps = st.sidebar.multiselect(
     options=APPS_TITLES,
     key="APPS"
 )
+
 seed_params = st.sidebar.multiselect(
     label='Параметри сідування бази',
     options=SEED_PARAMS,
@@ -38,16 +39,15 @@ show_table = st.sidebar.checkbox("Відобразити таблицю")
 if apps and seed_params:
     all_apps_data = pd.DataFrame(columns=TABLE_HEADERS)
 
-    plot_data = {
-        "Кількість точок": [r * lpr for r, lpr in seed_params]
-    }
+    plot_data = {"Кількість точок": [param.locations_total for param in seed_params]}
 
     for app in apps:
-        rows = [compose_row(app, r, lpr, requests=requests)
-                for r, lpr in seed_params]
+        rows = [compose_row(app, param, requests=requests)
+                for param in seed_params]
         current_app_data = pd.DataFrame(rows)
         all_apps_data = pd.concat(
             [all_apps_data, current_app_data], ignore_index=True)
+
 
         app_success_key = APP_SUCCESS_KEY.format(app=app)
         app_apdex_key = APP_APDEX_KEY.format(app=app)
@@ -60,9 +60,9 @@ if apps and seed_params:
     if show_table:
         st.table(all_apps_data)
 
-    apps_success = [APP_SUCCESS_KEY.format(app=app) for app in apps] 
-    apps_apdex = [APP_APDEX_KEY.format(app=app) for app in apps] 
-    apps_db_size = [APP_DB_SIZE_KEY.format(app=app) for app in apps] 
+    apps_success = [APP_SUCCESS_KEY.format(app=app) for app in apps]
+    apps_apdex = [APP_APDEX_KEY.format(app=app) for app in apps]
+    apps_db_size = [APP_DB_SIZE_KEY.format(app=app) for app in apps]
 
     plots_mapping = {
         "Залежність кількості успішних запитів від кількості точок": apps_success,

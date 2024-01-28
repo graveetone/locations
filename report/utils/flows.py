@@ -43,16 +43,18 @@ def compose_row(app, resources, locations, requests=None):
 
     return {
         "Додаток": app,
-        "Кількість локацій": locations_total,
-        "Розмір бази": get_db_size(app, locations_total),
+        "Кількість локацій": param.locations_total,
+        "Розмір бази": get_db_size(app, param.locations_total),
         "Кількість успішних запитів": total_success,
         "APDEX індекс": total_apdex,
     }
 
+
 def get_db_size(app, locations_total):
-    file = BASE_PATH + "/data/db_sizes.csv"
-    db_sizes = pd.read_csv(file)
-    app = get_path_to_app(app)
-    filter = (db_sizes.app_name == app) & (db_sizes.locations_total == locations_total)
-    
+    db_sizes = read_csv_file(DB_SIZES_FILE_PATH)
+    app = camel_to_snake_case_converter(app)
+
+    filter = (db_sizes.app_name == app) & (
+        db_sizes.locations_total == locations_total)
+
     return db_sizes[filter].iloc[0].db_size_bytes

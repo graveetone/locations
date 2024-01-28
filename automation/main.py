@@ -153,9 +153,9 @@ parent_directory = current_directory.parent / 'apps'
 
 LocationsFlow.reset_reports_folder()
 for app in APPS:
-    for resources_count, locations_count in SEED_PARAMS:
-        lflow = LocationsFlow(app=app,
-                              resources_count=resources_count, locations_count=locations_count)
+    for param in SEED_PARAMS:
+        lflow = LocationsFlow(app=app, resources_count=param.resources,
+                              locations_count=param.locations_per_resource)
 
         try:
             # lflow.run_test_flow()
