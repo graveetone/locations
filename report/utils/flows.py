@@ -1,5 +1,5 @@
 from .helpers import camel_to_snake_case_converter, read_csv_file
-from .constants import DB_SIZES_FILE, REPORT_FILES_DIR
+from .constants import DB_SIZES_REPORT_FILE, REPORT_FILES_DIR
 from .jmeter_report_analyser import JMeterReportAnalyser
 
 
@@ -39,7 +39,7 @@ def compose_row(app, param, requests=None):
 
 
 def get_db_size(app, locations_total):
-    db_sizes = read_csv_file(DB_SIZES_FILE)
+    db_sizes = read_csv_file(DB_SIZES_REPORT_FILE)
     app = camel_to_snake_case_converter(app)
 
     filter = (db_sizes.app_name == app) & (

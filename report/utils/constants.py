@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_PROJECT_DIR = Path(os.getenv("BASE_PROJECT_DIR"))
-DB_SIZES_FILE = BASE_PROJECT_DIR / os.getenv("DB_SIZES_FILE")
+DB_SIZES_REPORT_FILE = BASE_PROJECT_DIR / os.getenv("DB_SIZES_REPORT_FILE")
 
 REPORT_FILES_DIR = BASE_PROJECT_DIR / os.getenv("REPORT_FILES_DIR") 
 
