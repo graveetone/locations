@@ -88,7 +88,7 @@ class LocationsFlow:
 
     @staticmethod
     def reset_reports_folder():
-        folder_path = "reports"  # wtf
+        folder_path = "reports"
         try:
             shutil.rmtree(folder_path)
         except FileNotFoundError:
@@ -132,7 +132,7 @@ class LocationsFlow:
         # "prod" seeding
         self.claim_current_app()
         with ColorPrint("cyan") as print:
-            print("Seeding") # turn it into docstring with @verbose decorator
+            print("Seeding")
 
         self.run_seed()
 
@@ -170,12 +170,12 @@ class LocationsFlow:
             print(str(command))
         print()
 
-    def run_full_flow(self): # add docstring
+    def run_full_flow(self):
         self.run_test_flow()
         self.run_prod_flow()
 
 
-LocationsFlow.reset_reports_folder()  # do not reset this folder, generate folder with name as timestamp to be able to store different versions of reports
+LocationsFlow.reset_reports_folder()
 for app in APPS:
     for resources, locations_per_resource in SEED_PARAMS:
         lflow = LocationsFlow(app=app, resources_count=resources, locations_count=locations_per_resource)
