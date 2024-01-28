@@ -1,10 +1,14 @@
+from pathlib import Path
 from .helpers import SeedParam
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-BASE_PATH = "/home/graveetone/code/locations/report"
-DB_SIZES_FILE_PATH = BASE_PATH + "/data/db_sizes.csv"
-REPORT_FILE_PATH_TEMPLATE = BASE_PATH + \
-    "/data/{app}/{test_plan}/{resources}-{locations}.csv"
+BASE_PROJECT_DIR = Path(os.getenv("BASE_PROJECT_DIR"))
+DB_SIZES_FILE = BASE_PROJECT_DIR / os.getenv("DB_SIZES_FILE")
+
+REPORT_FILES_DIR = BASE_PROJECT_DIR / os.getenv("REPORT_FILES_DIR") 
 
 APPS_TITLES = [
     "PointFieldApp",

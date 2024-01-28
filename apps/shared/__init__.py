@@ -1,11 +1,19 @@
 import argparse
+from pathlib import Path
 import django
 import os
 import random
 import csv
 from django.db import connection
-from django.conf import settings
 from mongoengine.connection import _get_db
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BASE_PROJECT_DIR = Path(os.getenv("BASE_PROJECT_DIR"))
+DB_SIZES_FILE = BASE_PROJECT_DIR / os.getenv("DB_SIZES_FILE")
+
+POSTGRESQL_DB_SIZE_QUERY = "SELECT pg_database_size(current_database())"
 
 
 def get_seed_args():
@@ -26,8 +34,7 @@ def get_seed_args():
 
 
 def setup_django_for_app(app_name):
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE",
-                          "{app_name}.settings".format(app_name=app_name))
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{app_name}.settings".format(app_name=app_name))
     django.setup()
 
 
@@ -40,7 +47,7 @@ def generate_random_coordinates():
 
 def get_database_size_in_bytes():
     with connection.cursor() as cursor:
-        cursor.execute("SELECT pg_database_size(current_database())")
+        cursor.execute(POSTGRESQL_DB_SIZE_QUERY)
         size_in_bytes = cursor.fetchone()[0]
     return size_in_bytes
 
@@ -48,12 +55,9 @@ def get_mongo_database_size_in_bytes():
     return _get_db().command("dbStats")['dataSize']
 
 def save_database_size_to_file(app_name, locations_total, db_size_bytes):
-    base_dir = settings.BASE_DIR.parent.parent
-    file_path = "{base_dir}/automation/reports/db_sizes.csv".format(base_dir=base_dir)
-
-    file_exists = os.path.exists(file_path)
+    file_exists = os.path.exists(DB_SIZES_FILE)
     headers = ["app_name", "locations_total", "db_size_bytes"]
-    with open(file_path, 'a', newline='') as csv_file:
+    with open(DB_SIZES_FILE, 'a', newline='') as csv_file:
         writer = csv.writer(csv_file)
 
         if not file_exists:

@@ -1,10 +1,12 @@
 from .helpers import camel_to_snake_case_converter, read_csv_file
-from .constants import DB_SIZES_FILE_PATH, REPORT_FILE_PATH_TEMPLATE
+from .constants import DB_SIZES_FILE, REPORT_FILES_DIR
 from .jmeter_report_analyser import JMeterReportAnalyser
 
 
 def build_path_to_file(app, test_plan, resources, locations):
-    return REPORT_FILE_PATH_TEMPLATE.format(app=app, test_plan=test_plan, resources=resources, locations=locations)
+    file_path = "{app}/{test_plan}/{resources}-{locations}.csv".format(app=app, test_plan=test_plan, resources=resources, locations=locations)
+    
+    return REPORT_FILES_DIR / file_path
 
 
 def get_result(app, test_plan, resources, locations):
@@ -37,7 +39,7 @@ def compose_row(app, param, requests=None):
 
 
 def get_db_size(app, locations_total):
-    db_sizes = read_csv_file(DB_SIZES_FILE_PATH)
+    db_sizes = read_csv_file(DB_SIZES_FILE)
     app = camel_to_snake_case_converter(app)
 
     filter = (db_sizes.app_name == app) & (

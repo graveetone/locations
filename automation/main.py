@@ -7,16 +7,19 @@ from colorama import Fore, Style
 from config import APPS, TEST_PLANS, SEED_PARAMS
 
 from jmeter_runner import JMeterRunner
+from dotenv import load_dotenv
+load_dotenv()
 
-JMETER_BIN_PATH = '/home/graveetone/Desktop/apache-jmeter-5.6.2/bin/jmeter'
-
-TEST_PLANS_DIR = "test_plans"
+BASE_PROJECT_DIR = Path(os.getenv("BASE_PROJECT_DIR")) 
+JMETER_BIN_PATH = Path(os.getenv("JMETER_BIN_PATH"))
+TEST_PLANS_DIR = BASE_PROJECT_DIR / os.getenv("TEST_PLANS_DIR")
+APPS_DIR = BASE_PROJECT_DIR / 'apps'
 
 
 class LocationsFlow:
     def __init__(self, app, resources_count, locations_count):
         self.app = app
-        self.path_to_app = parent_directory / app
+        self.path_to_app = APPS_DIR / app
         self.resources_count = resources_count
         self.locations_count = locations_count
 
@@ -24,25 +27,25 @@ class LocationsFlow:
         COMMANDS = {
             "seed": [
                 'python3',
-                "{}/seed.py".format(self.path_to_app),
+                self.path_to_app / "seed.py",
                 '--resources={}'.format(self.resources_count),
                 '--locations={}'.format(self.locations_count),
             ],
             "test_seed": [
                 'python3',
-                "{}/seed.py".format(self.path_to_app),
+                self.path_to_app / "seed.py",
                 '--resources={}'.format(5),
                 '--locations={}'.format(5),
             ],
             "runserver": [
                 'python3',
-                "{}/manage.py".format(self.path_to_app),
+                self.path_to_app / "manage.py",
                 "runserver",
             ],
             "tests": [
                 "pytest",
                 "-vs",
-                Path.cwd().parent / "tests/test.py",
+                Path.cwd().parent / "tests" / "test.py",
             ]
         }
 
@@ -54,8 +57,8 @@ class LocationsFlow:
         subprocess.run(command)
 
     def run_test_seed(self):
-        command = self.build_command("test_seed")
-        print(Fore.MAGENTA + str(command) + Style.RESET_ALL)
+        command = self.build_command("test_seed") # move commands to AUTOMATION_COMMANDS
+        print(Fore.MAGENTA + str(command) + Style.RESET_ALL) # add decorators to make colorfull prints
         subprocess.run(command)
 
     def run_server(self):
@@ -72,22 +75,20 @@ class LocationsFlow:
         subprocess.run(command)
 
     def compose_file_path(self, request):
-        folder_path = "reports/{app}/{request}".format(
-            app=self.app, request=request)
-
-        file_path = "/{resources_count}-{locations_count}.csv".format(
-            request=request,
+        folder_path = Path("reports") / app / request
+        
+        file_path = "{resources_count}-{locations_count}.csv".format(
             resources_count=self.resources_count,
-            locations_count=self.locations_count
+            locations_count=self.locations_count,
         )
 
         os.makedirs(folder_path, exist_ok=True)
 
-        return folder_path + file_path
+        return folder_path / file_path
 
     @staticmethod
     def reset_reports_folder():
-        folder_path = "reports"
+        folder_path = "reports"  # wtf
         try:
             shutil.rmtree(folder_path)
         except FileNotFoundError:
@@ -119,7 +120,7 @@ class LocationsFlow:
 
     def run_prod_flow(self):
         # "prod" seeding
-        print(Fore.RED + "{}: Seeding".format(self.app) + Style.RESET_ALL)
+        print(Fore.RED + "{}: Seeding".format(self.app) + Style.RESET_ALL) # turn it into docstring with @verbose decorator
         self.run_seed()
 
         # run server
@@ -132,8 +133,7 @@ class LocationsFlow:
             print(
                 Fore.RED + "{}: Running JMeter test plan {}".format(self.app, test_plan) + Style.RESET_ALL)
             jmeter = JMeterRunner(jmeter_path=JMETER_BIN_PATH,
-                                  test_plan_path="{}/{}.jmx".format(
-                                      TEST_PLANS_DIR, test_plan),
+                                  test_plan_path=TEST_PLANS_DIR / "{}.jmx".format(test_plan),
                                   output_file=self.compose_file_path(test_plan))
             jmeter.run()
 
@@ -142,20 +142,18 @@ class LocationsFlow:
             Fore.RED + "{}: Turning server off".format(self.app) + Style.RESET_ALL)
         self.server_process.terminate()
 
-    def run_full_flow(self):
+    def run_full_flow(self): # add docstring
         self.run_test_flow()
         self.run_prod_flow()
 
 
-current_directory = Path.cwd()
-parent_directory = current_directory.parent / 'apps'
 
 
-LocationsFlow.reset_reports_folder()
+
+LocationsFlow.reset_reports_folder()  # do not reset this folder, generate folder with name as timestamp to be able to store different versions of reports
 for app in APPS:
     for param in SEED_PARAMS:
-        lflow = LocationsFlow(app=app, resources_count=param.resources,
-                              locations_count=param.locations_per_resource)
+        lflow = LocationsFlow(app=app, resources_count=param.resources, locations_count=param.locations_per_resource)
 
         try:
             # lflow.run_test_flow()

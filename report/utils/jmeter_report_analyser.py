@@ -18,7 +18,7 @@ class JMeterReportAnalyser:
             
     def analyze_requests(self):
         success_count = len(
-            self.data[self.data['success'] == True])/len(self.data)
+            self.data[self.data['success'] == True]) / len(self.data)
 
         self.results["summary"].update({
             "success": success_count * 100,
@@ -29,7 +29,7 @@ class JMeterReportAnalyser:
         #  but this code can be used for backward compatibility for use case when csv report can contain data about several requests
         for label in self.labels:
             data = self._get_request_data_by_label(label)
-            success_count = len(data[data['success'] == True])/len(data)
+            success_count = len(data[data['success'] == True]) / len(data)
 
             self.results[label].update({
                 "success": success_count * 100,
