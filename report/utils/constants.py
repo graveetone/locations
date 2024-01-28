@@ -5,10 +5,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_PROJECT_DIR = Path(os.getenv("BASE_PROJECT_DIR"))
+BASE_PROJECT_DIR = Path(os.getcwd()).parent
 DB_SIZES_REPORT_FILE = BASE_PROJECT_DIR / os.getenv("DB_SIZES_REPORT_FILE")
 
 REPORT_FILES_DIR = BASE_PROJECT_DIR / os.getenv("REPORT_FILES_DIR") 
+IMAGE_PATH = BASE_PROJECT_DIR / os.getenv("IMAGE_PATH")
 
 APPS_TITLES = [
     "PointFieldApp",

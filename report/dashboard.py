@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 from utils.flows import compose_row
-from utils.constants import (APP_ELAPSED_TIME_KEY, APPS_TITLES, SEED_PARAMS, REQUESTS_TITLES,
+from utils.constants import (APP_ELAPSED_TIME_KEY, APPS_TITLES, IMAGE_PATH, SEED_PARAMS, REQUESTS_TITLES,
                              TABLE_HEADERS, APP_APDEX_KEY, APP_DB_SIZE_KEY,
                              APP_SUCCESS_KEY, TABLE_HEADERS_WITH_UNITS)
 
@@ -80,4 +80,4 @@ if all((apps, seed_params, requests)):
         st.subheader(plot_title)
         st.line_chart(plot_data, x='Кількість точок', y=ydata)
 else:
-    st.image("image.png", width=600)
+    st.image(str(IMAGE_PATH), width=600)
