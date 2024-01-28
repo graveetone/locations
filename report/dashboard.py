@@ -4,7 +4,7 @@ import pandas as pd
 from utils.flows import compose_row
 from utils.constants import (APP_ELAPSED_TIME_KEY, APPS_TITLES, SEED_PARAMS, REQUESTS_TITLES,
                              TABLE_HEADERS, APP_APDEX_KEY, APP_DB_SIZE_KEY,
-                             APP_SUCCESS_KEY)
+                             APP_SUCCESS_KEY, TABLE_HEADERS_WITH_UNITS)
 
 st.set_page_config(page_title='Locations App Report',
                    page_icon="📍",
@@ -61,6 +61,7 @@ if all((apps, seed_params, requests)):
     if show_table:
         for app in apps:
             st.subheader(app)
+            all_apps_data[app].columns = TABLE_HEADERS_WITH_UNITS
             st.table(all_apps_data[app])
 
     apps_success = [APP_SUCCESS_KEY.format(app=app) for app in apps]

@@ -42,6 +42,13 @@ TABLE_HEADERS = [
     "Середній час відповіді"
 ]
 
+TABLE_HEADERS_WITH_UNITS = [
+    "Кількість локацій",
+    "Розмір бази, байт",
+    "Кількість успішних запитів, %",
+    "APDEX індекс",
+    "Середній час відповіді, мс"
+]
 APP_SUCCESS_KEY = "{app} success"
 APP_APDEX_KEY = "{app} apdex"
 APP_DB_SIZE_KEY = "{app} db_size"
