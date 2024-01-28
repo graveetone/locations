@@ -1,101 +1,101 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1705968289790,1235,GetResourcesNearby,101,Switching Protocols,Locations 1-1,text,true,,149,143,13,13,null,0,0,30
-1705968289874,2462,GetResourcesNearby,101,Switching Protocols,Locations 1-2,text,true,,149,143,25,25,null,0,0,1160
-1705968290068,3569,GetResourcesNearby,101,Switching Protocols,Locations 1-4,text,true,,149,143,37,37,null,0,0,966
-1705968289973,4796,GetResourcesNearby,101,Switching Protocols,Locations 1-3,text,true,,149,143,48,48,null,0,0,1062
-1705968291174,4835,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-15,,false,,0,0,59,59,null,0,0,0
-1705968291274,4735,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-16,,false,,0,0,59,59,null,0,0,0
-1705968291076,4936,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-14,,false,,0,0,58,58,null,0,0,0
-1705968291670,4345,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-20,,false,,0,0,56,56,null,0,0,0
-1705968291968,4050,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-23,,false,,0,0,55,55,null,0,0,0
-1705968291373,4642,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-17,,false,,0,0,55,55,null,0,0,0
-1705968291769,4250,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-21,,false,,0,0,55,55,null,0,0,0
-1705968291868,4150,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-22,,false,,0,0,55,55,null,0,0,0
-1705968291571,4448,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-19,,false,,0,0,53,53,null,0,0,0
-1705968291472,4548,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-18,,false,,0,0,53,53,null,0,0,0
-1705968290167,5853,GetResourcesNearby,101,Switching Protocols,Locations 1-5,text,true,,149,143,53,53,null,0,0,869
-1705968292166,4839,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-25,,false,,0,0,58,58,null,0,0,0
-1705968292265,4743,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-26,,false,,0,0,57,57,null,0,0,0
-1705968292564,4445,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-29,,false,,0,0,56,56,null,0,0,0
-1705968292762,4248,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-31,,false,,0,0,56,56,null,0,0,0
-1705968292961,4055,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-33,,false,,0,0,55,55,null,0,0,0
-1705968292861,4155,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-32,,false,,0,0,55,55,null,0,0,0
-1705968292066,4939,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-24,,false,,0,0,57,57,null,0,0,0
-1705968292662,4355,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-30,,false,,0,0,55,55,null,0,0,0
-1705968292364,4653,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-27,,false,,0,0,55,55,null,0,0,0
-1705968292463,4554,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-28,,false,,0,0,55,55,null,0,0,0
-1705968290272,6770,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-6,,false,,145,143,48,48,null,0,0,766
-1705968290564,6482,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-9,,false,,145,143,47,47,null,0,0,478
-1705968290662,6384,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-10,,false,,145,143,47,47,null,0,0,381
-1705968290471,6575,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-8,,false,,145,143,47,47,null,0,0,570
-1705968290364,6682,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-7,,false,,145,143,47,47,null,0,0,676
-1705968290761,6289,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-11,,false,,145,143,43,43,null,0,0,283
-1705968290860,6190,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-12,,false,,145,143,43,43,null,0,0,184
-1705968290963,6087,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-13,,false,,145,143,42,42,null,0,0,83
-1705968293160,4845,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-35,,false,,0,0,50,50,null,0,0,0
-1705968293059,4945,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-34,,false,,0,0,50,50,null,0,0,0
-1705968293262,4753,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-36,,false,,0,0,49,49,null,0,0,0
-1705968293560,4457,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-39,,false,,0,0,48,48,null,0,0,0
-1705968293359,4659,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-37,,false,,0,0,47,47,null,0,0,0
-1705968293659,4360,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-40,,false,,0,0,46,46,null,0,0,0
-1705968293460,4559,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-38,,false,,0,0,46,46,null,0,0,0
-1705968293760,4260,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-41,,false,,0,0,43,43,null,0,0,0
-1705968293859,4162,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-42,,false,,0,0,43,43,null,0,0,0
-1705968293960,4061,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-43,,false,,0,0,42,42,null,0,0,0
-1705968294060,4946,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-44,,false,,0,0,50,50,null,0,0,0
-1705968294759,4248,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-51,,false,,0,0,49,49,null,0,0,0
-1705968294860,4148,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-52,,false,,0,0,48,48,null,0,0,0
-1705968294159,4849,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-45,,false,,0,0,47,47,null,0,0,0
-1705968294259,4750,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-46,,false,,0,0,46,46,null,0,0,0
-1705968294360,4651,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-47,,false,,0,0,45,45,null,0,0,0
-1705968294460,4552,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-48,,false,,0,0,44,44,null,0,0,0
-1705968294559,4454,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-49,,false,,0,0,43,43,null,0,0,0
-1705968294959,4056,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-53,,false,,0,0,42,42,null,0,0,0
-1705968294658,4359,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-50,,false,,0,0,41,41,null,0,0,0
-1705968295059,4944,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-54,,false,,0,0,47,47,null,0,0,0
-1705968295158,4859,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-55,,false,,0,0,46,46,null,0,0,0
-1705968295259,4759,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-56,,false,,0,0,45,45,null,0,0,0
-1705968295360,4660,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-57,,false,,0,0,44,44,null,0,0,0
-1705968295460,4560,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-58,,false,,0,0,44,44,null,0,0,0
-1705968295561,4461,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-59,,false,,0,0,42,42,null,0,0,0
-1705968295659,4363,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-60,,false,,0,0,42,42,null,0,0,0
-1705968295764,4259,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-61,,false,,0,0,40,40,null,0,0,0
-1705968295859,4165,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-62,,false,,0,0,40,40,null,0,0,0
-1705968295959,4066,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-63,,false,,0,0,38,38,null,0,0,0
-1705968296059,4944,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-64,,false,,0,0,37,37,null,0,0,0
-1705968296159,4846,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-65,,false,,0,0,36,36,null,0,0,0
-1705968296259,4746,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-66,,false,,0,0,36,36,null,0,0,0
-1705968296359,4652,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-67,,false,,0,0,34,34,null,0,0,0
-1705968296462,4549,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-68,,false,,0,0,34,34,null,0,0,0
-1705968296561,4455,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-69,,false,,0,0,32,32,null,0,0,0
-1705968296660,4357,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-70,,false,,0,0,31,31,null,0,0,0
-1705968296759,4259,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-71,,false,,0,0,30,30,null,0,0,0
-1705968296859,4159,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-72,,false,,0,0,30,30,null,0,0,0
-1705968296959,4060,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-73,,false,,0,0,28,28,null,0,0,0
-1705968297060,4942,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-74,,false,,0,0,27,27,null,0,0,0
-1705968297160,4843,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-75,,false,,0,0,27,27,null,0,0,0
-1705968297259,4746,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-76,,false,,0,0,25,25,null,0,0,0
-1705968297359,4647,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-77,,false,,0,0,24,24,null,0,0,0
-1705968297462,4545,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-78,,false,,0,0,23,23,null,0,0,0
-1705968297560,4447,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-79,,false,,0,0,23,23,null,0,0,0
-1705968297659,4350,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-80,,false,,0,0,21,21,null,0,0,0
-1705968297759,4252,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-81,,false,,0,0,20,20,null,0,0,0
-1705968297859,4153,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-82,,false,,0,0,19,19,null,0,0,0
-1705968297960,4053,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-83,,false,,0,0,19,19,null,0,0,0
-1705968298161,4846,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-85,,false,,0,0,17,17,null,0,0,0
-1705968298260,4749,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-86,,false,,0,0,17,17,null,0,0,0
-1705968298360,4650,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-87,,false,,0,0,17,17,null,0,0,0
-1705968298059,4952,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-84,,false,,0,0,17,17,null,0,0,0
-1705968298459,4553,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-88,,false,,0,0,17,17,null,0,0,0
-1705968298558,4456,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-89,,false,,0,0,17,17,null,0,0,0
-1705968298659,4357,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-90,,false,,0,0,14,14,null,0,0,0
-1705968298761,4255,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-91,,false,,0,0,14,14,null,0,0,0
-1705968298959,4057,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-93,,false,,0,0,14,14,null,0,0,0
-1705968298859,4157,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-92,,false,,0,0,14,14,null,0,0,0
-1705968299059,4943,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-94,,false,,0,0,7,7,null,0,0,0
-1705968299161,4856,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-95,,false,,0,0,6,6,null,0,0,0
-1705968299265,4753,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-96,,false,,0,0,6,6,null,0,0,0
-1705968299358,4661,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-97,,false,,0,0,4,4,null,0,0,0
-1705968299458,4562,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-98,,false,,0,0,3,3,null,0,0,0
-1705968299558,4464,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-99,,false,,0,0,2,2,null,0,0,0
-1705968299659,4363,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-100,,false,,0,0,1,1,null,0,0,0
+1706461928655,1296,GetResourcesNearby,101,Switching Protocols,Locations 1-1,text,true,,149,143,14,14,null,0,0,45
+1706461928745,2374,GetResourcesNearby,101,Switching Protocols,Locations 1-2,text,true,,149,143,25,25,null,0,0,1245
+1706461928850,3362,GetResourcesNearby,101,Switching Protocols,Locations 1-3,text,true,,149,143,35,35,null,0,0,1140
+1706461928944,4320,GetResourcesNearby,101,Switching Protocols,Locations 1-4,text,true,,149,143,44,44,null,0,0,1046
+1706461929038,5422,GetResourcesNearby,101,Switching Protocols,Locations 1-5,text,true,,149,143,55,55,null,0,0,953
+1706461930015,4996,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-15,,false,,0,0,60,60,null,0,0,0
+1706461930504,4509,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-20,,false,,0,0,59,59,null,0,0,0
+1706461930107,4907,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-16,,false,,0,0,58,58,null,0,0,0
+1706461930801,4213,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-23,,false,,0,0,57,57,null,0,0,0
+1706461930702,4313,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-22,,false,,0,0,56,56,null,0,0,0
+1706461930206,4809,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-17,,false,,0,0,55,55,null,0,0,0
+1706461930404,4608,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-19,,false,,0,0,60,60,null,0,0,0
+1706461930305,4716,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-18,,false,,0,0,55,55,null,0,0,0
+1706461930900,4122,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-24,,false,,0,0,54,54,null,0,0,0
+1706461930603,4419,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-21,,false,,0,0,54,54,null,0,0,0
+1706461929135,6400,GetResourcesNearby,101,Switching Protocols,Locations 1-6,text,true,,149,143,55,55,null,0,0,857
+1706461929230,6771,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-7,,false,,145,143,59,59,null,0,0,765
+1706461930999,5003,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-25,,false,,0,0,58,58,null,0,0,0
+1706461931596,4413,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-31,,false,,0,0,57,57,null,0,0,0
+1706461931397,4612,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-29,,false,,0,0,57,57,null,0,0,0
+1706461931202,4808,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-27,,false,,0,0,55,55,null,0,0,0
+1706461929326,6684,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-8,,false,,145,143,54,54,null,0,0,671
+1706461931099,4912,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-26,,false,,0,0,53,53,null,0,0,0
+1706461931495,4517,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-30,,false,,0,0,52,52,null,0,0,0
+1706461931295,4717,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-28,,false,,0,0,51,51,null,0,0,0
+1706461929425,6588,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-9,,false,,145,143,51,51,null,0,0,574
+1706461931793,4228,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-33,,false,,0,0,49,49,null,0,0,0
+1706461931694,4328,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-32,,false,,0,0,49,49,null,0,0,0
+1706461931892,4131,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-34,,false,,0,0,47,47,null,0,0,0
+1706461929525,6500,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-10,,false,,145,143,46,46,null,0,0,497
+1706461931991,4038,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-35,,false,,0,0,45,45,null,0,0,0
+1706461929817,6216,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-13,,false,,145,143,44,44,null,0,0,212
+1706461929722,6311,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-12,,false,,145,143,44,44,null,0,0,305
+1706461929624,6409,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-11,,false,,145,143,44,44,null,0,0,402
+1706461929921,6116,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-14,,false,,145,143,41,41,null,0,0,110
+1706461932295,4708,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-38,,false,,0,0,50,50,null,0,0,0
+1706461932492,4513,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-40,,false,,0,0,49,49,null,0,0,0
+1706461932590,4416,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-41,,false,,0,0,48,48,null,0,0,0
+1706461932692,4315,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-42,,false,,0,0,47,47,null,0,0,0
+1706461932792,4216,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-43,,false,,0,0,46,46,null,0,0,0
+1706461932092,4918,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-36,,false,,0,0,45,45,null,0,0,0
+1706461932991,4019,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-45,,false,,0,0,45,45,null,0,0,0
+1706461932191,4821,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-37,,false,,0,0,43,43,null,0,0,0
+1706461932395,4617,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-39,,false,,0,0,42,42,null,0,0,0
+1706461932893,4122,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-44,,false,,0,0,41,41,null,0,0,0
+1706461933393,4619,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-49,,false,,0,0,50,50,null,0,0,0
+1706461933291,4721,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-48,,false,,0,0,50,50,null,0,0,0
+1706461933191,4823,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-47,,false,,0,0,48,48,null,0,0,0
+1706461933692,4325,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-52,,false,,0,0,47,47,null,0,0,0
+1706461933791,4228,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-53,,false,,0,0,46,46,null,0,0,0
+1706461933592,4426,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-51,,false,,0,0,46,46,null,0,0,0
+1706461933092,4927,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-46,,false,,0,0,46,46,null,0,0,0
+1706461933493,4527,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-50,,false,,0,0,45,45,null,0,0,0
+1706461933891,4130,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-54,,false,,0,0,43,43,null,0,0,0
+1706461933993,4029,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-55,,false,,0,0,43,43,null,0,0,0
+1706461934095,4923,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-56,,false,,0,0,45,45,null,0,0,0
+1706461934192,4828,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-57,,false,,0,0,44,44,null,0,0,0
+1706461934292,4728,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-58,,false,,0,0,44,44,null,0,0,0
+1706461934393,4628,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-59,,false,,0,0,44,44,null,0,0,0
+1706461934493,4529,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-60,,false,,0,0,41,41,null,0,0,0
+1706461934596,4426,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-61,,false,,0,0,40,40,null,0,0,0
+1706461934695,4333,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-62,,false,,0,0,39,39,null,0,0,0
+1706461934800,4231,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-63,,false,,0,0,38,38,null,0,0,0
+1706461934893,4138,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-64,,false,,0,0,37,37,null,0,0,0
+1706461934990,4042,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-65,,false,,0,0,36,36,null,0,0,0
+1706461935091,4912,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-66,,false,,0,0,35,35,null,0,0,0
+1706461935292,4712,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-68,,false,,0,0,34,34,null,0,0,0
+1706461935191,4814,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-67,,false,,0,0,33,33,null,0,0,0
+1706461935792,4214,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-73,,false,,0,0,32,32,null,0,0,0
+1706461935692,4315,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-72,,false,,0,0,31,31,null,0,0,0
+1706461935893,4114,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-74,,false,,0,0,31,31,null,0,0,0
+1706461935491,4518,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-70,,false,,0,0,29,29,null,0,0,0
+1706461935596,4414,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-71,,false,,0,0,28,28,null,0,0,0
+1706461935390,4620,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-69,,false,,0,0,27,27,null,0,0,0
+1706461935991,4020,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-75,,false,,0,0,26,26,null,0,0,0
+1706461936092,4910,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-76,,false,,0,0,25,25,null,0,0,0
+1706461936191,4811,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-77,,false,,0,0,25,25,null,0,0,0
+1706461936291,4712,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-78,,false,,0,0,24,24,null,0,0,0
+1706461936392,4611,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-79,,false,,0,0,23,23,null,0,0,0
+1706461936794,4210,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-83,,false,,0,0,21,21,null,0,0,0
+1706461936495,4511,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-80,,false,,0,0,20,20,null,0,0,0
+1706461936694,4313,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-82,,false,,0,0,19,19,null,0,0,0
+1706461936595,4416,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-81,,false,,0,0,18,18,null,0,0,0
+1706461936991,4023,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-85,,false,,0,0,17,17,null,0,0,0
+1706461936891,4121,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-84,,false,,0,0,16,16,null,0,0,0
+1706461937091,4914,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-86,,false,,0,0,15,15,null,0,0,0
+1706461937193,4813,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-87,,false,,0,0,14,14,null,0,0,0
+1706461937691,4315,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-92,,false,,0,0,13,13,null,0,0,0
+1706461937391,4615,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-89,,false,,0,0,13,13,null,0,0,0
+1706461937591,4416,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-91,,false,,0,0,11,11,null,0,0,0
+1706461937991,4018,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-95,,false,,0,0,10,10,null,0,0,0
+1706461937292,4717,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-88,,false,,0,0,10,10,null,0,0,0
+1706461937492,4518,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-90,,false,,0,0,9,9,null,0,0,0
+1706461937798,4213,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-93,,false,,0,0,7,7,null,0,0,0
+1706461937891,4121,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-94,,false,,0,0,6,6,null,0,0,0
+1706461938094,4907,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-96,,false,,0,0,5,5,null,0,0,0
+1706461938191,4814,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-97,,false,,0,0,5,5,null,0,0,0
+1706461938296,4710,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-98,,false,,0,0,4,4,null,0,0,0
+1706461938399,4608,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-99,,false,,0,0,3,3,null,0,0,0
+1706461938493,4516,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-100,,false,,0,0,3,3,null,0,0,0

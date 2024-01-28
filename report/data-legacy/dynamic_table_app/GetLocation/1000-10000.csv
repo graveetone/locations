@@ -1,0 +1,101 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1705970710433,1303,GetTrack,101,Switching Protocols,Locations 1-1,text,true,,1445708,35,14,14,null,0,0,49
+1705970710506,2959,GetTrack,101,Switching Protocols,Locations 1-2,text,true,,1445708,35,30,30,null,0,0,1230
+1705970710607,3654,GetTrack,101,Switching Protocols,Locations 1-3,text,true,,1445708,35,37,37,null,0,0,1187
+1705970710707,4463,GetTrack,101,Switching Protocols,Locations 1-4,text,true,,1445708,35,45,45,null,0,0,1144
+1705970710803,5175,GetTrack,101,Switching Protocols,Locations 1-5,text,true,,1445708,35,52,52,null,0,0,1116
+1705970711798,4209,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-15,,false,,0,0,52,52,null,0,0,0
+1705970711897,4114,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-16,,false,,0,0,51,51,null,0,0,0
+1705970710905,6005,GetTrack,101,Switching Protocols,Locations 1-6,text,true,,1445708,35,59,59,null,0,0,1072
+1705970711998,5027,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-17,,false,,0,0,59,59,null,0,0,0
+1705970712103,4924,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-18,,false,,0,0,58,58,null,0,0,0
+1705970712197,4832,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-19,,false,,0,0,57,57,null,0,0,0
+1705970712301,4728,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-20,,false,,0,0,57,57,null,0,0,0
+1705970712400,4631,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-21,,false,,0,0,55,55,null,0,0,0
+1705970712501,4530,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-22,,false,,0,0,55,55,null,0,0,0
+1705970712597,4436,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-23,,false,,0,0,53,53,null,0,0,0
+1705970712698,4337,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-24,,false,,0,0,52,52,null,0,0,0
+1705970712798,4237,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-25,,false,,0,0,52,52,null,0,0,0
+1705970712897,4138,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-26,,false,,0,0,51,51,null,0,0,0
+1705970711005,6747,GetTrack,101,Switching Protocols,Locations 1-7,text,true,,1445708,35,56,56,null,0,0,1044
+1705970713005,4996,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-27,,false,,0,0,57,57,null,0,0,0
+1705970713098,4903,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-28,,false,,0,0,57,57,null,0,0,0
+1705970713298,4704,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-30,,false,,0,0,57,57,null,0,0,0
+1705970713198,4804,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-29,,false,,0,0,57,57,null,0,0,0
+1705970713397,4613,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-31,,false,,0,0,55,55,null,0,0,0
+1705970713598,4413,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-33,,false,,0,0,54,54,null,0,0,0
+1705970713698,4315,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-34,,false,,0,0,53,53,null,0,0,0
+1705970713497,4518,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-32,,false,,0,0,51,51,null,0,0,0
+1705970713796,4220,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-35,,false,,0,0,50,50,null,0,0,0
+1705970713897,4120,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-36,,false,,0,0,49,49,null,0,0,0
+1705970711100,7015,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-8,,false,,145,35,49,49,null,0,0,1008
+1705970711202,6985,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-9,,false,,145,35,48,48,null,0,0,978
+1705970711297,6998,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-10,,false,,145,35,48,48,null,0,0,993
+1705970711398,6958,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-11,,false,,145,35,48,48,null,0,0,952
+1705970711498,6911,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-12,,false,,145,35,48,48,null,0,0,908
+1705970711599,6874,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-13,,false,,145,35,47,47,null,0,0,868
+1705970711699,6834,GetTrack,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-14,,false,,145,35,47,47,null,0,0,829
+1705970713997,5003,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-37,,false,,0,0,51,51,null,0,0,0
+1705970714097,4904,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-38,,false,,0,0,51,51,null,0,0,0
+1705970714198,4816,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-39,,false,,0,0,49,49,null,0,0,0
+1705970714296,4720,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-40,,false,,0,0,48,48,null,0,0,0
+1705970714397,4619,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-41,,false,,0,0,48,48,null,0,0,0
+1705970714497,4519,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-42,,false,,0,0,48,48,null,0,0,0
+1705970714596,4421,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-43,,false,,0,0,45,45,null,0,0,0
+1705970714699,4319,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-44,,false,,0,0,45,45,null,0,0,0
+1705970714797,4222,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-45,,false,,0,0,43,43,null,0,0,0
+1705970714901,4118,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-46,,false,,0,0,43,43,null,0,0,0
+1705970715001,5009,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-47,,false,,0,0,51,51,null,0,0,0
+1705970715099,4915,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-48,,false,,0,0,50,50,null,0,0,0
+1705970715198,4819,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-49,,false,,0,0,49,49,null,0,0,0
+1705970715302,4718,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-50,,false,,0,0,48,48,null,0,0,0
+1705970715399,4626,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-51,,false,,0,0,47,47,null,0,0,0
+1705970715500,4531,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-52,,false,,0,0,46,46,null,0,0,0
+1705970715600,4433,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-53,,false,,0,0,45,45,null,0,0,0
+1705970715700,4334,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-54,,false,,0,0,44,44,null,0,0,0
+1705970715803,4234,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-55,,false,,0,0,43,43,null,0,0,0
+1705970715904,4135,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-56,,false,,0,0,42,42,null,0,0,0
+1705970716001,5036,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-57,,false,,0,0,44,44,null,0,0,0
+1705970716099,4939,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-58,,false,,0,0,43,43,null,0,0,0
+1705970716199,4840,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-59,,false,,0,0,42,42,null,0,0,0
+1705970716299,4741,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-60,,false,,0,0,41,41,null,0,0,0
+1705970716402,4640,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-61,,false,,0,0,40,40,null,0,0,0
+1705970716507,4536,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-62,,false,,0,0,39,39,null,0,0,0
+1705970716602,4442,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-63,,false,,0,0,38,38,null,0,0,0
+1705970716698,4348,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-64,,false,,0,0,37,37,null,0,0,0
+1705970716798,4248,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-65,,false,,0,0,36,36,null,0,0,0
+1705970716899,4151,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-66,,false,,0,0,35,35,null,0,0,0
+1705970716999,5008,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-67,,false,,0,0,34,34,null,0,0,0
+1705970717098,4910,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-68,,false,,0,0,33,33,null,0,0,0
+1705970717199,4813,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-69,,false,,0,0,32,32,null,0,0,0
+1705970717299,4717,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-70,,false,,0,0,31,31,null,0,0,0
+1705970717398,4621,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-71,,false,,0,0,30,30,null,0,0,0
+1705970717498,4521,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-72,,false,,0,0,29,29,null,0,0,0
+1705970717598,4422,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-73,,false,,0,0,28,28,null,0,0,0
+1705970717698,4323,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-74,,false,,0,0,27,27,null,0,0,0
+1705970717808,4215,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-75,,false,,0,0,26,26,null,0,0,0
+1705970717910,4114,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-76,,false,,0,0,25,25,null,0,0,0
+1705970718009,4993,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-77,,false,,0,0,24,24,null,0,0,0
+1705970718099,4903,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-78,,false,,0,0,24,24,null,0,0,0
+1705970718403,4601,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-81,,false,,0,0,24,24,null,0,0,0
+1705970718998,4008,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-87,,false,,0,0,24,24,null,0,0,0
+1705970718200,4807,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-79,,false,,0,0,24,24,null,0,0,0
+1705970718599,4412,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-83,,false,,0,0,19,19,null,0,0,0
+1705970718698,4314,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-84,,false,,0,0,18,18,null,0,0,0
+1705970718800,4212,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-85,,false,,0,0,17,17,null,0,0,0
+1705970718899,4116,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-86,,false,,0,0,16,16,null,0,0,0
+1705970718302,4713,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-80,,false,,0,0,15,15,null,0,0,0
+1705970718503,4510,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-82,,false,,0,0,14,14,null,0,0,0
+1705970719201,4802,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-89,,false,,0,0,13,13,null,0,0,0
+1705970719099,4903,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-88,,false,,0,0,13,13,null,0,0,0
+1705970719301,4704,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-90,,false,,0,0,12,12,null,0,0,0
+1705970719504,4503,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-92,,false,,0,0,11,11,null,0,0,0
+1705970719597,4411,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-93,,false,,0,0,10,10,null,0,0,0
+1705970719698,4311,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-94,,false,,0,0,9,9,null,0,0,0
+1705970719799,4212,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-95,,false,,0,0,8,8,null,0,0,0
+1705970719901,4111,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-96,,false,,0,0,7,7,null,0,0,0
+1705970719404,4611,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-91,,false,,0,0,5,5,null,0,0,0
+1705970720000,5001,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-97,,false,,0,0,4,4,null,0,0,0
+1705970720103,4898,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-98,,false,,0,0,4,4,null,0,0,0
+1705970720203,4800,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-99,,false,,0,0,2,2,null,0,0,0
+1705970720299,4705,GetTrack,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-100,,false,,0,0,1,1,null,0,0,0

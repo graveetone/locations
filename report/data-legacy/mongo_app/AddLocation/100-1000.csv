@@ -1,0 +1,101 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1705959095930,320,AddLocation,101,Switching Protocols,Locations 1-1,text,true,,282,121,4,4,null,0,0,36
+1705959096014,558,AddLocation,101,Switching Protocols,Locations 1-2,text,true,,282,121,6,6,null,0,0,242
+1705959096101,640,AddLocation,101,Switching Protocols,Locations 1-3,text,true,,282,121,7,7,null,0,0,200
+1705959096207,715,AddLocation,101,Switching Protocols,Locations 1-4,text,true,,282,121,8,8,null,0,0,144
+1705959096308,1197,AddLocation,101,Switching Protocols,Locations 1-5,text,true,,282,121,12,12,null,0,0,619
+1705959096404,1276,AddLocation,101,Switching Protocols,Locations 1-6,text,true,,282,121,13,13,null,0,0,578
+1705959096501,1361,AddLocation,101,Switching Protocols,Locations 1-7,text,true,,282,121,14,14,null,0,0,538
+1705959096597,1535,AddLocation,101,Switching Protocols,Locations 1-8,text,true,,282,121,16,16,null,0,0,483
+1705959096696,1616,AddLocation,101,Switching Protocols,Locations 1-9,text,true,,282,121,17,17,null,0,0,424
+1705959096794,1700,AddLocation,101,Switching Protocols,Locations 1-10,text,true,,282,121,18,18,null,0,0,376
+1705959096907,1765,AddLocation,101,Switching Protocols,Locations 1-11,text,true,,282,121,18,18,null,0,0,390
+1705959097027,2848,AddLocation,101,Switching Protocols,Locations 1-12,text,true,,282,121,29,29,null,0,0,1654
+1705959097124,3058,AddLocation,101,Switching Protocols,Locations 1-13,text,true,,282,121,31,31,null,0,0,1605
+1705959097220,3142,AddLocation,101,Switching Protocols,Locations 1-14,text,true,,282,121,32,32,null,0,0,1560
+1705959097320,3218,AddLocation,101,Switching Protocols,Locations 1-15,text,true,,282,121,33,33,null,0,0,1603
+1705959097434,3270,AddLocation,101,Switching Protocols,Locations 1-16,text,true,,282,121,34,34,null,0,0,1529
+1705959097525,3353,AddLocation,101,Switching Protocols,Locations 1-17,text,true,,282,121,34,34,null,0,0,1495
+1705959097623,3444,AddLocation,101,Switching Protocols,Locations 1-18,text,true,,282,121,35,35,null,0,0,1439
+1705959097703,3682,AddLocation,101,Switching Protocols,Locations 1-19,text,true,,282,121,37,37,null,0,0,1402
+1705959097799,3772,AddLocation,101,Switching Protocols,Locations 1-20,text,true,,282,121,38,38,null,0,0,1356
+1705959097898,3823,AddLocation,101,Switching Protocols,Locations 1-21,text,true,,282,121,39,39,null,0,0,1304
+1705959097999,3893,AddLocation,101,Switching Protocols,Locations 1-22,text,true,,282,121,40,40,null,0,0,1243
+1705959098112,3959,AddLocation,101,Switching Protocols,Locations 1-23,text,true,,282,121,40,40,null,0,0,1176
+1705959098204,4190,AddLocation,101,Switching Protocols,Locations 1-24,text,true,,282,121,43,43,null,0,0,1273
+1705959098294,4280,AddLocation,101,Switching Protocols,Locations 1-25,text,true,,282,121,43,43,null,0,0,1230
+1705959098394,4348,AddLocation,101,Switching Protocols,Locations 1-26,text,true,,282,121,44,44,null,0,0,1171
+1705959098494,4424,AddLocation,101,Switching Protocols,Locations 1-27,text,true,,282,121,45,45,null,0,0,1117
+1705959098693,4321,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-29,,false,,0,0,45,45,null,0,0,0
+1705959098793,4229,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-30,,false,,0,0,44,44,null,0,0,0
+1705959098893,4139,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-31,,false,,0,0,43,43,null,0,0,0
+1705959098592,4513,AddLocation,101,Switching Protocols,Locations 1-28,text,true,,282,121,43,43,null,0,0,1062
+1705959098996,6984,AddLocation,101,Switching Protocols,Locations 1-32,text,true,,282,121,69,69,null,0,0,4396
+1705959099092,7062,AddLocation,101,Switching Protocols,Locations 1-33,text,true,,282,121,68,68,null,0,0,4345
+1705959099192,7107,AddLocation,101,Switching Protocols,Locations 1-34,text,true,,282,121,67,67,null,0,0,4284
+1705959099291,7151,AddLocation,101,Switching Protocols,Locations 1-35,text,true,,282,121,66,66,null,0,0,4234
+1705959099392,7212,AddLocation,101,Switching Protocols,Locations 1-36,text,true,,282,121,65,65,null,0,0,4171
+1705959099495,7284,AddLocation,101,Switching Protocols,Locations 1-37,text,true,,282,121,64,64,null,0,0,4110
+1705959099594,7350,AddLocation,101,Switching Protocols,Locations 1-38,text,true,,282,121,63,63,null,0,0,4052
+1705959102992,4025,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-72,,false,,0,0,62,62,null,0,0,0
+1705959099692,7431,AddLocation,101,Switching Protocols,Locations 1-39,text,true,,282,121,61,61,null,0,0,3993
+1705959099807,7821,AddLocation,101,Switching Protocols,Locations 1-40,text,true,,282,121,60,60,null,0,0,3920
+1705959099907,7889,AddLocation,101,Switching Protocols,Locations 1-41,text,true,,282,121,59,59,null,0,0,4041
+1705959099991,7971,AddLocation,101,Switching Protocols,Locations 1-42,text,true,,282,121,58,58,null,0,0,4027
+1705959103195,4836,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-74,,false,,0,0,57,57,null,0,0,0
+1705959103292,4740,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-75,,false,,0,0,56,56,null,0,0,0
+1705959103393,4640,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-76,,false,,0,0,55,55,null,0,0,0
+1705959103493,4541,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-77,,false,,0,0,54,54,null,0,0,0
+1705959103594,4440,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-78,,false,,0,0,54,54,null,0,0,0
+1705959103693,4341,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-79,,false,,0,0,54,54,null,0,0,0
+1705959103791,4244,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-80,,false,,0,0,54,54,null,0,0,0
+1705959103892,4143,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-81,,false,,0,0,53,53,null,0,0,0
+1705959100097,8044,AddLocation,101,Switching Protocols,Locations 1-43,text,true,,282,121,49,49,null,0,0,3970
+1705959100192,8115,AddLocation,101,Switching Protocols,Locations 1-44,text,true,,282,121,48,48,null,0,0,3921
+1705959100291,8180,AddLocation,101,Switching Protocols,Locations 1-45,text,true,,282,121,47,47,null,0,0,3869
+1705959100391,8243,AddLocation,101,Switching Protocols,Locations 1-46,text,true,,282,121,46,46,null,0,0,3817
+1705959100492,8309,AddLocation,101,Switching Protocols,Locations 1-47,text,true,,282,121,45,45,null,0,0,3759
+1705959100591,8377,AddLocation,101,Switching Protocols,Locations 1-48,text,true,,282,121,44,44,null,0,0,3709
+1705959103992,5275,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-82,,false,,0,0,43,43,null,0,0,0
+1705959104091,5181,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-83,,false,,0,0,42,42,null,0,0,0
+1705959104191,5087,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-84,,false,,0,0,41,41,null,0,0,0
+1705959104294,4997,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-85,,false,,0,0,40,40,null,0,0,0
+1705959104394,4902,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-86,,false,,0,0,39,39,null,0,0,0
+1705959104492,4812,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-87,,false,,0,0,38,38,null,0,0,0
+1705959104591,4716,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-88,,false,,0,0,37,37,null,0,0,0
+1705959104691,4617,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-89,,false,,0,0,36,36,null,0,0,0
+1705959104792,4517,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-90,,false,,0,0,35,35,null,0,0,0
+1705959104891,4420,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-91,,false,,0,0,34,34,null,0,0,0
+1705959100691,8713,AddLocation,101,Switching Protocols,Locations 1-49,text,true,,282,121,33,33,null,0,0,3648
+1705959100792,8780,AddLocation,101,Switching Protocols,Locations 1-50,text,true,,282,121,32,32,null,0,0,3585
+1705959100893,8844,AddLocation,101,Switching Protocols,Locations 1-51,text,true,,282,121,31,31,null,0,0,3528
+1705959100991,8915,AddLocation,101,Switching Protocols,Locations 1-52,text,true,,282,121,30,30,null,0,0,3477
+1705959104991,5077,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-92,,false,,0,0,29,29,null,0,0,0
+1705959105090,4988,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-93,,false,,0,0,28,28,null,0,0,0
+1705959105191,4891,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-94,,false,,0,0,27,27,null,0,0,0
+1705959105293,4789,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-95,,false,,0,0,27,27,null,0,0,0
+1705959105391,4692,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-96,,false,,0,0,25,25,null,0,0,0
+1705959105491,4594,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-97,,false,,0,0,24,24,null,0,0,0
+1705959105601,4485,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-98,,false,,0,0,23,23,null,0,0,0
+1705959105698,4389,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-99,,false,,0,0,23,23,null,0,0,0
+1705959105797,4293,AddLocation,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-100,,false,,0,0,21,21,null,0,0,0
+1705959101093,9000,AddLocation,101,Switching Protocols,Locations 1-53,text,true,,282,121,20,20,null,0,0,3418
+1705959101195,9073,AddLocation,101,Switching Protocols,Locations 1-54,text,true,,282,121,19,19,null,0,0,3570
+1705959101290,9141,AddLocation,101,Switching Protocols,Locations 1-55,text,true,,282,121,18,18,null,0,0,3521
+1705959101393,9206,AddLocation,101,Switching Protocols,Locations 1-56,text,true,,282,121,17,17,null,0,0,3466
+1705959101492,9271,AddLocation,101,Switching Protocols,Locations 1-57,text,true,,282,121,16,16,null,0,0,3411
+1705959101591,9335,AddLocation,101,Switching Protocols,Locations 1-58,text,true,,282,121,15,15,null,0,0,3354
+1705959101692,9301,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-59,,false,,145,121,14,14,null,0,0,3297
+1705959101791,9259,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-60,,false,,145,121,13,13,null,0,0,3254
+1705959101892,9199,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-61,,false,,145,121,12,12,null,0,0,3194
+1705959101990,9140,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-62,,false,,145,121,11,11,null,0,0,3137
+1705959102091,9087,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-63,,false,,145,121,10,10,null,0,0,3082
+1705959102193,9031,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-64,,false,,145,121,9,9,null,0,0,3024
+1705959102292,8974,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-65,,false,,145,121,8,8,null,0,0,2968
+1705959102390,8914,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-66,,false,,145,121,7,7,null,0,0,2911
+1705959102491,8856,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-67,,false,,145,121,6,6,null,0,0,2850
+1705959102591,8795,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-68,,false,,145,121,5,5,null,0,0,2790
+1705959102690,8740,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-69,,false,,145,121,4,4,null,0,0,2737
+1705959102791,8942,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-70,,false,,145,121,3,3,null,0,0,2938
+1705959102902,8876,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-71,,false,,145,121,2,2,null,0,0,2872
+1705959103095,10330,AddLocation,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-73,,false,,145,121,1,1,null,0,0,4324

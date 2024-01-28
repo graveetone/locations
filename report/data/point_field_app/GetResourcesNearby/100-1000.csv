@@ -1,101 +1,101 @@
 timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1705964802576,291,GetResourcesNearby,101,Switching Protocols,Locations 1-1,text,true,,149,143,4,4,null,0,0,42
-1705964802655,420,GetResourcesNearby,101,Switching Protocols,Locations 1-2,text,true,,149,143,5,5,null,0,0,216
-1705964802756,518,GetResourcesNearby,101,Switching Protocols,Locations 1-3,text,true,,149,143,6,6,null,0,0,116
-1705964802851,615,GetResourcesNearby,101,Switching Protocols,Locations 1-4,text,true,,149,143,7,7,null,0,0,22
-1705964802945,744,GetResourcesNearby,101,Switching Protocols,Locations 1-5,text,true,,149,143,8,8,null,0,0,526
-1705964803044,911,GetResourcesNearby,101,Switching Protocols,Locations 1-6,text,true,,149,143,10,10,null,0,0,430
-1705964803143,1082,GetResourcesNearby,101,Switching Protocols,Locations 1-7,text,true,,149,143,11,11,null,0,0,332
-1705964803252,1222,GetResourcesNearby,101,Switching Protocols,Locations 1-8,text,true,,149,143,13,13,null,0,0,226
-1705964803350,1393,GetResourcesNearby,101,Switching Protocols,Locations 1-9,text,true,,149,143,14,14,null,0,0,129
-1705964803450,1565,GetResourcesNearby,101,Switching Protocols,Locations 1-10,text,true,,149,143,16,16,null,0,0,31
-1705964803747,1484,GetResourcesNearby,101,Switching Protocols,Locations 1-13,text,true,,149,143,17,17,null,0,0,1273
-1705964803648,1814,GetResourcesNearby,101,Switching Protocols,Locations 1-12,text,true,,149,143,19,19,null,0,0,1373
-1705964803847,1830,GetResourcesNearby,101,Switching Protocols,Locations 1-14,text,true,,149,143,20,20,null,0,0,1175
-1705964803548,2331,GetResourcesNearby,101,Switching Protocols,Locations 1-11,text,true,,149,143,21,21,null,0,0,1474
-1705964803946,2138,GetResourcesNearby,101,Switching Protocols,Locations 1-15,text,true,,149,143,22,22,null,0,0,1078
-1705964804045,2244,GetResourcesNearby,101,Switching Protocols,Locations 1-16,text,true,,149,143,23,23,null,0,0,980
-1705964804145,2344,GetResourcesNearby,101,Switching Protocols,Locations 1-17,text,true,,149,143,24,24,null,0,0,882
-1705964804244,2493,GetResourcesNearby,101,Switching Protocols,Locations 1-18,text,true,,149,143,25,25,null,0,0,784
-1705964804343,2594,GetResourcesNearby,101,Switching Protocols,Locations 1-19,text,true,,149,143,26,26,null,0,0,687
-1705964804444,2712,GetResourcesNearby,101,Switching Protocols,Locations 1-20,text,true,,149,143,28,28,null,0,0,586
-1705964804544,2822,GetResourcesNearby,101,Switching Protocols,Locations 1-21,text,true,,149,143,29,29,null,0,0,488
-1705964804644,2923,GetResourcesNearby,101,Switching Protocols,Locations 1-22,text,true,,149,143,30,30,null,0,0,389
-1705964804750,3028,GetResourcesNearby,101,Switching Protocols,Locations 1-23,text,true,,149,143,31,31,null,0,0,284
-1705964804846,3155,GetResourcesNearby,101,Switching Protocols,Locations 1-24,text,true,,149,143,32,32,null,0,0,189
-1705964804941,3263,GetResourcesNearby,101,Switching Protocols,Locations 1-25,text,true,,149,143,33,33,null,0,0,96
-1705964805041,3444,GetResourcesNearby,101,Switching Protocols,Locations 1-26,text,true,,149,143,35,35,null,0,0,3187
-1705964805152,3534,GetResourcesNearby,101,Switching Protocols,Locations 1-27,text,true,,149,143,36,36,null,0,0,3078
-1705964805243,3645,GetResourcesNearby,101,Switching Protocols,Locations 1-28,text,true,,149,143,37,37,null,0,0,2989
-1705964805346,3805,GetResourcesNearby,101,Switching Protocols,Locations 1-29,text,true,,149,143,39,39,null,0,0,2889
-1705964805444,3900,GetResourcesNearby,101,Switching Protocols,Locations 1-30,text,true,,149,143,40,40,null,0,0,2793
-1705964805542,4016,GetResourcesNearby,101,Switching Protocols,Locations 1-31,text,true,,149,143,41,41,null,0,0,2697
-1705964805643,4124,GetResourcesNearby,101,Switching Protocols,Locations 1-32,text,true,,149,143,42,42,null,0,0,2599
-1705964805744,4226,GetResourcesNearby,101,Switching Protocols,Locations 1-33,text,true,,149,143,43,43,null,0,0,2501
-1705964805845,4350,GetResourcesNearby,101,Switching Protocols,Locations 1-34,text,true,,149,143,44,44,null,0,0,2404
-1705964805943,4452,GetResourcesNearby,101,Switching Protocols,Locations 1-35,text,true,,149,143,45,45,null,0,0,2308
-1705964806042,4556,GetResourcesNearby,101,Switching Protocols,Locations 1-36,text,true,,149,143,46,46,null,0,0,2211
-1705964806142,4658,GetResourcesNearby,101,Switching Protocols,Locations 1-37,text,true,,149,143,47,47,null,0,0,2114
-1705964806242,4769,GetResourcesNearby,101,Switching Protocols,Locations 1-38,text,true,,149,143,48,48,null,0,0,2017
-1705964806341,4866,GetResourcesNearby,101,Switching Protocols,Locations 1-39,text,true,,149,143,49,49,null,0,0,1919
-1705964806441,4959,GetResourcesNearby,101,Switching Protocols,Locations 1-40,text,true,,149,143,50,50,null,0,0,1821
-1705964806541,5066,GetResourcesNearby,101,Switching Protocols,Locations 1-41,text,true,,149,143,51,51,null,0,0,1723
-1705964806642,5167,GetResourcesNearby,101,Switching Protocols,Locations 1-42,text,true,,149,143,52,52,null,0,0,1623
-1705964806743,5265,GetResourcesNearby,101,Switching Protocols,Locations 1-43,text,true,,149,143,53,53,null,0,0,1523
-1705964806841,5384,GetResourcesNearby,101,Switching Protocols,Locations 1-44,text,true,,149,143,54,54,null,0,0,1426
-1705964806941,5494,GetResourcesNearby,101,Switching Protocols,Locations 1-45,text,true,,149,143,55,55,null,0,0,1327
-1705964807042,5588,GetResourcesNearby,101,Switching Protocols,Locations 1-46,text,true,,149,143,55,55,null,0,0,1227
-1705964807142,5710,GetResourcesNearby,101,Switching Protocols,Locations 1-47,text,true,,149,143,54,54,null,0,0,1128
-1705964808945,4064,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-65,,false,,0,0,53,53,null,0,0,0
-1705964808848,4163,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-64,,false,,0,0,52,52,null,0,0,0
-1705964808644,4367,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-62,,false,,0,0,51,51,null,0,0,0
-1705964808446,4566,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-60,,false,,0,0,50,50,null,0,0,0
-1705964808749,4263,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-63,,false,,0,0,49,49,null,0,0,0
-1705964808344,4668,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-59,,false,,0,0,48,48,null,0,0,0
-1705964808543,4471,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-61,,false,,0,0,47,47,null,0,0,0
-1705964808242,4775,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-58,,false,,0,0,46,46,null,0,0,0
-1705964807241,5824,GetResourcesNearby,101,Switching Protocols,Locations 1-48,text,true,,149,143,45,45,null,0,0,1030
-1705964807342,5912,GetResourcesNearby,101,Switching Protocols,Locations 1-49,text,true,,149,143,44,44,null,0,0,931
-1705964807441,6000,GetResourcesNearby,101,Switching Protocols,Locations 1-50,text,true,,149,143,43,43,null,0,0,833
-1705964807541,6088,GetResourcesNearby,101,Switching Protocols,Locations 1-51,text,true,,149,143,42,42,null,0,0,735
-1705964807641,6205,GetResourcesNearby,101,Switching Protocols,Locations 1-52,text,true,,149,143,41,41,null,0,0,636
-1705964809043,4959,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-66,,false,,0,0,40,40,null,0,0,0
-1705964809242,4761,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-68,,false,,0,0,39,39,null,0,0,0
-1705964809142,4861,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-67,,false,,0,0,39,39,null,0,0,0
-1705964809944,4059,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-75,,false,,0,0,39,39,null,0,0,0
-1705964809343,4661,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-69,,false,,0,0,38,38,null,0,0,0
-1705964809444,4560,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-70,,false,,0,0,38,38,null,0,0,0
-1705964809543,4462,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-71,,false,,0,0,37,37,null,0,0,0
-1705964809642,4363,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-72,,false,,0,0,37,37,null,0,0,0
-1705964809742,4264,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-73,,false,,0,0,35,35,null,0,0,0
-1705964809843,4163,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-74,,false,,0,0,35,35,null,0,0,0
-1705964807742,6325,GetResourcesNearby,101,Switching Protocols,Locations 1-53,text,true,,149,143,30,30,null,0,0,536
-1705964807842,6418,GetResourcesNearby,101,Switching Protocols,Locations 1-54,text,true,,149,143,29,29,null,0,0,437
-1705964807941,6345,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-55,,false,,145,143,28,28,null,0,0,339
-1705964808142,6144,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-57,,false,,145,143,28,28,null,0,0,140
-1705964808042,6244,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-56,,false,,145,143,28,28,null,0,0,239
-1705964810047,5077,GetResourcesNearby,101,Switching Protocols,Locations 1-76,text,true,,149,143,25,25,null,0,0,4849
-1705964810141,5220,GetResourcesNearby,101,Switching Protocols,Locations 1-77,text,true,,149,143,24,24,null,0,0,4756
-1705964810242,5305,GetResourcesNearby,101,Switching Protocols,Locations 1-78,text,true,,149,143,23,23,null,0,0,4656
-1705964810343,5445,GetResourcesNearby,101,Switching Protocols,Locations 1-79,text,true,,149,143,22,22,null,0,0,4556
-1705964810443,5550,GetResourcesNearby,101,Switching Protocols,Locations 1-80,text,true,,149,143,21,21,null,0,0,4458
-1705964810543,5667,GetResourcesNearby,101,Switching Protocols,Locations 1-81,text,true,,149,143,20,20,null,0,0,4359
-1705964810644,5767,GetResourcesNearby,101,Switching Protocols,Locations 1-82,text,true,,149,143,19,19,null,0,0,4260
-1705964810741,5893,GetResourcesNearby,101,Switching Protocols,Locations 1-83,text,true,,149,143,18,18,null,0,0,4164
-1705964810841,6012,GetResourcesNearby,101,Switching Protocols,Locations 1-84,text,true,,149,143,17,17,null,0,0,4066
-1705964810940,6174,GetResourcesNearby,101,Switching Protocols,Locations 1-85,text,true,,149,143,16,16,null,0,0,3968
-1705964811044,6271,GetResourcesNearby,101,Switching Protocols,Locations 1-86,text,true,,149,143,15,15,null,0,0,3866
-1705964811143,6410,GetResourcesNearby,101,Switching Protocols,Locations 1-87,text,true,,149,143,14,14,null,0,0,3768
-1705964811241,6527,GetResourcesNearby,101,Switching Protocols,Locations 1-88,text,true,,149,143,13,13,null,0,0,3672
-1705964811342,6634,GetResourcesNearby,101,Switching Protocols,Locations 1-89,text,true,,149,143,12,12,null,0,0,3572
-1705964811441,6769,GetResourcesNearby,101,Switching Protocols,Locations 1-90,text,true,,149,143,11,11,null,0,0,3473
-1705964811541,6892,GetResourcesNearby,101,Switching Protocols,Locations 1-91,text,true,,149,143,10,10,null,0,0,3375
-1705964811641,7009,GetResourcesNearby,101,Switching Protocols,Locations 1-92,text,true,,149,143,9,9,null,0,0,3276
-1705964811741,7105,GetResourcesNearby,101,Switching Protocols,Locations 1-93,text,true,,149,143,8,8,null,0,0,3177
-1705964811846,7213,GetResourcesNearby,101,Switching Protocols,Locations 1-94,text,true,,149,143,7,7,null,0,0,3073
-1705964811940,7308,GetResourcesNearby,101,Switching Protocols,Locations 1-95,text,true,,149,143,6,6,null,0,0,2980
-1705964812041,7395,GetResourcesNearby,101,Switching Protocols,Locations 1-96,text,true,,149,143,5,5,null,0,0,2881
-1705964812145,7503,GetResourcesNearby,101,Switching Protocols,Locations 1-97,text,true,,149,143,4,4,null,0,0,2778
-1705964812251,7638,GetResourcesNearby,101,Switching Protocols,Locations 1-98,text,true,,149,143,3,3,null,0,0,2673
-1705964812345,7760,GetResourcesNearby,101,Switching Protocols,Locations 1-99,text,true,,149,143,2,2,null,0,0,2581
-1705964812445,7847,GetResourcesNearby,101,Switching Protocols,Locations 1-100,text,true,,149,143,1,1,null,0,0,2483
+1706422920456,333,GetResourcesNearby,101,Switching Protocols,Locations 1-1,text,true,,149,143,4,4,null,0,0,35
+1706422920534,485,GetResourcesNearby,101,Switching Protocols,Locations 1-2,text,true,,149,143,5,5,null,0,0,259
+1706422920636,595,GetResourcesNearby,101,Switching Protocols,Locations 1-3,text,true,,149,143,7,7,null,0,0,164
+1706422920731,749,GetResourcesNearby,101,Switching Protocols,Locations 1-4,text,true,,149,143,8,8,null,0,0,75
+1706422920832,889,GetResourcesNearby,101,Switching Protocols,Locations 1-5,text,true,,149,143,9,9,null,0,0,656
+1706422920931,999,GetResourcesNearby,101,Switching Protocols,Locations 1-6,text,true,,149,143,11,11,null,0,0,559
+1706422921027,1149,GetResourcesNearby,101,Switching Protocols,Locations 1-7,text,true,,149,143,12,12,null,0,0,465
+1706422921125,1258,GetResourcesNearby,101,Switching Protocols,Locations 1-8,text,true,,149,143,13,13,null,0,0,369
+1706422921225,1355,GetResourcesNearby,101,Switching Protocols,Locations 1-9,text,true,,149,143,14,14,null,0,0,271
+1706422921325,1454,GetResourcesNearby,101,Switching Protocols,Locations 1-10,text,true,,149,143,15,15,null,0,0,173
+1706422921423,1559,GetResourcesNearby,101,Switching Protocols,Locations 1-11,text,true,,149,143,16,16,null,0,0,75
+1706422921526,1686,GetResourcesNearby,101,Switching Protocols,Locations 1-12,text,true,,149,143,17,17,null,0,0,1462
+1706422921626,1791,GetResourcesNearby,101,Switching Protocols,Locations 1-13,text,true,,149,143,18,18,null,0,0,1364
+1706422921724,1900,GetResourcesNearby,101,Switching Protocols,Locations 1-14,text,true,,149,143,19,19,null,0,0,1267
+1706422921825,2021,GetResourcesNearby,101,Switching Protocols,Locations 1-15,text,true,,149,143,21,21,null,0,0,1168
+1706422921922,2124,GetResourcesNearby,101,Switching Protocols,Locations 1-16,text,true,,149,143,22,22,null,0,0,1073
+1706422922025,2220,GetResourcesNearby,101,Switching Protocols,Locations 1-17,text,true,,149,143,23,23,null,0,0,971
+1706422922150,2304,GetResourcesNearby,101,Switching Protocols,Locations 1-18,text,true,,149,143,24,24,null,0,0,847
+1706422922246,2413,GetResourcesNearby,101,Switching Protocols,Locations 1-19,text,true,,149,143,25,25,null,0,0,753
+1706422922342,2527,GetResourcesNearby,101,Switching Protocols,Locations 1-20,text,true,,149,143,26,26,null,0,0,660
+1706422922441,2646,GetResourcesNearby,101,Switching Protocols,Locations 1-21,text,true,,149,143,27,27,null,0,0,563
+1706422922541,2755,GetResourcesNearby,101,Switching Protocols,Locations 1-22,text,true,,149,143,28,28,null,0,0,464
+1706422922641,2872,GetResourcesNearby,101,Switching Protocols,Locations 1-23,text,true,,149,143,29,29,null,0,0,365
+1706422922740,2994,GetResourcesNearby,101,Switching Protocols,Locations 1-24,text,true,,149,143,31,31,null,0,0,268
+1706422922839,3099,GetResourcesNearby,101,Switching Protocols,Locations 1-25,text,true,,149,143,32,32,null,0,0,170
+1706422922938,3239,GetResourcesNearby,101,Switching Protocols,Locations 1-26,text,true,,149,143,33,33,null,0,0,72
+1706422923036,3395,GetResourcesNearby,101,Switching Protocols,Locations 1-27,text,true,,149,143,35,35,null,0,0,3158
+1706422923129,3508,GetResourcesNearby,101,Switching Protocols,Locations 1-28,text,true,,149,143,36,36,null,0,0,3067
+1706422923224,3623,GetResourcesNearby,101,Switching Protocols,Locations 1-29,text,true,,149,143,37,37,null,0,0,2973
+1706422923325,3743,GetResourcesNearby,101,Switching Protocols,Locations 1-30,text,true,,149,143,38,38,null,0,0,2873
+1706422923422,3847,GetResourcesNearby,101,Switching Protocols,Locations 1-31,text,true,,149,143,39,39,null,0,0,2778
+1706422923528,3943,GetResourcesNearby,101,Switching Protocols,Locations 1-32,text,true,,149,143,40,40,null,0,0,2672
+1706422923625,4059,GetResourcesNearby,101,Switching Protocols,Locations 1-33,text,true,,149,143,41,41,null,0,0,2577
+1706422923723,4175,GetResourcesNearby,101,Switching Protocols,Locations 1-34,text,true,,149,143,42,42,null,0,0,2480
+1706422923823,4289,GetResourcesNearby,101,Switching Protocols,Locations 1-35,text,true,,149,143,43,43,null,0,0,2381
+1706422923924,4400,GetResourcesNearby,101,Switching Protocols,Locations 1-36,text,true,,149,143,44,44,null,0,0,2281
+1706422924024,4557,GetResourcesNearby,101,Switching Protocols,Locations 1-37,text,true,,149,143,46,46,null,0,0,2183
+1706422924128,4649,GetResourcesNearby,101,Switching Protocols,Locations 1-38,text,true,,149,143,47,47,null,0,0,2080
+1706422924221,4759,GetResourcesNearby,101,Switching Protocols,Locations 1-39,text,true,,149,143,48,48,null,0,0,1989
+1706422924321,4878,GetResourcesNearby,101,Switching Protocols,Locations 1-40,text,true,,149,143,49,49,null,0,0,1890
+1706422924421,4983,GetResourcesNearby,101,Switching Protocols,Locations 1-41,text,true,,149,143,50,50,null,0,0,1792
+1706422924523,5100,GetResourcesNearby,101,Switching Protocols,Locations 1-42,text,true,,149,143,52,52,null,0,0,1691
+1706422924625,5206,GetResourcesNearby,101,Switching Protocols,Locations 1-43,text,true,,149,143,53,53,null,0,0,1590
+1706422924726,5326,GetResourcesNearby,101,Switching Protocols,Locations 1-44,text,true,,149,143,54,54,null,0,0,1490
+1706422924825,5439,GetResourcesNearby,101,Switching Protocols,Locations 1-45,text,true,,149,143,55,55,null,0,0,1393
+1706422924922,5585,GetResourcesNearby,101,Switching Protocols,Locations 1-46,text,true,,149,143,55,55,null,0,0,1297
+1706422925023,5674,GetResourcesNearby,101,Switching Protocols,Locations 1-47,text,true,,149,143,54,54,null,0,0,1197
+1706422925130,5767,GetResourcesNearby,101,Switching Protocols,Locations 1-48,text,true,,149,143,53,53,null,0,0,1093
+1706422926821,4201,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-65,,false,,0,0,52,52,null,0,0,0
+1706422926425,4597,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-61,,false,,0,0,52,52,null,0,0,0
+1706422926922,4101,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-66,,false,,0,0,52,52,null,0,0,0
+1706422926224,4800,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-59,,false,,0,0,50,50,null,0,0,0
+1706422926722,4300,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-64,,false,,0,0,50,50,null,0,0,0
+1706422926325,4699,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-60,,false,,0,0,49,49,null,0,0,0
+1706422926525,4500,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-62,,false,,0,0,47,47,null,0,0,0
+1706422926625,4400,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-63,,false,,0,0,46,46,null,0,0,0
+1706422925222,5879,GetResourcesNearby,101,Switching Protocols,Locations 1-49,text,true,,149,143,44,44,null,0,0,1003
+1706422925323,5994,GetResourcesNearby,101,Switching Protocols,Locations 1-50,text,true,,149,143,43,43,null,0,0,906
+1706422925423,6085,GetResourcesNearby,101,Switching Protocols,Locations 1-51,text,true,,149,143,42,42,null,0,0,807
+1706422925523,6177,GetResourcesNearby,101,Switching Protocols,Locations 1-52,text,true,,149,143,41,41,null,0,0,708
+1706422925623,6280,GetResourcesNearby,101,Switching Protocols,Locations 1-53,text,true,,149,143,40,40,null,0,0,609
+1706422927022,4981,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-67,,false,,0,0,39,39,null,0,0,0
+1706422927121,4882,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-68,,false,,0,0,38,38,null,0,0,0
+1706422927225,4779,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-69,,false,,0,0,38,38,null,0,0,0
+1706422927423,4582,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-71,,false,,0,0,36,36,null,0,0,0
+1706422927521,4486,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-72,,false,,0,0,35,35,null,0,0,0
+1706422927723,4286,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-74,,false,,0,0,34,34,null,0,0,0
+1706422927823,4189,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-75,,false,,0,0,33,33,null,0,0,0
+1706422927622,4389,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-73,,false,,0,0,33,33,null,0,0,0
+1706422927922,4093,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-76,,false,,0,0,32,32,null,0,0,0
+1706422927325,4691,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-70,,false,,0,0,31,31,null,0,0,0
+1706422925722,6410,GetResourcesNearby,101,Switching Protocols,Locations 1-54,text,true,,149,143,29,29,null,0,0,511
+1706422926021,6220,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-57,,false,,145,143,28,28,null,0,0,215
+1706422925822,6419,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-55,,false,,145,143,28,28,null,0,0,412
+1706422925922,6319,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-56,,false,,145,143,28,28,null,0,0,313
+1706422926122,6121,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Read timed out,Locations 1-58,,false,,145,143,25,25,null,0,0,116
+1706422928125,4879,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-78,,false,,0,0,24,24,null,0,0,0
+1706422928224,4781,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-79,,false,,0,0,24,24,null,0,0,0
+1706422928326,4680,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-80,,false,,0,0,22,22,null,0,0,0
+1706422928523,4484,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-82,,false,,0,0,22,22,null,0,0,0
+1706422928024,4982,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-77,,false,,0,0,22,22,null,0,0,0
+1706422928426,4585,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-81,,false,,0,0,20,20,null,0,0,0
+1706422928623,4390,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-83,,false,,0,0,19,19,null,0,0,0
+1706422928723,4291,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-84,,false,,0,0,18,18,null,0,0,0
+1706422928826,4189,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-85,,false,,0,0,17,17,null,0,0,0
+1706422928921,4096,GetResourcesNearby,Websocket I/O error,WebSocket I/O error: Connection reset,Locations 1-86,,false,,0,0,15,15,null,0,0,0
+1706422929024,4279,GetResourcesNearby,101,Switching Protocols,Locations 1-87,text,true,,149,143,14,14,null,0,0,4039
+1706422929122,4402,GetResourcesNearby,101,Switching Protocols,Locations 1-88,text,true,,149,143,13,13,null,0,0,3943
+1706422929222,4521,GetResourcesNearby,101,Switching Protocols,Locations 1-89,text,true,,149,143,12,12,null,0,0,3845
+1706422929322,4616,GetResourcesNearby,101,Switching Protocols,Locations 1-90,text,true,,149,143,11,11,null,0,0,3747
+1706422929421,4744,GetResourcesNearby,101,Switching Protocols,Locations 1-91,text,true,,149,143,10,10,null,0,0,3649
+1706422929521,4866,GetResourcesNearby,101,Switching Protocols,Locations 1-92,text,true,,149,143,9,9,null,0,0,3551
+1706422929623,5007,GetResourcesNearby,101,Switching Protocols,Locations 1-93,text,true,,149,143,8,8,null,0,0,3451
+1706422929722,5100,GetResourcesNearby,101,Switching Protocols,Locations 1-94,text,true,,149,143,7,7,null,0,0,3353
+1706422929822,5209,GetResourcesNearby,101,Switching Protocols,Locations 1-95,text,true,,149,143,6,6,null,0,0,3255
+1706422929923,5299,GetResourcesNearby,101,Switching Protocols,Locations 1-96,text,true,,149,143,5,5,null,0,0,3156
+1706422930022,5419,GetResourcesNearby,101,Switching Protocols,Locations 1-97,text,true,,149,143,4,4,null,0,0,3058
+1706422930133,5524,GetResourcesNearby,101,Switching Protocols,Locations 1-98,text,true,,149,143,3,3,null,0,0,2949
+1706422930233,5614,GetResourcesNearby,101,Switching Protocols,Locations 1-99,text,true,,149,143,2,2,null,0,0,2850
+1706422930334,5732,GetResourcesNearby,101,Switching Protocols,Locations 1-100,text,true,,149,143,1,1,null,0,0,2755
