@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_APP_DIR = Path(os.getcwd()).parent
+BASE_APP_DIR = Path(os.path.abspath(os.path.dirname(__file__))).parent.parent
 DB_SIZES_REPORT_FILE = BASE_APP_DIR / os.getenv("DB_SIZES_REPORT_FILE")
 
 REPORT_FILES_DIR = BASE_APP_DIR / os.getenv("REPORT_FILES_DIR") 
