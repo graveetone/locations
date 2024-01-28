@@ -33,7 +33,6 @@ def compose_row(app, param, requests=None):
 
 
     return {
-        "Додаток": app,
         "Кількість локацій": param.locations_total,
         "Розмір бази": get_db_size(app, param.locations_total),
         "Кількість успішних запитів": total_success_normalized,

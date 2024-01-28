@@ -35,20 +35,18 @@ requests = st.sidebar.multiselect(
     key="REQUESTS",
     default=REQUESTS_TITLES
 )
-show_table = st.sidebar.checkbox("Відобразити таблицю")
+show_table = st.sidebar.toggle("Відобразити таблицю")
 
 if all((apps, seed_params, requests)):
     all_apps_data = pd.DataFrame(columns=TABLE_HEADERS)
 
     plot_data = {"Кількість точок": [param.locations_total for param in seed_params]}
-
+    all_apps_data = {}   
     for app in apps:
         rows = [compose_row(app, param, requests=requests)
                 for param in seed_params]
         current_app_data = pd.DataFrame(rows)
-        all_apps_data = pd.concat(
-            [all_apps_data, current_app_data], ignore_index=True)
-
+        all_apps_data[app] = current_app_data
 
         app_success_key = APP_SUCCESS_KEY.format(app=app)
         app_apdex_key = APP_APDEX_KEY.format(app=app)
@@ -61,7 +59,9 @@ if all((apps, seed_params, requests)):
         plot_data[app_elapsed_time_key] = current_app_data["Середній час відповіді"]
 
     if show_table:
-        st.table(all_apps_data)
+        for app in apps:
+            st.subheader(app)
+            st.table(all_apps_data[app])
 
     apps_success = [APP_SUCCESS_KEY.format(app=app) for app in apps]
     apps_apdex = [APP_APDEX_KEY.format(app=app) for app in apps]
