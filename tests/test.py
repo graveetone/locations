@@ -48,7 +48,6 @@ async def test_get_track(resources_url, get_track_payload, expected_location_key
         first_location_from_track = response[0]
         assert type(first_location_from_track) is dict
 
-        # keys = expected_location_keys
         check_keys_are_present(first_location_from_track,
                                expected_location_keys)
 
@@ -64,7 +63,6 @@ async def test_add_location(resources_url, add_location_payload, expected_locati
         response = json.loads(response)
 
         assert type(response) is dict
-        # keys = expected_location_keys
         check_keys_are_present(response, expected_location_keys)
         check_values_are_correct(
             add_location_payload["coordinates"], response["coordinates"])
