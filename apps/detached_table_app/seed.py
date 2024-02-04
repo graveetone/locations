@@ -2,7 +2,7 @@ import os
 import sys
 import time
 
-current_app_name = "dynamic_table_app"
+current_app_name = "detached_table_app"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 

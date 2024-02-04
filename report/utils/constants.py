@@ -14,7 +14,7 @@ IMAGE_PATH = BASE_APP_DIR / os.getenv("IMAGE_PATH")
 APPS_TITLES = [
     "PointFieldApp",
     "SingleTableApp",
-    "DynamicTableApp",
+    "DetachedTableApp",
     "MongoApp",
 ]
 

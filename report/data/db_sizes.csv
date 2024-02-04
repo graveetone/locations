@@ -14,8 +14,8 @@ point_field_app,10000,17986019
 point_field_app,100000,32092643
 point_field_app,1000000,173699555
 point_field_app,10000000,1572270563
-dynamic_table_app,1000,50074083
-dynamic_table_app,10000,49377763
-dynamic_table_app,100000,65892835
-dynamic_table_app,1000000,253305359
-dynamic_table_app,10000000,1538761231
+detached_table_app,1000,50074083
+detached_table_app,10000,49377763
+detached_table_app,100000,65892835
+detached_table_app,1000000,253305359
+detached_table_app,10000000,1538761231

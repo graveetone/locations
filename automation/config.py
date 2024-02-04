@@ -2,7 +2,7 @@ APPS = [
     "mongo_app",
     "single_table_app",
     "point_field_app",
-    "dynamic_table_app"
+    "detached_table_app"
 ]
 
 SEED_PARAMS = [
