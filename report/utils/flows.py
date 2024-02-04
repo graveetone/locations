@@ -13,7 +13,7 @@ def get_result(app, test_plan, resources, locations):
     path_to_file = build_path_to_file(app, test_plan, resources, locations)
     jmra = JMeterReportAnalyser(path_to_file)
 
-    return jmra.analyze()
+    return jmra.analyze(consider_response_time=False)
 
 
 def compose_row(app, param, requests=None):

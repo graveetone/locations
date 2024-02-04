@@ -7,9 +7,12 @@ class JMeterReportAnalyser:
         self.labels = self.data["label"].unique()
         self._prepare_results_template()
 
-    def analyze(self):
+    def analyze(self, consider_response_time=True):
         self.analyze_requests()
-        self.calculate_apdex()
+        if consider_response_time:
+            self.calculate_apdex()
+        else:
+            self.calculate_apdex(tt=None, ft=None)
         self.calculate_mean_elapsed_time()
 
         return self.results
@@ -38,18 +41,27 @@ class JMeterReportAnalyser:
             })
 
     def calculate_apdex(self, tt=500, ft=1500):
-        count_satisfied = lambda data: len(data[(data['elapsed'] <= tt) & (data['success'] == True)]) 
-        count_tolerant = lambda data: len(data[(data['elapsed'] >= tt) & (data['elapsed'] <= ft) & (data['success'] == True)])         
-
-        apdex = (count_satisfied(self.data) + count_tolerant(self.data) * 0.5) / len(self.data)
+        if tt and ft:  # consider response time in apdex
+            count_satisfied = lambda data: len(data[(data['elapsed'] <= tt) & (data['success'] == True)]) 
+            count_tolerant = lambda data: len(data[(data['elapsed'] >= tt) & (data['elapsed'] <= ft) & (data['success'] == True)])         
+            
+            apdex = (count_satisfied(self.data) + count_tolerant(self.data) * 0.5) / len(self.data)
+        else:  # calculate apdex simply as success_count/all_count
+            count_successful = lambda data: len(data[data['success'] == True])
+            
+            apdex = count_successful(self.data) / len(self.data)
+ 
         self.results["summary"].update({
             "apdex": apdex,
         })
 
         for label in self.labels:
             data = self._get_request_data_by_label(label)
-
-            apdex = (count_satisfied(data) + count_tolerant(data) * 0.5) / len(data)
+            if tt and ft:  # consider response time in apdex
+                apdex = (count_satisfied(data) + count_tolerant(data) * 0.5) / len(data)
+            else:  # calculate apdex simply as success_count/all_count
+                apdex = count_successful(self.data) / len(self.data)
+            
             self.results[label].update({
                 "apdex": apdex,
             })
