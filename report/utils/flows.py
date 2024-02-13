@@ -2,6 +2,8 @@ from .helpers import camel_to_snake_case_converter, read_csv_file
 from .constants import DB_SIZES_REPORT_FILE, REPORT_FILES_DIR
 from .jmeter_report_analyser import JMeterReportAnalyser
 
+TOTAL_REQUESTS_PER_SESSION = 100  # 100 requests 
+SESSION_DURATION = 10             # in 10 seconds
 
 def build_path_to_file(app, test_plan, resources, locations):
     file_path = "{app}/{test_plan}/{resources}-{locations}.csv".format(app=app, test_plan=test_plan, resources=resources, locations=locations)
@@ -17,7 +19,7 @@ def get_result(app, test_plan, resources, locations):
 
 
 def compose_row(app, param, requests=None):
-    total_success, total_apdex, total_elapsed_time = 0, 0, 0
+    total_success, total_apdex, total_elapsed_time, total_successful_requests = 0, 0, 0, 0
 
     path_to_app = camel_to_snake_case_converter(app)
 
@@ -26,6 +28,7 @@ def compose_row(app, param, requests=None):
         total_success += result["summary"]["success"]
         total_apdex += result["summary"]["apdex"]
         total_elapsed_time += result["summary"]["elapsed"]
+        total_successful_requests += result["summary"]["success"] / TOTAL_REQUESTS_PER_SESSION
 
     total_success_normalized = total_success / len(requests)
     total_apdex_normalized = total_apdex / len(requests)
@@ -37,7 +40,8 @@ def compose_row(app, param, requests=None):
         "Розмір бази": get_db_size(app, param.locations_total),
         "Кількість успішних запитів": total_success_normalized,
         "APDEX індекс": total_apdex_normalized,
-        "Середній час відповіді": total_elapsed_time_normalized
+        "Середній час відповіді": total_elapsed_time_normalized,
+        "Пропускна здатність": total_successful_requests/SESSION_DURATION
     }
 
 
