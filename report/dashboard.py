@@ -106,4 +106,5 @@ if all((apps, seed_params, requests)):
             
             st.pyplot(fig)
 else:
-    st.image(str(IMAGE_PATH), width=600)
+    st.header('Використовуйте параметри для відображення результатів')
+    st.image(str(IMAGE_PATH), width=500)
