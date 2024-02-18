@@ -20,4 +20,4 @@ pandas
 matplotlib
 streamlit
 python-dotenv
-
+scipy
