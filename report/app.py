@@ -1,3 +1,4 @@
+import streamlit
 from components.controls import build_controls, display_no_params_image
 from components.plots import build_plots
 
