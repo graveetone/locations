@@ -1,11 +1,10 @@
-import matplotlib.pyplot as plt
+import altair
 import streamlit as st
 import pandas as pd
 
 from utils.flows import compose_row
-from utils.constants import (APP_ELAPSED_TIME_KEY, APPS_TITLES, IMAGE_PATH, SEED_PARAMS, REQUESTS_TITLES,
-                             TABLE_HEADERS, APP_APDEX_KEY, APP_DB_SIZE_KEY,
-                             APP_SUCCESS_KEY, TABLE_HEADERS_WITH_UNITS, APP_THROUGHTPUT_KEY)
+from utils.constants import (
+    APPS_TITLES, IMAGE_PATH, SEED_PARAMS, REQUESTS_TITLES, TABLE_HEADERS)
 
 st.set_page_config(page_title='Locations App Report',
                    page_icon="📍",
@@ -21,13 +20,15 @@ st.sidebar.subheader("Параметри")
 apps = st.sidebar.multiselect(
     label="Додатки",
     options=APPS_TITLES,
-    key="APPS"
+    key="APPS",
+    default=APPS_TITLES
 )
 
 seed_params = st.sidebar.multiselect(
     label='Параметри сідування бази',
     options=SEED_PARAMS,
-    key="SEED_PARAMS"
+    key="SEED_PARAMS",
+    default=SEED_PARAMS
 )
 
 requests = st.sidebar.multiselect(
@@ -36,75 +37,53 @@ requests = st.sidebar.multiselect(
     key="REQUESTS",
     default=REQUESTS_TITLES
 )
+
+admin_panel = st.sidebar.toggle("Адмін панель")
+method = 'log'
+degree = 0
+
+show_approximation = st.sidebar.toggle(
+    "Апроксимація", value=False)
+
+
+method = st.sidebar.selectbox('Метод апроксимації', options=[
+                                  'linear', 'log', 'exp', 'pow', 'quad', 'poly'])
 show_table = st.sidebar.toggle("Відобразити таблицю")
-show_interactive_plots = st.sidebar.toggle("Відобразити динамічні графіки", value=False)
 
 if all((apps, seed_params, requests)):
-    all_apps_data = pd.DataFrame(columns=TABLE_HEADERS)
+    all_apps_data_df = pd.DataFrame(columns=TABLE_HEADERS)
 
-    plot_data = {"Кількість точок": [param.locations_total for param in seed_params]}
-    all_apps_data = {}   
+    plots = [
+        "Кількість успішних запитів",
+        "APDEX індекс",
+        "Розмір бази",
+        "Середній час відповіді",
+        "Пропускна здатність"
+    ]
+
     for app in apps:
         rows = [compose_row(app, param, requests=requests)
                 for param in seed_params]
-        current_app_data = pd.DataFrame(rows)
-        all_apps_data[app] = current_app_data
+        app_df = pd.DataFrame(rows, columns=TABLE_HEADERS)
+        all_apps_data_df = pd.concat([all_apps_data_df, app_df])
 
-        app_success_key = APP_SUCCESS_KEY.format(app=app)
-        app_apdex_key = APP_APDEX_KEY.format(app=app)
-        app_db_size_key = APP_DB_SIZE_KEY.format(app=app)
-        app_elapsed_time_key = APP_ELAPSED_TIME_KEY.format(app=app)
-        app_throughput_key = APP_THROUGHTPUT_KEY.format(app=app) 
+    for plot in plots:
+        st.subheader(plot)
+        if show_approximation:
+            scatter = altair.Chart(all_apps_data_df).mark_point(size=60).encode(
+                x='Кількість точок', y=plot, color='Додаток', tooltip=TABLE_HEADERS).interactive()
 
-        plot_data[app_success_key] = current_app_data["Кількість успішних запитів"]
-        plot_data[app_apdex_key] = current_app_data["APDEX індекс"]
-        plot_data[app_db_size_key] = current_app_data["Розмір бази"]
-        plot_data[app_elapsed_time_key] = current_app_data["Середній час відповіді"]
-        plot_data[app_throughput_key] = current_app_data["Пропускна здатність"]
-         
+            approximation = scatter.transform_regression('Кількість точок', plot, groupby=[
+                                                         'Додаток'], method=method, order=degree).mark_line()
+            figure = scatter + approximation
+        else:
+            lines = altair.Chart(all_apps_data_df).mark_line().encode(
+                x='Кількість точок', y=plot, color='Додаток', tooltip=TABLE_HEADERS).interactive()
+            figure = lines
 
+        st.altair_chart(figure, use_container_width=True)
     if show_table:
-        for app in apps:
-            st.subheader(app)
-            all_apps_data[app].columns = TABLE_HEADERS_WITH_UNITS
-            st.table(all_apps_data[app])
-    
-    if show_interactive_plots:
-        apps_success = [APP_SUCCESS_KEY.format(app=app) for app in apps]
-        apps_apdex = [APP_APDEX_KEY.format(app=app) for app in apps]
-        apps_db_size = [APP_DB_SIZE_KEY.format(app=app) for app in apps]
-        apps_elapsed_time = [APP_ELAPSED_TIME_KEY.format(app=app) for app in apps]
-        apps_throughput = [APP_THROUGHTPUT_KEY.format(app=app) for app in apps]
-
-        plots_mapping = {
-            "Залежність кількості успішних запитів від кількості точок": apps_success,
-            "Залежність значення індексу APDEX від кількості точок": apps_apdex,
-            "Залежність розміру бази від кількості точок": apps_db_size,
-            "Залежність середнього часу відповіді від кількості точок": apps_elapsed_time,
-            "Залежність пропускної здатності від кількості точок": apps_throughput
-        }
-
-        for plot_title, ydata in plots_mapping.items():
-            st.subheader(plot_title)
-            st.line_chart(plot_data, x='Кількість точок', y=ydata)        
-    else:
-        plots_mapping = {
-            "Залежність кількості успішних запитів від кількості точок": app_success_key,
-            "Залежність значення індексу APDEX від кількості точок": app_apdex_key,
-            "Залежність розміру бази від кількості точок": app_db_size_key,
-            "Залежність середнього часу відповіді від кількості точок": app_elapsed_time_key,
-            "Залежність пропускної здатності від кількості точок": app_throughput_key
-        }
-
-
-        for plot_title, ydata_key in plots_mapping.items():
-            fig, ax = plt.subplots()
-            st.subheader(plot_title)
-            ax.plot(plot_data['Кількість точок'], plot_data[ydata_key], color='black')
-
-            ax.scatter(plot_data['Кількість точок'], plot_data[ydata_key], marker='s', color='black')
-            
-            st.pyplot(fig)
+        st.table(all_apps_data_df)
 else:
     st.header('Використовуйте параметри для відображення результатів')
     st.image(str(IMAGE_PATH), width=500)
